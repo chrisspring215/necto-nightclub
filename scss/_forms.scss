@@ -1,0 +1,65 @@
+
+input[type="text"], input[type="email"], textarea, input[type="submit"]
+{
+	background: $color-dark;
+	border: 1px solid $color-light;
+	color: $color-lightest;
+	font-family: $other;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, input[type="submit"]:focus
+{
+	background: $color-light;
+	border: 1px solid $color-redorange;
+	color: $color-dark;
+}
+
+.ss-q-date select
+{
+	background: $color-dark;
+	padding: 5px;
+	border: 1px solid $color-light;
+	color: $color-lightest;
+	font-family: $other;
+}
+
+.ss-q-date select:focus
+{
+	background: $color-light;
+	padding: 5px;
+	border: 1px solid $color-redorange;
+	color: $color-dark;
+}
+
+
+#navigation-table
+{
+	background: none;
+	padding: 0;
+	border: 1px solid $color-light;
+	background-color: $color-redorange;
+
+}
+
+#ss-submit
+{
+	color: $color-white;
+	padding: 15px, 10px, 7px, 10px;
+	border: none;
+	background: none;
+	margin: 0;
+	font-family: $other;
+	font-size: 1em;
+}
+
+.ss-q-title
+{
+	color: $color-redorange;
+	font-family: $other;
+}
+
+.ss-secondary-text
+{
+	font-family: $other
+}
+

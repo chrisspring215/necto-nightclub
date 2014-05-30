@@ -1,0 +1,594 @@
+
+
+.article-background
+{
+	background-repeat: repeat;
+}
+
+.hide-microformats
+{
+	display: none;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.page-section
+{
+	border-bottom: 1px solid $color-darkest;
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+img
+{
+	border: 1px solid $color-darkest;
+}
+
+article
+{	
+	font-family: $other;
+	border-bottom: 1px solid $color-dark;
+	
+	.small-screen-bg
+	{
+
+		background-image: url('../img/necto-mobile-banner.jpg');
+		background-repeat: no-repeat;
+		background-position: center top;
+		border-bottom: 2px solid $color-darkest;
+		padding-bottom: 1em;
+
+		h6
+		{
+			font-family: $test;
+			font-weight: 100;
+			margin-top: .5em;
+			margin-bottom: .5em;
+			font-size: 3.75em;
+			text-align: center;
+			text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.46);
+			line-height: 1em;
+			color: $color-white;
+		}
+
+		.standard-button
+		{
+			width: 100%;
+		}
+	}
+
+	h2, h3, h4, h5, h6, a, p
+	{
+		font-weight: normal;
+	}
+
+	h2
+	{
+		font-family: $other;
+		color: $color-redorange;
+		margin: 0;
+		margin-bottom: .5em;
+		font-weight: bold;
+		font-weight: 1.5em;
+	}
+
+	h3
+	{
+		font-family: $other;
+		color: $color-orange;
+		margin: 0;
+		margin-bottom: .25em;
+		font-weight: bold;
+	}
+
+	h4
+	{
+		font-family: $other;
+		color: $color-redorange;
+		margin: 0;
+		margin-bottom: .25em;
+		font-weight: bold;
+	}
+
+	h5
+	{
+		font-family: $other;
+		color: $color-orange;
+		margin: 0;
+		margin-bottom: 0em;
+	}
+
+	h6
+	{
+		font-family: $other;
+		color: $color-redorange;
+		margin: 0;
+		margin-bottom: .75em;
+	}
+
+	p
+	{
+		font-family: $other;
+		color: $color-light;
+		margin: 0;
+		margin-bottom: .5em;
+	}
+
+	a
+	{
+		transition: color 200ms ease-out 100ms;
+		font-family: $other;
+		color: $color-blue;
+	}
+
+	a:hover
+	{
+		transition: color 200ms ease-out 100ms;
+		font-family: $other;
+		color: $color-darkorange;
+	}
+
+	img
+	{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 1em;
+	}
+
+	ul
+	{
+		color: $color-light;
+		font-family: $other;
+		list-style-type: none;
+	}
+
+	strong
+	{
+		color: $color-orange;
+		font-weight: normal;
+	}
+	.home-page-special-event-date
+	{
+		color: $color-light;
+		font-family: $other;
+	}
+	.reservations-and-bottle-service
+	{
+		p
+		{
+			font-family: $other;
+		}
+
+		strong
+		{
+			color: $color-orange;
+		}
+	}
+	small
+	{
+		font-family: $other;
+	}
+
+	.private-rental-photos
+	{
+		img
+		{
+			transition: border 200ms ease-out 100ms;
+			border: 1px solid $color-darkest;
+		}
+
+		img:hover
+		{	transition: border 200ms ease-out 100ms;
+			border: 1px solid $color-redorange;
+		}
+	}
+	.standard-button
+	{
+		transition: background-color 200ms ease-out 100ms;
+		border: 2px solid $color-dark;
+		padding: 8px 6px;
+		background-color: $color-darkest;
+		color: $color-redorange;
+		text-align: center;
+		margin-bottom: .25em;
+		width: 100%;
+		display: block;
+		font-weight: bold;
+	}
+
+	.standard-button:hover
+	{
+		transition: background-color 200ms ease-out 100ms;
+		background-color: $color-orange;
+		color: $color-dark;
+	}
+
+	.tix-button
+	{
+		transition: background-color 200ms ease-out 100ms;
+		background-color: $color-redorange;
+		color: $color-orange;
+	}
+	.tix-button:hover
+	{
+		transition: background-color 200ms ease-out 100ms;
+		background-color: $color-orange;
+		color: $color-redorange;
+	}
+
+	.special-event
+	{
+		font-family: $other;
+		color: $color-light;
+	}
+
+	.feat
+	{
+		color: $color-white;
+		font-size: .75em;
+	}
+	.map-link img
+	{
+		padding: 0;
+		margin: 0;
+	}
+
+	.social-icon
+	{
+		i
+		{	
+			font-size: 3em;
+		}
+
+		.foundicon-facebook
+		{
+			transition: color 200ms ease-out 100ms;
+			color: #3b5998;
+		}
+
+		.foundicon-twitter
+		{
+			transition: color 200ms ease-out 100ms;
+			color:  #00aced;
+		}
+
+		.foundicon-youtube
+		{
+			transition: color 200ms ease-out 100ms;
+			color: #bb0000;
+		}
+
+		.foundicon-instagram
+		{
+			transition: color 200ms ease-out 100ms;
+			color: #517fa4;
+		}
+
+		a
+		{
+			font-family: $other;
+			font-weight: bold;
+			color: $color-light;
+		}
+
+		span
+		{
+			display: none;
+		}
+
+	}
+
+	.cal-header
+	{
+		font-family: $header;
+
+	}
+	.contact-us
+	{
+		a
+		{
+			color: $color-light;
+			padding-top: .2em;
+		}
+
+		a:hover
+		{
+			color: $color-redorange;
+		}
+	}
+
+	.contact-us-social
+	{
+		h4
+		{
+			font-family: $other;
+
+			a
+			{
+				float: none;
+				font-size: .75em;
+
+			}
+		}
+	}
+
+	.calendar-date
+	{
+		color: $color-light;
+		font-family: $other;
+		margin-bottom: .5em;
+		line-height: 1.25em;
+
+		.day-indicator
+		{
+			color: $color-redorange;
+			font-weight: bold;
+		}
+
+		.date-indicator
+		{
+			color: $color-white;
+		}
+	}
+
+	.calendar-event
+	{
+		h3 a
+		{
+			font-family: $other;
+			color: $color-orange;
+			font-weight: bold;
+
+			.special-calendar-event
+			{
+				transition: color 200ms ease-out 100ms;
+				color: $color-redorange;
+				font-size: .45em;
+			}
+		}
+
+		h3 a:hover
+		{
+			color: $color-redorange;
+
+			.special-calendar-event
+			{
+				transition: color 200ms ease-out 100ms;
+				color: $color-white;
+				font-size: .45em;
+			}
+		}
+	}
+
+	.calendar-links
+	{
+		h5
+		{
+			color: $color-orange;
+		}
+
+		p
+		{
+			color: $color-light;
+		}
+
+		.standard-button
+		{
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+	}
+
+	.about-the-club
+	{
+		h4 a
+		{
+			color: $color-redorange;
+			font-family: $other;
+		}
+
+		.about-page-taglines
+		{
+			color: $color-orange;
+		}
+	}
+
+	.mayhem-events
+	{
+		small
+		{
+			color: $color-light;
+			font-size: 1em;
+		}
+		img
+		{
+			border: 1px solid $color-darkest;
+		}
+	}
+
+	.about-the-nights
+	{
+		.day-of-night
+		{
+			color: $color-light;
+		}
+		.home-page-weekly-event
+		{
+			h3
+			{
+				margin-top: -.25em;
+				font-weight: bold;
+				font-size: 1.25em;
+			}
+		}
+	}
+
+	.mailing-list-text
+	{
+		color: $color-light;
+	}
+	.soundcloud
+	{
+		zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.75;
+	}
+	.soundcloud-intro
+	{
+		color: $color-redorange;
+		font-weight: bold;
+	}
+
+	.past-events
+	{
+		a
+		{
+			.past-event-date
+			{
+				color: $color-light;
+			}
+			.past-event-name
+			{
+				transition: color 200ms ease-out 100ms;
+				color: $color-redorange;
+			}
+			
+		}
+
+		a:hover
+		{
+			.past-event-name 
+			{
+				transition: color 200ms ease-out 100ms;
+				color: $color-blue;
+			}
+		}
+	}
+	.past-event-link
+	{
+		transition: color 200ms ease-out 100ms;
+		color: $color-light;
+		font-size: .5em;
+	}
+
+	.past-event-link:hover
+	{
+		transition: color 200ms ease-out 100ms;
+		color: $color-blue;
+	}
+
+	.disqus
+	{
+		border: 1px solid $color-dark;
+		background-color: #111;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	.recent-photos
+	{
+		transition: opacity .5s;
+		opacity: 1;
+
+		img
+		{
+			transition: border-color .5s;
+			border: 1px solid #222;
+			border-color: #222;
+		}
+	}
+
+	.recent-photos:hover
+	{
+		transition: opacity .5s;
+		opacity: .5;
+
+		img
+		{
+			transition: border-color .5s;
+			border: 1px solid $color-orange;
+			border-color: $color-orange;
+		}
+	}
+}
+
+.page-section:last-child
+{
+	border: none;
+}
+
+@media only screen and (min-width: 768px)
+{
+	article
+	{
+		h2
+		{
+		}
+
+		h3
+		{
+			margin-bottom: .10em;
+			
+			small
+			{
+				color: $color-light;
+			}
+		}
+
+		h4
+		{
+			margin-bottom: 0;
+		}
+
+		.social-icon
+		{
+			i
+			{	
+				font-size:5em;
+				transform: rotate(-90deg)
+			}
+
+			.foundicon-facebook:hover
+			{
+				transition: color 200ms ease-out 100ms;
+				color: #3b5998 - 25;
+			}
+
+			.foundicon-twitter:hover
+			{
+				transition: color 200ms ease-out 100ms;
+				color:  #00aced - 50;
+			}
+
+			.foundicon-youtube:hover
+			{
+				transition: color 200ms ease-out 100ms;
+				color: #bb0000 - 50;
+			}
+
+			.foundicon-instagram:hover
+			{
+				transition: color 200ms ease-out 100ms;
+				color: #517fa4 - 50;
+			}
+
+			span
+			{
+				display: block;
+			}
+		}
+	}
+}
+
+
+.temp-body
+{
+	h2 > img
+	{
+		width: 10%;
+	}
+}
+

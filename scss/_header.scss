@@ -1,0 +1,293 @@
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url('../img/background.jpg');
+	background-repeat: repeat;
+}
+
+header
+{
+	padding-top: 2em;
+	padding-bottom: 0em;
+	border-bottom: 1px solid $color-darkest;
+}
+.top-bar
+{
+
+	.name
+	{
+
+	}
+
+	.mobile-header
+	{
+		color: $color-orange;
+		font-family: $other;
+	}
+
+	.dropdown
+	{
+		font-family: $other;
+	}
+
+	
+}
+
+.article-background
+{
+	background-repeat: repeat;
+}
+
+.utility-navigation
+{
+	text-align: right;
+
+	ul
+	{
+		margin: 0;
+	}
+
+	li
+	{
+		display: inline;
+		list-style-type: none;
+	}
+
+	a
+	{	
+		transition: color 250ms ease;
+		font-size: .75em;
+		color: $color-light;
+		font-family: $other;
+		display: inline;
+		margin-left: 1em;
+		font-weight: bold;
+	}
+
+	a:hover
+	{
+		transition: color 200ms ease;
+		color: $color-lightest;
+	}
+
+	a:focus
+	{
+		color: $color-light;
+	}
+}
+
+.social-navigation
+{
+	text-align: right;
+
+	ul
+	{
+		margin: 0;
+	}
+
+	li
+	{
+		display: inline;
+		list-style-type: none;
+	}
+
+	a
+	{
+		transition: color 250ms ease;
+		font-size: .75em;
+		color: $color-light;
+		font-family: $other;
+		margin-left: 1em
+	}
+
+	a:hover
+	{
+		transition: color 200ms ease;
+		color: $color-lightest;
+	}
+}
+
+
+
+
+.global-nav
+{
+	margin-bottom: -2em;
+
+
+	ul
+	{
+		margin-top: 2em;
+		padding-top: 2em;
+		text-align: center;
+	}
+
+	a
+	{
+		transition: color 250ms ease;
+		font-weight: bold;
+		font-size: .9em;
+		color: $color-lightest;
+		padding: 0;
+		font-family: $other;
+
+
+	}
+
+	.moved
+	{
+		margin: -.25em 0 0 0;
+		line-height: 1em;
+	}
+
+	a:hover
+	{
+		transition: color 200ms ease;
+		color: $color-redorange;
+	}
+
+	.header-logo
+	{	
+		margin-top: -3em;
+		border-radius: .85em;
+		background: #000000; /* Old browsers */
+		background: -moz-linear-gradient(top,  #000000 0%, #111111 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#111111)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #000000 0%,#111111 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #000000 0%,#111111 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #000000 0%,#111111 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #000000 0%,#111111 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#111111',GradientType=0 ); /* IE6-9 */
+		border: 2px solid $color-darkest;
+		width: 100%;
+
+	}
+}
+
+.global-nav-background
+{
+	margin-top: -9em;
+	padding: 1em 0;
+	border-top: 2px solid $color-darkest;
+	border-bottom: $color-dark;
+
+}
+
+.night-nav
+{
+	margin: 2em auto 1em auto;
+	text-align: center;
+	width: 100%;
+	height: 60px;
+
+	li
+	{
+		padding: .25em 0;
+		line-height: 1.23em;
+
+		a
+		{
+			transition: opacity 250ms ease;
+			transition: opacity 250msms ease, color 250ms ease;
+			font-family: $other;
+			color: $color-lightest;
+			opacity: .9;
+			font-size: .7em;
+
+		}
+
+		a>strong
+		{
+			transition: color 200ms ease;
+			color: $color-orange;
+			font-size: 1.75em;
+			
+		}
+	}
+
+	li:hover
+	{
+		a
+		{
+			transition: opacity 200ms ease, color 200ms ease;
+			opacity: 1;
+			color: $color-white;
+		}
+
+		strong
+		{
+			transition: opacity 200ms ease, color 200ms ease;
+			opacity: 1;
+			color: $color-redorange;
+		}
+	}
+}
+
+
+.main-image-container
+	{
+		img
+		{
+			position: relative;
+			margin-bottom: 2em;
+			opacity: .5;
+			border: 2px solid $color-darkest;
+		}
+
+		.main-image-text
+		{
+			position: absolute;
+			top: 12%;
+			width: 100%;
+			margin: 0 auto;
+  			
+
+			.image-text-header
+			{
+				font-family: $test;
+				font-size: 12em;
+				line-height: 1em;
+				margin-bottom: .1em;
+				color: $color-redorange;
+				text-shadow:
+   			1px -1px 0 $color-redorange - #222222,  
+   			-4px -4px 4px #111111,
+   			-4px 4px 4px #222222,
+     		1px 1px 0 $color-redorange - #111111;
+     		-webkit-perspective:150px; /* Chrome, Safari, Opera */
+-webkit-perspective-origin: 10% 10%; /* Chrome, Safari, Opera */
+perspective:150px;
+perspective-origin: 100% 100%;
+
+	     		span
+	     		{
+	     			color: $color-orange;
+	     			opacity: .8;
+
+
+
+	     		}
+			}
+
+			.image-text-content
+			{
+				font-size: 1em;
+				font-family: $other;
+				color: $color-white - #222222;
+				line-height: 1.25em;
+				font-weight: bold;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+
+
+
+@media only screen and (max-width: 768px)
+{
+
+
+}

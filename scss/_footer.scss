@@ -1,0 +1,111 @@
+footer
+{
+	padding-top: 4em;
+	padding-bottom: 4em;
+	background-color: #101010;
+	font-family: $other;
+	line-height: 1.3em;
+
+	.footer-address
+	{	
+		font-weight: 100;
+		img
+		{
+			display: none;
+		}
+		.footer-address-name
+		{
+			display: block;
+			background-image: url('../img/necto-nightclub-logo-ann-arbor-small.png');
+			background-repeat: no-repeat;
+			background-size: 75px 75px;
+			height: 75px;
+			width: 75px;
+			margin: 0 auto 1em auto;
+
+			.text
+			{
+				opacity: 0;
+			}
+		}
+
+		.footer-address-street
+		{
+			color: $color-light;
+
+			a
+			{
+				color: $color-orange;
+			}
+		}
+
+		.replace
+		{
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+	}
+
+	.footer-nav
+	{	
+		margin-top: 1em;
+		
+		ul
+		{
+			list-style-type: none;
+			font-size: .9em;
+		}
+
+		a
+		{
+			color: $color-redorange;
+			display: inline-block;
+			width: 8em;
+			font-weight: 100;
+		}
+
+		li:hover a
+		{
+			transition: color 250ms ease;
+			color: $color-orange;
+		}
+
+		a:hover
+		{
+			transition: color 250ms ease;
+			color: $color-light;
+		}
+
+		small
+		{
+			color: $color-dark;
+		}
+		li:hover small
+		{	
+			transition: color 250ms ease;
+			color: $color-light;
+		}
+		small
+		{
+			font-size: .8em;
+		}
+	}
+
+	.copyright
+	{
+		font-size: .9em;
+		color: $color-dark;
+		a
+		{
+			transition: color 250ms ease;
+			color: $color-redorange;
+		}
+
+		a:hover
+		{
+			transition: color 250ms ease;
+			color: $color-orange;
+		}
+	}
+}
