@@ -1,6 +1,8 @@
 # www.robotstxt.org/
 # www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
 
+Sitemap: http://www.necto.com/sitemap.xml
+
 User-agent: *
 Disallow: /voltage-mailing-list-thank-you.html
 Disallow: /recreation-wednesday-mailing-list-thank-you.html

@@ -421,7 +421,7 @@ article
 			{
 				margin-top: -.25em;
 				font-weight: bold;
-				font-size: 1.25em;
+				font-size: 1.35em;
 			}
 		}
 	}
@@ -486,32 +486,6 @@ article
 		background-color: #111;
 		padding-top: 1em;
 		padding-bottom: 1em;
-	}
-
-	.recent-photos
-	{
-		transition: opacity .5s;
-		opacity: 1;
-
-		img
-		{
-			transition: border-color .5s;
-			border: 1px solid #222;
-			border-color: #222;
-		}
-	}
-
-	.recent-photos:hover
-	{
-		transition: opacity .5s;
-		opacity: .5;
-
-		img
-		{
-			transition: border-color .5s;
-			border: 1px solid $color-orange;
-			border-color: $color-orange;
-		}
 	}
 }
 

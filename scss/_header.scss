@@ -239,7 +239,7 @@ header
 		.main-image-text
 		{
 			position: absolute;
-			top: 12%;
+			top: 22.5%;
 			width: 100%;
 			margin: 0 auto;
   			
@@ -247,38 +247,23 @@ header
 			.image-text-header
 			{
 				font-family: $test;
-				font-size: 12em;
+				font-size: 8em;
 				line-height: 1em;
-				margin-bottom: .1em;
+				margin-bottom: 0;
 				color: $color-redorange;
 				text-shadow:
-   			1px -1px 0 $color-redorange - #222222,  
-   			-4px -4px 4px #111111,
-   			-4px 4px 4px #222222,
-     		1px 1px 0 $color-redorange - #111111;
-     		-webkit-perspective:150px; /* Chrome, Safari, Opera */
--webkit-perspective-origin: 10% 10%; /* Chrome, Safari, Opera */
-perspective:150px;
-perspective-origin: 100% 100%;
-
-	     		span
-	     		{
-	     			color: $color-orange;
-	     			opacity: .8;
-
-
-
-	     		}
+   			-1px -1px 0 #111,  
+   			1px -1px 0 #111,
+   			-1px 1px 0 #111,
+     		1px 1px 0 #111;
 			}
 
 			.image-text-content
 			{
-				font-size: 1em;
+				font-size: 1.5em;
 				font-family: $other;
-				color: $color-white - #222222;
-				line-height: 1.25em;
-				font-weight: bold;
-				margin-bottom: 0;
+				color: $color-white;
+				line-height: 1em;
 			}
 		}
 	}

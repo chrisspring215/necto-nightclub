@@ -1,0 +1,8 @@
+ErrorDocument 404 /notfound.html
+
+RewriteEngine on
+# Options +FollowSymlinks
+RewriteCond %{HTTP_REFERER} badsite\.com [NC,OR]
+RewriteCond %{HTTP_REFERER} anotherbadsite\.com
+RewriteRule .* - [F]
+
