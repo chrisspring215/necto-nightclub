@@ -8149,38 +8149,25 @@ header {
 /* line 240, ../scss/_header.scss */
 .main-image-container .main-image-text {
   position: absolute;
-  top: 12%;
+  top: 22.5%;
   width: 100%;
   margin: 0 auto;
 }
 /* line 248, ../scss/_header.scss */
 .main-image-container .main-image-text .image-text-header {
   font-family: "Six Caps", sans-serif;
-  font-size: 12em;
+  font-size: 8em;
   line-height: 1em;
-  margin-bottom: .1em;
-  color: #a1400a;
-  text-shadow: 1px -1px 0 #7f1e00, -4px -4px 4px #111111, -4px 4px 4px #222222, 1px 1px 0 #902f00;
-  -webkit-perspective: 150px;
-  /* Chrome, Safari, Opera */
-  -webkit-perspective-origin: 10% 10%;
-  /* Chrome, Safari, Opera */
-  perspective: 150px;
-  perspective-origin: 100% 100%;
-}
-/* line 265, ../scss/_header.scss */
-.main-image-container .main-image-text .image-text-header span {
-  color: #f8a31e;
-  opacity: .8;
-}
-/* line 275, ../scss/_header.scss */
-.main-image-container .main-image-text .image-text-content {
-  font-size: 1em;
-  font-family: "Montserrat", sans-serif;
-  color: #cccccc;
-  line-height: 1.25em;
-  font-weight: bold;
   margin-bottom: 0;
+  color: #a1400a;
+  text-shadow: -1px -1px 0 #111111, 1px -1px 0 #111111, -1px 1px 0 #111111, 1px 1px 0 #111111;
+}
+/* line 262, ../scss/_header.scss */
+.main-image-container .main-image-text .image-text-content {
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  color: #eeeeee;
+  line-height: 1em;
 }
 
 /* line 2, ../scss/_footer.scss */
@@ -8315,6 +8302,12 @@ article {
   border-bottom: 1px solid #333333;
 }
 /* line 36, ../scss/_article.scss */
+article .photo-page-nav {
+  color: #f8a31e;
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 44, ../scss/_article.scss */
 article .small-screen-bg {
   background-image: url("../img/necto-mobile-banner.jpg");
   background-repeat: no-repeat;
@@ -8322,7 +8315,7 @@ article .small-screen-bg {
   border-bottom: 2px solid #222222;
   padding-bottom: 1em;
 }
-/* line 45, ../scss/_article.scss */
+/* line 53, ../scss/_article.scss */
 article .small-screen-bg h6 {
   font-family: "Six Caps", sans-serif;
   font-weight: 100;
@@ -8334,15 +8327,15 @@ article .small-screen-bg h6 {
   line-height: 1em;
   color: #eeeeee;
 }
-/* line 58, ../scss/_article.scss */
+/* line 66, ../scss/_article.scss */
 article .small-screen-bg .standard-button {
   width: 100%;
 }
-/* line 64, ../scss/_article.scss */
+/* line 72, ../scss/_article.scss */
 article h2, article h3, article h4, article h5, article h6, article a, article p {
   font-weight: normal;
 }
-/* line 69, ../scss/_article.scss */
+/* line 77, ../scss/_article.scss */
 article h2 {
   font-family: "Montserrat", sans-serif;
   color: #a1400a;
@@ -8351,7 +8344,7 @@ article h2 {
   font-weight: bold;
   font-weight: 1.5em;
 }
-/* line 79, ../scss/_article.scss */
+/* line 87, ../scss/_article.scss */
 article h3 {
   font-family: "Montserrat", sans-serif;
   color: #f8a31e;
@@ -8359,7 +8352,7 @@ article h3 {
   margin-bottom: .25em;
   font-weight: bold;
 }
-/* line 88, ../scss/_article.scss */
+/* line 96, ../scss/_article.scss */
 article h4 {
   font-family: "Montserrat", sans-serif;
   color: #a1400a;
@@ -8367,84 +8360,84 @@ article h4 {
   margin-bottom: .25em;
   font-weight: bold;
 }
-/* line 97, ../scss/_article.scss */
+/* line 105, ../scss/_article.scss */
 article h5 {
   font-family: "Montserrat", sans-serif;
   color: #f8a31e;
   margin: 0;
   margin-bottom: 0em;
 }
-/* line 105, ../scss/_article.scss */
+/* line 113, ../scss/_article.scss */
 article h6 {
   font-family: "Montserrat", sans-serif;
   color: #a1400a;
   margin: 0;
   margin-bottom: .75em;
 }
-/* line 113, ../scss/_article.scss */
+/* line 121, ../scss/_article.scss */
 article p {
   font-family: "Montserrat", sans-serif;
   color: #666666;
   margin: 0;
   margin-bottom: .5em;
 }
-/* line 121, ../scss/_article.scss */
+/* line 129, ../scss/_article.scss */
 article a {
   transition: color 200ms ease-out 100ms;
   font-family: "Montserrat", sans-serif;
   color: #00a4d6;
 }
-/* line 128, ../scss/_article.scss */
+/* line 136, ../scss/_article.scss */
 article a:hover {
   transition: color 200ms ease-out 100ms;
   font-family: "Montserrat", sans-serif;
   color: #99583d;
 }
-/* line 135, ../scss/_article.scss */
+/* line 143, ../scss/_article.scss */
 article img {
   width: 100%;
   margin: 0;
   margin-bottom: 1em;
 }
-/* line 142, ../scss/_article.scss */
+/* line 150, ../scss/_article.scss */
 article ul {
   color: #666666;
   font-family: "Montserrat", sans-serif;
   list-style-type: none;
 }
-/* line 149, ../scss/_article.scss */
+/* line 157, ../scss/_article.scss */
 article strong {
   color: #f8a31e;
   font-weight: normal;
 }
-/* line 154, ../scss/_article.scss */
+/* line 162, ../scss/_article.scss */
 article .home-page-special-event-date {
   color: #666666;
   font-family: "Montserrat", sans-serif;
 }
-/* line 161, ../scss/_article.scss */
+/* line 169, ../scss/_article.scss */
 article .reservations-and-bottle-service p {
   font-family: "Montserrat", sans-serif;
 }
-/* line 166, ../scss/_article.scss */
+/* line 174, ../scss/_article.scss */
 article .reservations-and-bottle-service strong {
   color: #f8a31e;
 }
-/* line 171, ../scss/_article.scss */
+/* line 179, ../scss/_article.scss */
 article small {
   font-family: "Montserrat", sans-serif;
 }
-/* line 178, ../scss/_article.scss */
+/* line 186, ../scss/_article.scss */
 article .private-rental-photos img {
   transition: border 200ms ease-out 100ms;
   border: 1px solid #222222;
 }
-/* line 184, ../scss/_article.scss */
+/* line 192, ../scss/_article.scss */
 article .private-rental-photos img:hover {
   transition: border 200ms ease-out 100ms;
   border: 1px solid #a1400a;
 }
-/* line 189, ../scss/_article.scss */
+/* line 197, ../scss/_article.scss */
 article .standard-button {
   transition: background-color 200ms ease-out 100ms;
   border: 2px solid #333333;
@@ -8457,293 +8450,271 @@ article .standard-button {
   display: block;
   font-weight: bold;
 }
-/* line 203, ../scss/_article.scss */
+/* line 211, ../scss/_article.scss */
 article .standard-button:hover {
   transition: background-color 200ms ease-out 100ms;
   background-color: #f8a31e;
   color: #333333;
 }
-/* line 210, ../scss/_article.scss */
+/* line 218, ../scss/_article.scss */
 article .tix-button {
   transition: background-color 200ms ease-out 100ms;
   background-color: #a1400a;
   color: #f8a31e;
 }
-/* line 216, ../scss/_article.scss */
+/* line 224, ../scss/_article.scss */
 article .tix-button:hover {
   transition: background-color 200ms ease-out 100ms;
   background-color: #f8a31e;
   color: #a1400a;
 }
-/* line 223, ../scss/_article.scss */
+/* line 231, ../scss/_article.scss */
 article .special-event {
   font-family: "Montserrat", sans-serif;
   color: #666666;
 }
-/* line 229, ../scss/_article.scss */
+/* line 237, ../scss/_article.scss */
 article .feat {
   color: #eeeeee;
   font-size: .75em;
 }
-/* line 234, ../scss/_article.scss */
+/* line 242, ../scss/_article.scss */
 article .map-link img {
   padding: 0;
   margin: 0;
 }
-/* line 242, ../scss/_article.scss */
+/* line 250, ../scss/_article.scss */
 article .social-icon i {
   font-size: 3em;
 }
-/* line 247, ../scss/_article.scss */
+/* line 255, ../scss/_article.scss */
 article .social-icon .foundicon-facebook {
   transition: color 200ms ease-out 100ms;
   color: #3b5998;
 }
-/* line 253, ../scss/_article.scss */
+/* line 261, ../scss/_article.scss */
 article .social-icon .foundicon-twitter {
   transition: color 200ms ease-out 100ms;
   color: #00aced;
 }
-/* line 259, ../scss/_article.scss */
+/* line 267, ../scss/_article.scss */
 article .social-icon .foundicon-youtube {
   transition: color 200ms ease-out 100ms;
   color: #bb0000;
 }
-/* line 265, ../scss/_article.scss */
+/* line 273, ../scss/_article.scss */
 article .social-icon .foundicon-instagram {
   transition: color 200ms ease-out 100ms;
   color: #517fa4;
 }
-/* line 271, ../scss/_article.scss */
+/* line 279, ../scss/_article.scss */
 article .social-icon a {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #666666;
 }
-/* line 278, ../scss/_article.scss */
+/* line 286, ../scss/_article.scss */
 article .social-icon span {
   display: none;
 }
-/* line 285, ../scss/_article.scss */
+/* line 293, ../scss/_article.scss */
 article .cal-header {
   font-family: "Six Caps", sans-serif;
 }
-/* line 292, ../scss/_article.scss */
+/* line 300, ../scss/_article.scss */
 article .contact-us a {
   color: #666666;
   padding-top: .2em;
 }
-/* line 298, ../scss/_article.scss */
+/* line 306, ../scss/_article.scss */
 article .contact-us a:hover {
   color: #a1400a;
 }
-/* line 306, ../scss/_article.scss */
+/* line 314, ../scss/_article.scss */
 article .contact-us-social h4 {
   font-family: "Montserrat", sans-serif;
 }
-/* line 310, ../scss/_article.scss */
+/* line 318, ../scss/_article.scss */
 article .contact-us-social h4 a {
   float: none;
   font-size: .75em;
 }
-/* line 319, ../scss/_article.scss */
+/* line 327, ../scss/_article.scss */
 article .calendar-date {
   color: #666666;
   font-family: "Montserrat", sans-serif;
   margin-bottom: .5em;
   line-height: 1.25em;
 }
-/* line 326, ../scss/_article.scss */
+/* line 334, ../scss/_article.scss */
 article .calendar-date .day-indicator {
   color: #a1400a;
   font-weight: bold;
 }
-/* line 332, ../scss/_article.scss */
+/* line 340, ../scss/_article.scss */
 article .calendar-date .date-indicator {
   color: #eeeeee;
 }
-/* line 340, ../scss/_article.scss */
+/* line 348, ../scss/_article.scss */
 article .calendar-event h3 a {
   font-family: "Montserrat", sans-serif;
   color: #f8a31e;
   font-weight: bold;
 }
-/* line 346, ../scss/_article.scss */
+/* line 354, ../scss/_article.scss */
 article .calendar-event h3 a .special-calendar-event {
   transition: color 200ms ease-out 100ms;
   color: #a1400a;
   font-size: .45em;
 }
-/* line 354, ../scss/_article.scss */
+/* line 362, ../scss/_article.scss */
 article .calendar-event h3 a:hover {
   color: #a1400a;
 }
-/* line 358, ../scss/_article.scss */
+/* line 366, ../scss/_article.scss */
 article .calendar-event h3 a:hover .special-calendar-event {
   transition: color 200ms ease-out 100ms;
   color: #eeeeee;
   font-size: .45em;
 }
-/* line 369, ../scss/_article.scss */
+/* line 377, ../scss/_article.scss */
 article .calendar-links h5 {
   color: #f8a31e;
 }
-/* line 374, ../scss/_article.scss */
+/* line 382, ../scss/_article.scss */
 article .calendar-links p {
   color: #666666;
 }
-/* line 379, ../scss/_article.scss */
+/* line 387, ../scss/_article.scss */
 article .calendar-links .standard-button {
   font-weight: bold;
   margin-bottom: 0;
 }
-/* line 388, ../scss/_article.scss */
+/* line 396, ../scss/_article.scss */
 article .about-the-club h4 a {
   color: #a1400a;
   font-family: "Montserrat", sans-serif;
 }
-/* line 394, ../scss/_article.scss */
+/* line 402, ../scss/_article.scss */
 article .about-the-club .about-page-taglines {
   color: #f8a31e;
 }
-/* line 402, ../scss/_article.scss */
+/* line 410, ../scss/_article.scss */
 article .mayhem-events small {
   color: #666666;
   font-size: 1em;
 }
-/* line 407, ../scss/_article.scss */
+/* line 415, ../scss/_article.scss */
 article .mayhem-events img {
   border: 1px solid #222222;
 }
-/* line 415, ../scss/_article.scss */
+/* line 423, ../scss/_article.scss */
 article .about-the-nights .day-of-night {
   color: #666666;
 }
-/* line 421, ../scss/_article.scss */
+/* line 429, ../scss/_article.scss */
 article .about-the-nights .home-page-weekly-event h3 {
   margin-top: -0.25em;
   font-weight: bold;
-  font-size: 1.25em;
+  font-size: 1.35em;
 }
-/* line 430, ../scss/_article.scss */
+/* line 438, ../scss/_article.scss */
 article .mailing-list-text {
   color: #666666;
 }
-/* line 434, ../scss/_article.scss */
+/* line 442, ../scss/_article.scss */
 article .soundcloud {
   zoom: 1;
   filter: alpha(opacity=50);
   opacity: 0.75;
 }
-/* line 440, ../scss/_article.scss */
+/* line 448, ../scss/_article.scss */
 article .soundcloud-intro {
   color: #a1400a;
   font-weight: bold;
 }
-/* line 450, ../scss/_article.scss */
+/* line 458, ../scss/_article.scss */
 article .past-events a .past-event-date {
   color: #666666;
 }
-/* line 454, ../scss/_article.scss */
+/* line 462, ../scss/_article.scss */
 article .past-events a .past-event-name {
   transition: color 200ms ease-out 100ms;
   color: #a1400a;
 }
-/* line 464, ../scss/_article.scss */
+/* line 472, ../scss/_article.scss */
 article .past-events a:hover .past-event-name {
   transition: color 200ms ease-out 100ms;
   color: #00a4d6;
 }
-/* line 471, ../scss/_article.scss */
+/* line 479, ../scss/_article.scss */
 article .past-event-link {
   transition: color 200ms ease-out 100ms;
   color: #666666;
   font-size: .5em;
 }
-/* line 478, ../scss/_article.scss */
+/* line 486, ../scss/_article.scss */
 article .past-event-link:hover {
   transition: color 200ms ease-out 100ms;
   color: #00a4d6;
 }
-/* line 484, ../scss/_article.scss */
+/* line 492, ../scss/_article.scss */
 article .disqus {
   border: 1px solid #333333;
   background-color: #111;
   padding-top: 1em;
   padding-bottom: 1em;
 }
-/* line 492, ../scss/_article.scss */
-article .recent-photos {
-  transition: opacity .5s;
-  opacity: 1;
-}
-/* line 497, ../scss/_article.scss */
-article .recent-photos img {
-  transition: border-color .5s;
-  border: 1px solid #222;
-  border-color: #222;
-}
-/* line 505, ../scss/_article.scss */
-article .recent-photos:hover {
-  transition: opacity .5s;
-  opacity: .5;
-}
-/* line 510, ../scss/_article.scss */
-article .recent-photos:hover img {
-  transition: border-color .5s;
-  border: 1px solid #f8a31e;
-  border-color: #f8a31e;
-}
 
-/* line 519, ../scss/_article.scss */
+/* line 501, ../scss/_article.scss */
 .page-section:last-child {
   border: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 532, ../scss/_article.scss */
+  /* line 514, ../scss/_article.scss */
   article h3 {
     margin-bottom: .10em;
   }
-  /* line 536, ../scss/_article.scss */
+  /* line 518, ../scss/_article.scss */
   article h3 small {
     color: #666666;
   }
-  /* line 542, ../scss/_article.scss */
+  /* line 524, ../scss/_article.scss */
   article h4 {
     margin-bottom: 0;
   }
-  /* line 549, ../scss/_article.scss */
+  /* line 531, ../scss/_article.scss */
   article .social-icon i {
     font-size: 5em;
     transform: rotate(-90deg);
   }
-  /* line 555, ../scss/_article.scss */
+  /* line 537, ../scss/_article.scss */
   article .social-icon .foundicon-facebook:hover {
     transition: color 200ms ease-out 100ms;
     color: #22407f;
   }
-  /* line 561, ../scss/_article.scss */
+  /* line 543, ../scss/_article.scss */
   article .social-icon .foundicon-twitter:hover {
     transition: color 200ms ease-out 100ms;
     color: #007abb;
   }
-  /* line 567, ../scss/_article.scss */
+  /* line 549, ../scss/_article.scss */
   article .social-icon .foundicon-youtube:hover {
     transition: color 200ms ease-out 100ms;
     color: #890000;
   }
-  /* line 573, ../scss/_article.scss */
+  /* line 555, ../scss/_article.scss */
   article .social-icon .foundicon-instagram:hover {
     transition: color 200ms ease-out 100ms;
     color: #1f4d72;
   }
-  /* line 579, ../scss/_article.scss */
+  /* line 561, ../scss/_article.scss */
   article .social-icon span {
     display: block;
   }
 }
-/* line 590, ../scss/_article.scss */
+/* line 572, ../scss/_article.scss */
 .temp-body h2 > img {
   width: 10%;
 }
