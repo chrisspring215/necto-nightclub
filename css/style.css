@@ -8149,25 +8149,30 @@ header {
 /* line 240, ../scss/_header.scss */
 .main-image-container .main-image-text {
   position: absolute;
-  top: 22.5%;
+  top: 18%;
   width: 100%;
   margin: 0 auto;
 }
 /* line 248, ../scss/_header.scss */
 .main-image-container .main-image-text .image-text-header {
   font-family: "Six Caps", sans-serif;
-  font-size: 8em;
+  font-size: 12em;
   line-height: 1em;
   margin-bottom: 0;
-  color: #a1400a;
-  text-shadow: -1px -1px 0 #111111, 1px -1px 0 #111111, -1px 1px 0 #111111, 1px 1px 0 #111111;
+  color: #f8a31e;
+  text-shadow: 1px -1px 0px #7f1e00, -4px -4px 4px #111111, -4px 4px 4px #222222, 1px 1px 0px #902f00;
 }
-/* line 262, ../scss/_header.scss */
+/* line 257, ../scss/_header.scss */
+.main-image-container .main-image-text .image-text-header span {
+  color: #F8A31E;
+  opacity: 0.8;
+}
+/* line 264, ../scss/_header.scss */
 .main-image-container .main-image-text .image-text-content {
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: "Montserrat", sans-serif;
   color: #eeeeee;
-  line-height: 1em;
+  line-height: 1.3em;
 }
 
 /* line 2, ../scss/_footer.scss */
@@ -8269,45 +8274,50 @@ footer .copyright a:hover {
   color: #f8a31e;
 }
 
-/* line 4, ../scss/_article.scss */
+/* line 2, ../scss/_article.scss */
+.photo-page-nav {
+  color: #f8a31e;
+}
+
+/* line 7, ../scss/_article.scss */
 .article-background {
   background-repeat: repeat;
 }
 
-/* line 9, ../scss/_article.scss */
+/* line 12, ../scss/_article.scss */
 .hide-microformats {
   display: none;
 }
 
-/* line 14, ../scss/_article.scss */
+/* line 17, ../scss/_article.scss */
 .center {
   text-align: center;
 }
 
-/* line 19, ../scss/_article.scss */
+/* line 22, ../scss/_article.scss */
 .page-section {
   border-bottom: 1px solid #222222;
   padding-top: 4em;
   padding-bottom: 4em;
 }
 
-/* line 26, ../scss/_article.scss */
+/* line 29, ../scss/_article.scss */
 img {
   border: 1px solid #222222;
 }
 
-/* line 31, ../scss/_article.scss */
+/* line 34, ../scss/_article.scss */
 article {
   font-family: "Montserrat", sans-serif;
   border-bottom: 1px solid #333333;
 }
-/* line 36, ../scss/_article.scss */
+/* line 39, ../scss/_article.scss */
 article .photo-page-nav {
   color: #f8a31e;
   margin-top: 0;
   padding-top: 0;
 }
-/* line 44, ../scss/_article.scss */
+/* line 47, ../scss/_article.scss */
 article .small-screen-bg {
   background-image: url("../img/necto-mobile-banner.jpg");
   background-repeat: no-repeat;
@@ -8315,7 +8325,7 @@ article .small-screen-bg {
   border-bottom: 2px solid #222222;
   padding-bottom: 1em;
 }
-/* line 53, ../scss/_article.scss */
+/* line 56, ../scss/_article.scss */
 article .small-screen-bg h6 {
   font-family: "Six Caps", sans-serif;
   font-weight: 100;
@@ -8327,15 +8337,15 @@ article .small-screen-bg h6 {
   line-height: 1em;
   color: #eeeeee;
 }
-/* line 66, ../scss/_article.scss */
+/* line 69, ../scss/_article.scss */
 article .small-screen-bg .standard-button {
   width: 100%;
 }
-/* line 72, ../scss/_article.scss */
+/* line 75, ../scss/_article.scss */
 article h2, article h3, article h4, article h5, article h6, article a, article p {
   font-weight: normal;
 }
-/* line 77, ../scss/_article.scss */
+/* line 80, ../scss/_article.scss */
 article h2 {
   font-family: "Montserrat", sans-serif;
   color: #a1400a;
@@ -8344,7 +8354,7 @@ article h2 {
   font-weight: bold;
   font-weight: 1.5em;
 }
-/* line 87, ../scss/_article.scss */
+/* line 90, ../scss/_article.scss */
 article h3 {
   font-family: "Montserrat", sans-serif;
   color: #f8a31e;
@@ -8352,7 +8362,7 @@ article h3 {
   margin-bottom: .25em;
   font-weight: bold;
 }
-/* line 96, ../scss/_article.scss */
+/* line 99, ../scss/_article.scss */
 article h4 {
   font-family: "Montserrat", sans-serif;
   color: #a1400a;
@@ -8360,84 +8370,84 @@ article h4 {
   margin-bottom: .25em;
   font-weight: bold;
 }
-/* line 105, ../scss/_article.scss */
+/* line 108, ../scss/_article.scss */
 article h5 {
   font-family: "Montserrat", sans-serif;
   color: #f8a31e;
   margin: 0;
   margin-bottom: 0em;
 }
-/* line 113, ../scss/_article.scss */
+/* line 116, ../scss/_article.scss */
 article h6 {
   font-family: "Montserrat", sans-serif;
   color: #a1400a;
   margin: 0;
   margin-bottom: .75em;
 }
-/* line 121, ../scss/_article.scss */
+/* line 124, ../scss/_article.scss */
 article p {
   font-family: "Montserrat", sans-serif;
   color: #666666;
   margin: 0;
   margin-bottom: .5em;
 }
-/* line 129, ../scss/_article.scss */
+/* line 132, ../scss/_article.scss */
 article a {
   transition: color 200ms ease-out 100ms;
   font-family: "Montserrat", sans-serif;
   color: #00a4d6;
 }
-/* line 136, ../scss/_article.scss */
+/* line 139, ../scss/_article.scss */
 article a:hover {
   transition: color 200ms ease-out 100ms;
   font-family: "Montserrat", sans-serif;
   color: #99583d;
 }
-/* line 143, ../scss/_article.scss */
+/* line 146, ../scss/_article.scss */
 article img {
   width: 100%;
   margin: 0;
   margin-bottom: 1em;
 }
-/* line 150, ../scss/_article.scss */
+/* line 153, ../scss/_article.scss */
 article ul {
   color: #666666;
   font-family: "Montserrat", sans-serif;
   list-style-type: none;
 }
-/* line 157, ../scss/_article.scss */
+/* line 160, ../scss/_article.scss */
 article strong {
   color: #f8a31e;
   font-weight: normal;
 }
-/* line 162, ../scss/_article.scss */
+/* line 165, ../scss/_article.scss */
 article .home-page-special-event-date {
   color: #666666;
   font-family: "Montserrat", sans-serif;
 }
-/* line 169, ../scss/_article.scss */
+/* line 172, ../scss/_article.scss */
 article .reservations-and-bottle-service p {
   font-family: "Montserrat", sans-serif;
 }
-/* line 174, ../scss/_article.scss */
+/* line 177, ../scss/_article.scss */
 article .reservations-and-bottle-service strong {
   color: #f8a31e;
 }
-/* line 179, ../scss/_article.scss */
+/* line 182, ../scss/_article.scss */
 article small {
   font-family: "Montserrat", sans-serif;
 }
-/* line 186, ../scss/_article.scss */
+/* line 189, ../scss/_article.scss */
 article .private-rental-photos img {
   transition: border 200ms ease-out 100ms;
   border: 1px solid #222222;
 }
-/* line 192, ../scss/_article.scss */
+/* line 195, ../scss/_article.scss */
 article .private-rental-photos img:hover {
   transition: border 200ms ease-out 100ms;
   border: 1px solid #a1400a;
 }
-/* line 197, ../scss/_article.scss */
+/* line 200, ../scss/_article.scss */
 article .standard-button {
   transition: background-color 200ms ease-out 100ms;
   border: 2px solid #333333;
@@ -8450,215 +8460,215 @@ article .standard-button {
   display: block;
   font-weight: bold;
 }
-/* line 211, ../scss/_article.scss */
+/* line 214, ../scss/_article.scss */
 article .standard-button:hover {
   transition: background-color 200ms ease-out 100ms;
   background-color: #f8a31e;
   color: #333333;
 }
-/* line 218, ../scss/_article.scss */
+/* line 221, ../scss/_article.scss */
 article .tix-button {
   transition: background-color 200ms ease-out 100ms;
   background-color: #a1400a;
   color: #f8a31e;
 }
-/* line 224, ../scss/_article.scss */
+/* line 227, ../scss/_article.scss */
 article .tix-button:hover {
   transition: background-color 200ms ease-out 100ms;
   background-color: #f8a31e;
   color: #a1400a;
 }
-/* line 231, ../scss/_article.scss */
+/* line 234, ../scss/_article.scss */
 article .special-event {
   font-family: "Montserrat", sans-serif;
   color: #666666;
 }
-/* line 237, ../scss/_article.scss */
+/* line 240, ../scss/_article.scss */
 article .feat {
   color: #eeeeee;
   font-size: .75em;
 }
-/* line 242, ../scss/_article.scss */
+/* line 245, ../scss/_article.scss */
 article .map-link img {
   padding: 0;
   margin: 0;
 }
-/* line 250, ../scss/_article.scss */
+/* line 253, ../scss/_article.scss */
 article .social-icon i {
   font-size: 3em;
 }
-/* line 255, ../scss/_article.scss */
+/* line 258, ../scss/_article.scss */
 article .social-icon .foundicon-facebook {
   transition: color 200ms ease-out 100ms;
   color: #3b5998;
 }
-/* line 261, ../scss/_article.scss */
+/* line 264, ../scss/_article.scss */
 article .social-icon .foundicon-twitter {
   transition: color 200ms ease-out 100ms;
   color: #00aced;
 }
-/* line 267, ../scss/_article.scss */
+/* line 270, ../scss/_article.scss */
 article .social-icon .foundicon-youtube {
   transition: color 200ms ease-out 100ms;
   color: #bb0000;
 }
-/* line 273, ../scss/_article.scss */
+/* line 276, ../scss/_article.scss */
 article .social-icon .foundicon-instagram {
   transition: color 200ms ease-out 100ms;
   color: #517fa4;
 }
-/* line 279, ../scss/_article.scss */
+/* line 282, ../scss/_article.scss */
 article .social-icon a {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #666666;
 }
-/* line 286, ../scss/_article.scss */
+/* line 289, ../scss/_article.scss */
 article .social-icon span {
   display: none;
 }
-/* line 293, ../scss/_article.scss */
+/* line 296, ../scss/_article.scss */
 article .cal-header {
   font-family: "Six Caps", sans-serif;
 }
-/* line 300, ../scss/_article.scss */
+/* line 303, ../scss/_article.scss */
 article .contact-us a {
   color: #666666;
   padding-top: .2em;
 }
-/* line 306, ../scss/_article.scss */
+/* line 309, ../scss/_article.scss */
 article .contact-us a:hover {
   color: #a1400a;
 }
-/* line 314, ../scss/_article.scss */
+/* line 317, ../scss/_article.scss */
 article .contact-us-social h4 {
   font-family: "Montserrat", sans-serif;
 }
-/* line 318, ../scss/_article.scss */
+/* line 321, ../scss/_article.scss */
 article .contact-us-social h4 a {
   float: none;
   font-size: .75em;
 }
-/* line 327, ../scss/_article.scss */
+/* line 330, ../scss/_article.scss */
 article .calendar-date {
   color: #666666;
   font-family: "Montserrat", sans-serif;
   margin-bottom: .5em;
   line-height: 1.25em;
 }
-/* line 334, ../scss/_article.scss */
+/* line 337, ../scss/_article.scss */
 article .calendar-date .day-indicator {
   color: #a1400a;
   font-weight: bold;
 }
-/* line 340, ../scss/_article.scss */
+/* line 343, ../scss/_article.scss */
 article .calendar-date .date-indicator {
   color: #eeeeee;
 }
-/* line 348, ../scss/_article.scss */
+/* line 351, ../scss/_article.scss */
 article .calendar-event h3 a {
   font-family: "Montserrat", sans-serif;
   color: #f8a31e;
   font-weight: bold;
 }
-/* line 354, ../scss/_article.scss */
+/* line 357, ../scss/_article.scss */
 article .calendar-event h3 a .special-calendar-event {
   transition: color 200ms ease-out 100ms;
   color: #a1400a;
   font-size: .45em;
 }
-/* line 362, ../scss/_article.scss */
+/* line 365, ../scss/_article.scss */
 article .calendar-event h3 a:hover {
   color: #a1400a;
 }
-/* line 366, ../scss/_article.scss */
+/* line 369, ../scss/_article.scss */
 article .calendar-event h3 a:hover .special-calendar-event {
   transition: color 200ms ease-out 100ms;
   color: #eeeeee;
   font-size: .45em;
 }
-/* line 377, ../scss/_article.scss */
+/* line 380, ../scss/_article.scss */
 article .calendar-links h5 {
   color: #f8a31e;
 }
-/* line 382, ../scss/_article.scss */
+/* line 385, ../scss/_article.scss */
 article .calendar-links p {
   color: #666666;
 }
-/* line 387, ../scss/_article.scss */
+/* line 390, ../scss/_article.scss */
 article .calendar-links .standard-button {
   font-weight: bold;
   margin-bottom: 0;
 }
-/* line 396, ../scss/_article.scss */
+/* line 399, ../scss/_article.scss */
 article .about-the-club h4 a {
   color: #a1400a;
   font-family: "Montserrat", sans-serif;
 }
-/* line 402, ../scss/_article.scss */
+/* line 405, ../scss/_article.scss */
 article .about-the-club .about-page-taglines {
   color: #f8a31e;
 }
-/* line 410, ../scss/_article.scss */
+/* line 413, ../scss/_article.scss */
 article .mayhem-events small {
   color: #666666;
   font-size: 1em;
 }
-/* line 415, ../scss/_article.scss */
+/* line 418, ../scss/_article.scss */
 article .mayhem-events img {
   border: 1px solid #222222;
 }
-/* line 423, ../scss/_article.scss */
+/* line 426, ../scss/_article.scss */
 article .about-the-nights .day-of-night {
   color: #666666;
 }
-/* line 429, ../scss/_article.scss */
+/* line 432, ../scss/_article.scss */
 article .about-the-nights .home-page-weekly-event h3 {
   margin-top: -0.25em;
   font-weight: bold;
-  font-size: 1.35em;
+  font-size: 1.25em;
 }
-/* line 438, ../scss/_article.scss */
+/* line 441, ../scss/_article.scss */
 article .mailing-list-text {
   color: #666666;
 }
-/* line 442, ../scss/_article.scss */
+/* line 445, ../scss/_article.scss */
 article .soundcloud {
   zoom: 1;
   filter: alpha(opacity=50);
   opacity: 0.75;
 }
-/* line 448, ../scss/_article.scss */
+/* line 451, ../scss/_article.scss */
 article .soundcloud-intro {
   color: #a1400a;
   font-weight: bold;
 }
-/* line 458, ../scss/_article.scss */
+/* line 461, ../scss/_article.scss */
 article .past-events a .past-event-date {
   color: #666666;
 }
-/* line 462, ../scss/_article.scss */
+/* line 465, ../scss/_article.scss */
 article .past-events a .past-event-name {
   transition: color 200ms ease-out 100ms;
   color: #a1400a;
 }
-/* line 472, ../scss/_article.scss */
+/* line 475, ../scss/_article.scss */
 article .past-events a:hover .past-event-name {
   transition: color 200ms ease-out 100ms;
   color: #00a4d6;
 }
-/* line 479, ../scss/_article.scss */
+/* line 482, ../scss/_article.scss */
 article .past-event-link {
   transition: color 200ms ease-out 100ms;
   color: #666666;
   font-size: .5em;
 }
-/* line 486, ../scss/_article.scss */
+/* line 489, ../scss/_article.scss */
 article .past-event-link:hover {
   transition: color 200ms ease-out 100ms;
   color: #00a4d6;
 }
-/* line 492, ../scss/_article.scss */
+/* line 495, ../scss/_article.scss */
 article .disqus {
   border: 1px solid #333333;
   background-color: #111;
@@ -8666,55 +8676,55 @@ article .disqus {
   padding-bottom: 1em;
 }
 
-/* line 501, ../scss/_article.scss */
+/* line 504, ../scss/_article.scss */
 .page-section:last-child {
   border: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 514, ../scss/_article.scss */
+  /* line 517, ../scss/_article.scss */
   article h3 {
     margin-bottom: .10em;
   }
-  /* line 518, ../scss/_article.scss */
+  /* line 521, ../scss/_article.scss */
   article h3 small {
     color: #666666;
   }
-  /* line 524, ../scss/_article.scss */
+  /* line 527, ../scss/_article.scss */
   article h4 {
     margin-bottom: 0;
   }
-  /* line 531, ../scss/_article.scss */
+  /* line 534, ../scss/_article.scss */
   article .social-icon i {
     font-size: 5em;
     transform: rotate(-90deg);
   }
-  /* line 537, ../scss/_article.scss */
+  /* line 540, ../scss/_article.scss */
   article .social-icon .foundicon-facebook:hover {
     transition: color 200ms ease-out 100ms;
     color: #22407f;
   }
-  /* line 543, ../scss/_article.scss */
+  /* line 546, ../scss/_article.scss */
   article .social-icon .foundicon-twitter:hover {
     transition: color 200ms ease-out 100ms;
     color: #007abb;
   }
-  /* line 549, ../scss/_article.scss */
+  /* line 552, ../scss/_article.scss */
   article .social-icon .foundicon-youtube:hover {
     transition: color 200ms ease-out 100ms;
     color: #890000;
   }
-  /* line 555, ../scss/_article.scss */
+  /* line 558, ../scss/_article.scss */
   article .social-icon .foundicon-instagram:hover {
     transition: color 200ms ease-out 100ms;
     color: #1f4d72;
   }
-  /* line 561, ../scss/_article.scss */
+  /* line 564, ../scss/_article.scss */
   article .social-icon span {
     display: block;
   }
 }
-/* line 572, ../scss/_article.scss */
+/* line 575, ../scss/_article.scss */
 .temp-body h2 > img {
   width: 10%;
 }

@@ -239,7 +239,7 @@ header
 		.main-image-text
 		{
 			position: absolute;
-			top: 22.5%;
+			top: 18%;
 			width: 100%;
 			margin: 0 auto;
   			
@@ -247,26 +247,30 @@ header
 			.image-text-header
 			{
 				font-family: $test;
-				font-size: 8em;
+				font-size: 12em;
 				line-height: 1em;
 				margin-bottom: 0;
-				color: $color-redorange;
-				text-shadow:
-   			-1px -1px 0 #111,  
-   			1px -1px 0 #111,
-   			-1px 1px 0 #111,
-     		1px 1px 0 #111;
+				color: $color-orange;
+				text-shadow: 1px -1px 0px #7F1E00, -4px -4px 4px #111, -4px 4px 4px #222, 1px 1px 0px #902F00;
+			
+				span
+				{
+					color: #F8A31E;
+opacity: 0.8;
+				}
 			}
 
 			.image-text-content
 			{
-				font-size: 1.5em;
+				font-size: 1em;
 				font-family: $other;
 				color: $color-white;
-				line-height: 1em;
+				line-height: 1.3em;
 			}
 		}
 	}
+
+
 
 
 
