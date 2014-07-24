@@ -21,3 +21,11 @@ AddOutputFilterByType DEFLATE application/x-javascript
 <files *.html>
 SetOutputFilter DEFLATE
 </files>
+
+# force www to al pages
+RewriteCond %{HTTP_HOST} ^necto.com
+RewriteRule (.*) http://www.necto.com/$1 [R=301,L]
+
+# force www to al pages
+RewriteCond %{HTTP_HOST} ^thenecto.com
+RewriteRule (.*) http://www.necto.com/$1 [R=301,L]
