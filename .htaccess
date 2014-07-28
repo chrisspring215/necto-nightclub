@@ -26,6 +26,10 @@ SetOutputFilter DEFLATE
 RewriteCond %{HTTP_HOST} ^necto.com
 RewriteRule (.*) http://www.necto.com/$1 [R=301,L]
 
-# force www to al pages
+# force www to all pages
 RewriteCond %{HTTP_HOST} ^thenecto.com
+RewriteRule (.*) http://www.necto.com/$1 [R=301,L]
+
+# redirects IP addres to URL 162.249.0.11
+RewriteCond %{HTTP_HOST} ^162\.249\.0\.11
 RewriteRule (.*) http://www.necto.com/$1 [R=301,L]
