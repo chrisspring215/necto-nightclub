@@ -8,7 +8,7 @@
 
 <url>
   <loc>http://www.necto.com/</loc>
-  <lastmod>2014-07-26T20:29:33+00:00</lastmod>
+  <lastmod>2014-08-11T03:38:53+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/tix/calendar.php</loc>
@@ -31,11 +31,11 @@
 </url>
 <url>
   <loc>http://www.necto.com/calendar.html</loc>
-  <lastmod>2014-07-26T20:29:33+00:00</lastmod>
+  <lastmod>2014-08-11T03:38:52+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/factory-monday.html</loc>
-  <lastmod>2014-07-26T20:29:34+00:00</lastmod>
+  <lastmod>2014-08-11T03:38:52+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/recreation-wednesday.html</loc>
@@ -47,19 +47,23 @@
 </url>
 <url>
   <loc>http://www.necto.com/pride-friday.html</loc>
-  <lastmod>2014-07-26T20:29:33+00:00</lastmod>
+  <lastmod>2014-08-11T03:42:45+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/frequency-saturday.html</loc>
-  <lastmod>2014-07-26T20:29:34+00:00</lastmod>
+  <lastmod>2014-08-11T03:42:45+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/voltage-upcoming-events.html</loc>
   <lastmod>2014-04-03T18:57:20+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.necto.com/special-events/the-red-man-film-casting-call-at-necto-nightclub-ann-arbor-michigan-aug-3rd-2014.html</loc>
-  <lastmod>2014-07-26T20:32:33+00:00</lastmod>
+  <loc>http://www.necto.com/special-events/factorys-heros-vs-villians-at-necto-nightclub-ann-arbor-michigan-aug-18th-2014.html</loc>
+  <lastmod>2014-08-11T03:39:38+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/special-events/laganja-estranja-live-at-necto-nightclub-ann-arbor-michigan-aug-29th-2014.html</loc>
+  <lastmod>2014-08-11T03:39:38+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/about-the-necto.html</loc>
@@ -89,7 +93,7 @@
 </url>
 <url>
   <loc>http://www.necto.com/past-events.html</loc>
-  <lastmod>2014-07-26T20:29:33+00:00</lastmod>
+  <lastmod>2014-08-11T03:38:52+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/photo-archive/factory-photos-20140721/factory-photos-20140721.html</loc>
@@ -100,16 +104,12 @@
   <lastmod>2014-07-18T21:12:09+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.necto.com/photo-archive/pride-photos-20140718/pride-photos-20140718.html</loc>
-  <lastmod>2014-07-26T20:29:52+00:00</lastmod>
+  <loc>http://www.necto.com/photo-archive/pride-photos-20140801/pride-photos-20140801.html</loc>
+  <lastmod>2014-08-11T03:39:08+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.necto.com/special-events/boys-of-summer-contest-at-necto-nightclub-ann-arbor-michigan-july-25th-2014.html</loc>
-  <lastmod>2014-07-15T03:19:52+00:00</lastmod>
-</url>
-<url>
-  <loc>http://www.necto.com/photo-archive/frequency-photos-20140719/frequency-photos-20140719.html</loc>
-  <lastmod>2014-07-26T20:29:51+00:00</lastmod>
+  <loc>http://www.necto.com/photo-archive/frequency-photos-20140802/frequency-photos-20140802.html</loc>
+  <lastmod>2014-08-11T03:39:07+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/voltage-events/zeds-dead-at-necto-nightclub-ann-arbor-michigan-jan-22nd-2014.html</loc>
@@ -236,8 +236,32 @@
   <lastmod>2014-07-15T03:19:52+00:00</lastmod>
 </url>
 <url>
+  <loc>http://www.necto.com/special-events/boys-of-summer-contest-at-necto-nightclub-ann-arbor-michigan-july-25th-2014.html</loc>
+  <lastmod>2014-07-15T03:19:52+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/special-events/the-red-man-film-casting-call-at-necto-nightclub-ann-arbor-michigan-aug-3rd-2014.html</loc>
+  <lastmod>2014-07-26T20:32:33+00:00</lastmod>
+</url>
+<url>
   <loc>http://www.necto.com/photo-archive/factory-photos-20140512/factory-photos-20140512.html</loc>
   <lastmod>2014-07-26T20:29:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/photo-archive/pride-photos-20140725/pride-photos-20140725.html</loc>
+  <lastmod>2014-08-11T03:39:08+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/photo-archive/frequency-photos-20140726/frequency-photos-20140726.html</loc>
+  <lastmod>2014-08-11T03:39:07+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/photo-archive/pride-photos-20140718/pride-photos-20140718.html</loc>
+  <lastmod>2014-08-11T03:39:07+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/photo-archive/frequency-photos-20140719/frequency-photos-20140719.html</loc>
+  <lastmod>2014-08-11T03:39:06+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/photo-archive/pride-photos-20140516/pride-photos-20140516.html</loc>
