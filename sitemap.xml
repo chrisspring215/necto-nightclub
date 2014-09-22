@@ -8,7 +8,7 @@
 
 <url>
   <loc>http://www.necto.com/</loc>
-  <lastmod>2014-09-21T02:42:09+00:00</lastmod>
+  <lastmod>2014-09-23T00:01:46+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/tix/calendar.php</loc>
@@ -31,7 +31,7 @@
 </url>
 <url>
   <loc>http://www.necto.com/calendar.html</loc>
-  <lastmod>2014-09-21T02:42:09+00:00</lastmod>
+  <lastmod>2014-09-23T00:01:46+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/factory-monday.html</loc>
@@ -43,11 +43,11 @@
 </url>
 <url>
   <loc>http://www.necto.com/college-thursday.html</loc>
-  <lastmod>2014-09-21T02:42:09+00:00</lastmod>
+  <lastmod>2014-09-21T17:07:19+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/pride-friday.html</loc>
-  <lastmod>2014-09-21T02:42:09+00:00</lastmod>
+  <lastmod>2014-09-23T00:01:46+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/frequency-saturday.html</loc>
@@ -58,16 +58,16 @@
   <lastmod>2014-09-05T15:11:43+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.necto.com/special-events/terrence-dixon-and-gabi-at-necto-nightclub-ann-arbor-michigan-september-20th-2014.html</loc>
-  <lastmod>2014-09-21T02:42:20+00:00</lastmod>
-</url>
-<url>
   <loc>http://www.necto.com/special-events/pure-pwnage-at-necto-nightclub-ann-arbor-michigan-september-22nd-2014.html</loc>
   <lastmod>2014-09-21T02:42:20+00:00</lastmod>
 </url>
 <url>
+  <loc>http://www.necto.com/special-events/shangela-dragster-live-at-necto-nightclub-ann-arbor-michigan-oct-17th-2014.html</loc>
+  <lastmod>2014-09-23T00:02:02+00:00</lastmod>
+</url>
+<url>
   <loc>http://www.necto.com/special-events/dirtyphonics-live-at-necto-nightclub-ann-arbor-michigan-oct-22nd-2014.html</loc>
-  <lastmod>2014-09-21T02:42:18+00:00</lastmod>
+  <lastmod>2014-09-23T00:02:01+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/voltage-events/kill-the-noise-with-botnek-and-two-fresh-at-necto-nightclub-ann-arbor-michigan-november-5th-2014.html</loc>
@@ -75,7 +75,7 @@
 </url>
 <url>
   <loc>http://www.necto.com/special-events/aeroplane-live-at-necto-nightclub-ann-arbor-michigan-nov-6th-2014.html</loc>
-  <lastmod>2014-09-21T02:42:17+00:00</lastmod>
+  <lastmod>2014-09-23T00:02:01+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/about-the-necto.html</loc>
@@ -105,7 +105,7 @@
 </url>
 <url>
   <loc>http://www.necto.com/past-events.html</loc>
-  <lastmod>2014-09-19T17:57:28+00:00</lastmod>
+  <lastmod>2014-09-21T17:05:39+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/photo-archive/factory-photos-20140818/factory-photos-20140818.html</loc>
@@ -116,16 +116,8 @@
   <lastmod>2014-08-31T00:07:19+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.necto.com/special-events/sultan-and-ned-shepard-at-necto-nightclub-ann-arbor-michigan-september-18th-2014.html</loc>
-  <lastmod>2014-09-21T02:42:20+00:00</lastmod>
-</url>
-<url>
   <loc>http://www.necto.com/photo-archive/pride-photos-20140822/pride-photos-20140822.html</loc>
   <lastmod>2014-09-09T17:17:08+00:00</lastmod>
-</url>
-<url>
-  <loc>http://www.necto.com/special-events/alaska-thunderfuck-live-at-necto-nightclub-ann-arbor-michigan-sept-19th-2014.html</loc>
-  <lastmod>2014-09-21T02:42:18+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/photo-archive/frequency-photos-20140823/frequency-photos-20140823.html</loc>
@@ -270,6 +262,14 @@
 <url>
   <loc>http://www.necto.com/special-events/laganja-estranja-live-at-necto-nightclub-ann-arbor-michigan-aug-29th-2014.html</loc>
   <lastmod>2014-09-21T02:42:19+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/special-events/alaska-thunderfuck-live-at-necto-nightclub-ann-arbor-michigan-sept-19th-2014.html</loc>
+  <lastmod>2014-09-21T02:42:18+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/special-events/terrence-dixon-and-gabi-at-necto-nightclub-ann-arbor-michigan-september-20th-2014.html</loc>
+  <lastmod>2014-09-21T02:42:20+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/photo-archive/factory-photos-20140721/factory-photos-20140721.html</loc>
