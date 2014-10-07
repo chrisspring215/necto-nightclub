@@ -1,0 +1,65 @@
+.halloween-banner
+{
+	border: .25em solid $color-darkest;
+	border-radius: .3em;
+	padding: 1em 2em;
+	margin-top: 2em;
+
+	/* fallback */
+	background-color: #2F2727;
+	background-image: url(images/radial_bg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	/* Safari 4-5, Chrome 1-9 */ /* Can't specify a percentage size? Laaaaaame. */
+	background: -webkit-gradient(radial, center center, 0, center center, 460, from($color-orange), to(#2F2727));
+
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-radial-gradient(circle, $color-orange, #2F2727);
+	
+	/* Firefox 3.6+ */
+	background: -moz-radial-gradient(50% -25%, circle, $color-orange, $color-redorange);
+	
+	/* IE 10 */
+	background: -ms-radial-gradient(circle, $color-orange, #2F2727);
+	background-color: $color-redorange;
+
+
+
+
+	h2
+	{
+		color: $color-darkest;
+		color: none;
+		font-family: $header;
+		font-size: 9em;
+		margin-bottom: 0;
+		font-variant: small-caps;
+		text-shadow:
+		   -1px -1px 0 $color-darkest,  
+		    1px -1px 0 $color-darkest,
+		    -1px 1px 0 $color-darkest,
+		     1px 1px 0 $color-darkest;
+	}
+
+	li
+	{
+		color: $color-darkest;
+	}
+	
+	.day-title
+	{
+		font-weight: bold;
+		font-size: 1.25em;
+	}
+
+	.party-desc
+	{
+	}
+
+	h3
+	{
+		color: $color-darkest;
+	}
+
+}
