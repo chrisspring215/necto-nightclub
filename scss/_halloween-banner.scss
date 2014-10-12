@@ -6,6 +6,98 @@
 	margin-top: 2em;
 
 	/* fallback */
+	background-color: $color-redorange;
+	background-image: url(images/radial_bg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	/* Safari 4-5, Chrome 1-9 */ /* Can't specify a percentage size? Laaaaaame. */
+	background: -webkit-gradient(radial, center center, 0, center center, 460, from($color-orange), to($color-redorange));
+
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-radial-gradient(circle, $color-orange, $color-redorange);
+	
+	/* Firefox 3.6+ */
+	background: -moz-radial-gradient(50% -25%, circle, $color-orange, $color-redorange);
+	
+	/* IE 10 */
+	background: -ms-radial-gradient(circle, $color-orange, $color-redorange);
+	background-color: $color-redorange;
+
+
+
+
+	h2
+	{
+		color: $color-darkest;
+		color: none;
+		font-family: $header;
+		font-size: 3.5em;
+		margin-bottom: 0;
+		font-variant: small-caps;
+		line-height: 1em;
+
+	}
+
+	h4
+	{
+		margin: .5em 0 1em 0;
+		color: $color-darkest;
+		font-size: 1.25em;
+		font-weight: 500;
+		font-variant: small-caps;
+	}
+
+	li
+	{
+		color: $color-darkest;
+	}
+	
+	.day-title
+	{
+		font-weight: bold;
+		font-size: 1.25em;
+	}
+
+	.party-desc
+	{
+	}
+
+	h3
+	{
+		color: $color-darkest;
+		background-color: $color-darkest;
+		color: $color-redorange;
+		border-radius: .3em;
+		border: 3px solid $color-dark;
+		font-weight: 500;
+		padding-top: .2em;
+		padding-bottom: .2em;
+		font-size: 1em;
+	}
+
+
+}
+.halloweenpage-date
+	{
+		color: $color-redorange
+	}
+.halloweenpage-intro
+{
+	color: $color-orange;
+	font-weight: bold;
+}
+@media only screen and (min-width: 768px)
+{
+
+.halloween-banner
+{
+	border: .25em solid $color-darkest;
+	border-radius: .3em;
+	padding: 1em 2em;
+	margin-top: 2em;
+
+	/* fallback */
 	background-color: #2F2727;
 	background-image: url(images/radial_bg.png);
 	background-position: center center;
@@ -32,14 +124,18 @@
 		color: $color-darkest;
 		color: none;
 		font-family: $header;
-		font-size: 9em;
+		font-size: 6em;
 		margin-bottom: 0;
 		font-variant: small-caps;
-		text-shadow:
-		   -1px -1px 0 $color-darkest,  
-		    1px -1px 0 $color-darkest,
-		    -1px 1px 0 $color-darkest,
-		     1px 1px 0 $color-darkest;
+		line-height: 1em;
+
+	}
+
+	h4
+	{
+		margin: 1em 0;
+		color: $color-darkest;
+		font-size: 2em;
 	}
 
 	li
@@ -60,6 +156,12 @@
 	h3
 	{
 		color: $color-darkest;
+		background-color: $color-darkest;
+		color: $color-redorange;
+		border-radius: .3em;
+		border: 3px solid $color-dark;
 	}
+
+}
 
 }

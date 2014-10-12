@@ -9149,19 +9149,19 @@ h1, h2, h3, h4, h5, h6, a, ul, li
   padding: 1em 2em;
   margin-top: 2em;
   /* fallback */
-  background-color: #2F2727;
+  background-color: #a1400a;
   background-image: url(images/radial_bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   /* Safari 4-5, Chrome 1-9 */
   /* Can't specify a percentage size? Laaaaaame. */
-  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#f8a31e), to(#2f2727));
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#f8a31e), to(#a1400a));
   /* Safari 5.1+, Chrome 10+ */
-  background: -webkit-radial-gradient(circle, #f8a31e, #2f2727);
+  background: -webkit-radial-gradient(circle, #f8a31e, #a1400a);
   /* Firefox 3.6+ */
   background: -moz-radial-gradient(50% -25%, circle, #f8a31e, #a1400a);
   /* IE 10 */
-  background: -ms-radial-gradient(circle, #f8a31e, #2f2727);
+  background: -ms-radial-gradient(circle, #f8a31e, #a1400a);
   background-color: #a1400a;
 }
 /* line 31, ../scss/_halloween-banner.scss */
@@ -9169,21 +9169,106 @@ h1, h2, h3, h4, h5, h6, a, ul, li
   color: #222222;
   color: none;
   font-family: "Six Caps", sans-serif;
-  font-size: 9em;
+  font-size: 3.5em;
   margin-bottom: 0;
   font-variant: small-caps;
-  text-shadow: -1px -1px 0 #222222, 1px -1px 0 #222222, -1px 1px 0 #222222, 1px 1px 0 #222222;
+  line-height: 1em;
 }
-/* line 46, ../scss/_halloween-banner.scss */
+/* line 43, ../scss/_halloween-banner.scss */
+.halloween-banner h4 {
+  margin: .5em 0 1em 0;
+  color: #222222;
+  font-size: 1.25em;
+  font-weight: 500;
+  font-variant: small-caps;
+}
+/* line 52, ../scss/_halloween-banner.scss */
 .halloween-banner li {
   color: #222222;
 }
-/* line 51, ../scss/_halloween-banner.scss */
+/* line 57, ../scss/_halloween-banner.scss */
 .halloween-banner .day-title {
   font-weight: bold;
   font-size: 1.25em;
 }
-/* line 61, ../scss/_halloween-banner.scss */
+/* line 67, ../scss/_halloween-banner.scss */
 .halloween-banner h3 {
   color: #222222;
+  background-color: #222222;
+  color: #a1400a;
+  border-radius: .3em;
+  border: 3px solid #333333;
+  font-weight: 500;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  font-size: 1em;
+}
+
+/* line 82, ../scss/_halloween-banner.scss */
+.halloweenpage-date {
+  color: #a1400a;
+}
+
+/* line 86, ../scss/_halloween-banner.scss */
+.halloweenpage-intro {
+  color: #f8a31e;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 94, ../scss/_halloween-banner.scss */
+  .halloween-banner {
+    border: 0.25em solid #222222;
+    border-radius: .3em;
+    padding: 1em 2em;
+    margin-top: 2em;
+    /* fallback */
+    background-color: #2F2727;
+    background-image: url(images/radial_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#f8a31e), to(#2f2727));
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, #f8a31e, #2f2727);
+    /* Firefox 3.6+ */
+    background: -moz-radial-gradient(50% -25%, circle, #f8a31e, #a1400a);
+    /* IE 10 */
+    background: -ms-radial-gradient(circle, #f8a31e, #2f2727);
+    background-color: #a1400a;
+  }
+  /* line 123, ../scss/_halloween-banner.scss */
+  .halloween-banner h2 {
+    color: #222222;
+    color: none;
+    font-family: "Six Caps", sans-serif;
+    font-size: 6em;
+    margin-bottom: 0;
+    font-variant: small-caps;
+    line-height: 1em;
+  }
+  /* line 135, ../scss/_halloween-banner.scss */
+  .halloween-banner h4 {
+    margin: 1em 0;
+    color: #222222;
+    font-size: 2em;
+  }
+  /* line 142, ../scss/_halloween-banner.scss */
+  .halloween-banner li {
+    color: #222222;
+  }
+  /* line 147, ../scss/_halloween-banner.scss */
+  .halloween-banner .day-title {
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+  /* line 157, ../scss/_halloween-banner.scss */
+  .halloween-banner h3 {
+    color: #222222;
+    background-color: #222222;
+    color: #a1400a;
+    border-radius: .3em;
+    border: 3px solid #333333;
+  }
 }
