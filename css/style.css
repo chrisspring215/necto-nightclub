@@ -8691,40 +8691,44 @@ article .disqus {
     color: #666666;
   }
   /* line 527, ../scss/_article.scss */
+  article .special-event-header {
+    font-size: 1.25em;
+  }
+  /* line 532, ../scss/_article.scss */
   article h4 {
     margin-bottom: 0;
   }
-  /* line 534, ../scss/_article.scss */
+  /* line 539, ../scss/_article.scss */
   article .social-icon i {
     font-size: 5em;
     transform: rotate(-90deg);
   }
-  /* line 540, ../scss/_article.scss */
+  /* line 545, ../scss/_article.scss */
   article .social-icon .foundicon-facebook:hover {
     transition: color 200ms ease-out 100ms;
     color: #22407f;
   }
-  /* line 546, ../scss/_article.scss */
+  /* line 551, ../scss/_article.scss */
   article .social-icon .foundicon-twitter:hover {
     transition: color 200ms ease-out 100ms;
     color: #007abb;
   }
-  /* line 552, ../scss/_article.scss */
+  /* line 557, ../scss/_article.scss */
   article .social-icon .foundicon-youtube:hover {
     transition: color 200ms ease-out 100ms;
     color: #890000;
   }
-  /* line 558, ../scss/_article.scss */
+  /* line 563, ../scss/_article.scss */
   article .social-icon .foundicon-instagram:hover {
     transition: color 200ms ease-out 100ms;
     color: #1f4d72;
   }
-  /* line 564, ../scss/_article.scss */
+  /* line 569, ../scss/_article.scss */
   article .social-icon span {
     display: block;
   }
 }
-/* line 575, ../scss/_article.scss */
+/* line 580, ../scss/_article.scss */
 .temp-body h2 > img {
   width: 10%;
 }
