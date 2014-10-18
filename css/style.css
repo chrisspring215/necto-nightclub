@@ -8646,29 +8646,31 @@ article .soundcloud-intro {
 /* line 461, ../scss/_article.scss */
 article .past-events a .past-event-date {
   color: #666666;
+  width: 8em;
+  display: inline-block;
 }
-/* line 465, ../scss/_article.scss */
+/* line 467, ../scss/_article.scss */
 article .past-events a .past-event-name {
   transition: color 200ms ease-out 100ms;
   color: #a1400a;
 }
-/* line 475, ../scss/_article.scss */
+/* line 477, ../scss/_article.scss */
 article .past-events a:hover .past-event-name {
   transition: color 200ms ease-out 100ms;
   color: #00a4d6;
 }
-/* line 482, ../scss/_article.scss */
+/* line 484, ../scss/_article.scss */
 article .past-event-link {
   transition: color 200ms ease-out 100ms;
   color: #666666;
   font-size: .5em;
 }
-/* line 489, ../scss/_article.scss */
+/* line 491, ../scss/_article.scss */
 article .past-event-link:hover {
   transition: color 200ms ease-out 100ms;
   color: #00a4d6;
 }
-/* line 495, ../scss/_article.scss */
+/* line 497, ../scss/_article.scss */
 article .disqus {
   border: 1px solid #333333;
   background-color: #111;
@@ -8676,59 +8678,59 @@ article .disqus {
   padding-bottom: 1em;
 }
 
-/* line 504, ../scss/_article.scss */
+/* line 506, ../scss/_article.scss */
 .page-section:last-child {
   border: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 517, ../scss/_article.scss */
+  /* line 519, ../scss/_article.scss */
   article h3 {
     margin-bottom: .10em;
   }
-  /* line 521, ../scss/_article.scss */
+  /* line 523, ../scss/_article.scss */
   article h3 small {
     color: #666666;
   }
-  /* line 527, ../scss/_article.scss */
+  /* line 529, ../scss/_article.scss */
   article .special-event-header {
     font-size: 1.25em;
   }
-  /* line 532, ../scss/_article.scss */
+  /* line 534, ../scss/_article.scss */
   article h4 {
     margin-bottom: 0;
   }
-  /* line 539, ../scss/_article.scss */
+  /* line 541, ../scss/_article.scss */
   article .social-icon i {
     font-size: 5em;
     transform: rotate(-90deg);
   }
-  /* line 545, ../scss/_article.scss */
+  /* line 547, ../scss/_article.scss */
   article .social-icon .foundicon-facebook:hover {
     transition: color 200ms ease-out 100ms;
     color: #22407f;
   }
-  /* line 551, ../scss/_article.scss */
+  /* line 553, ../scss/_article.scss */
   article .social-icon .foundicon-twitter:hover {
     transition: color 200ms ease-out 100ms;
     color: #007abb;
   }
-  /* line 557, ../scss/_article.scss */
+  /* line 559, ../scss/_article.scss */
   article .social-icon .foundicon-youtube:hover {
     transition: color 200ms ease-out 100ms;
     color: #890000;
   }
-  /* line 563, ../scss/_article.scss */
+  /* line 565, ../scss/_article.scss */
   article .social-icon .foundicon-instagram:hover {
     transition: color 200ms ease-out 100ms;
     color: #1f4d72;
   }
-  /* line 569, ../scss/_article.scss */
+  /* line 571, ../scss/_article.scss */
   article .social-icon span {
     display: block;
   }
 }
-/* line 580, ../scss/_article.scss */
+/* line 582, ../scss/_article.scss */
 .temp-body h2 > img {
   width: 10%;
 }
