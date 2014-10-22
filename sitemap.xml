@@ -8,7 +8,7 @@
 
 <url>
   <loc>http://www.necto.com/</loc>
-  <lastmod>2014-10-16T17:29:55+00:00</lastmod>
+  <lastmod>2014-10-19T17:39:29+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/tix/calendar.php</loc>
@@ -23,7 +23,7 @@
 </url>
 <url>
   <loc>http://www.necto.com/contact.html</loc>
-  <lastmod>2014-10-15T18:39:23+00:00</lastmod>
+  <lastmod>2014-10-22T12:23:00+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/directions.html</loc>
@@ -31,7 +31,7 @@
 </url>
 <url>
   <loc>http://www.necto.com/calendar.html</loc>
-  <lastmod>2014-10-16T17:29:55+00:00</lastmod>
+  <lastmod>2014-10-22T12:23:00+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/factory-monday.html</loc>
@@ -43,15 +43,15 @@
 </url>
 <url>
   <loc>http://www.necto.com/transport-thursday.html</loc>
-  <lastmod>2014-10-15T18:39:20+00:00</lastmod>
+  <lastmod>2014-10-18T15:50:11+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/pride-friday.html</loc>
-  <lastmod>2014-10-16T16:42:00+00:00</lastmod>
+  <lastmod>2014-10-22T12:23:00+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/frequency-saturday.html</loc>
-  <lastmod>2014-10-16T17:29:55+00:00</lastmod>
+  <lastmod>2014-10-22T12:23:00+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/voltage-upcoming-events.html</loc>
@@ -60,18 +60,6 @@
 <url>
   <loc>http://www.necto.com/halloween-parties-michigan-2014-necto-nightclub.html</loc>
   <lastmod>2014-10-16T17:29:56+00:00</lastmod>
-</url>
-<url>
-  <loc>http://www.necto.com/recreation-wednesday.html</loc>
-  <lastmod>2014-10-15T18:39:23+00:00</lastmod>
-</url>
-<url>
-  <loc>http://www.necto.com/special-events/g-spot-superdre-at-necto-nightclub-ann-arbor-michigan-oct-16th-2014.html</loc>
-  <lastmod>2014-10-16T17:30:13+00:00</lastmod>
-</url>
-<url>
-  <loc>http://www.necto.com/special-events/shangela-dragster-live-at-necto-nightclub-ann-arbor-michigan-oct-17th-2014.html</loc>
-  <lastmod>2014-10-16T17:30:19+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/special-events/dirtyphonics-live-at-necto-nightclub-ann-arbor-michigan-oct-22nd-2014.html</loc>
@@ -90,6 +78,10 @@
   <lastmod>2014-10-16T17:30:14+00:00</lastmod>
 </url>
 <url>
+  <loc>http://www.necto.com/special-events/dia-de-las-brujas-at-necto-nightclub-ann-arbor-michigan-oct-29-2014.html</loc>
+  <lastmod>2014-10-19T17:39:42+00:00</lastmod>
+</url>
+<url>
   <loc>http://www.necto.com/special-events/haunted-home-at-necto-nightclub-ann-arbor-michigan-oct-29th-2014.html</loc>
   <lastmod>2014-10-16T17:30:14+00:00</lastmod>
 </url>
@@ -99,7 +91,7 @@
 </url>
 <url>
   <loc>http://www.necto.com/special-events/pride-night-halloween-spectacular-at-necto-nightclub-ann-arbor-michigan-oct-31st-2014.html</loc>
-  <lastmod>2014-10-16T17:30:18+00:00</lastmod>
+  <lastmod>2014-10-19T17:39:42+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/special-events/day-of-the-dead-party-at-necto-nightclub-ann-arbor-michigan-nov-1st-2014.html</loc>
@@ -116,6 +108,10 @@
 <url>
   <loc>http://www.necto.com/special-events/aeroplane-live-at-necto-nightclub-ann-arbor-michigan-nov-6th-2014.html</loc>
   <lastmod>2014-10-16T17:30:10+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/recreation-wednesday.html</loc>
+  <lastmod>2014-10-15T18:39:23+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/about-the-necto.html</loc>
@@ -145,7 +141,11 @@
 </url>
 <url>
   <loc>http://www.necto.com/past-events.html</loc>
-  <lastmod>2014-10-15T18:39:22+00:00</lastmod>
+  <lastmod>2014-10-18T15:50:11+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/special-events/morgan-mcmichaels-live-at-necto-nightclub-ann-arbor-michigan-nov-14th-2014.html</loc>
+  <lastmod>2014-10-22T12:23:09+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/photo-archive/factory-photos-20140922/factory-photos-20140922.html</loc>
@@ -156,12 +156,12 @@
   <lastmod>2014-10-16T16:42:15+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.necto.com/photo-archive/pride-photos-20141010/pride-photos-20141010.html</loc>
-  <lastmod>2014-10-16T16:42:26+00:00</lastmod>
+  <loc>http://www.necto.com/photo-archive/pride-photos-20141017/pride-photos-20141017.html</loc>
+  <lastmod>2014-10-22T12:23:18+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.necto.com/photo-archive/frequency-photos-20140927/frequency-photos-20140927.html</loc>
-  <lastmod>2014-10-16T16:42:20+00:00</lastmod>
+  <loc>http://www.necto.com/photo-archive/frequency-photos-20141018/frequency-photos-20141018.html</loc>
+  <lastmod>2014-10-22T12:23:15+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/voltage-events/zeds-dead-at-necto-nightclub-ann-arbor-michigan-jan-22nd-2014.html</loc>
@@ -249,7 +249,7 @@
 </url>
 <url>
   <loc>http://www.necto.com/special-events/dragster-featuring-gia-gunn-at-necto-nightclub-ann-arbor-michigan-may-9th-2014.html</loc>
-  <lastmod>2014-10-16T17:30:12+00:00</lastmod>
+  <lastmod>2014-10-19T17:39:42+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/special-events/halfway-to-halloween-at-necto-nightclub-ann-arbor-michigan-may-12th-2014.html</loc>
@@ -316,12 +316,28 @@
   <lastmod>2014-10-16T17:30:18+00:00</lastmod>
 </url>
 <url>
+  <loc>http://www.necto.com/special-events/shangela-dragster-live-at-necto-nightclub-ann-arbor-michigan-oct-17th-2014.html</loc>
+  <lastmod>2014-10-16T17:30:19+00:00</lastmod>
+</url>
+<url>
   <loc>http://www.necto.com/photo-archive/factory-photos-20140818/factory-photos-20140818.html</loc>
   <lastmod>2014-10-16T16:42:16+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/photo-archive/college-photos-20140515/college-photos-20140515.html</loc>
   <lastmod>2014-10-16T16:42:14+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/photo-archive/pride-photos-20141010/pride-photos-20141010.html</loc>
+  <lastmod>2014-10-22T12:23:17+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/photo-archive/frequency-photos-20140927/frequency-photos-20140927.html</loc>
+  <lastmod>2014-10-22T12:23:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.necto.com/photo-archive/factory-photos-20140721/factory-photos-20140721.html</loc>
+  <lastmod>2014-10-16T16:42:15+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/photo-archive/pride-photos-20141003/pride-photos-20141003.html</loc>
@@ -332,7 +348,7 @@
   <lastmod>2014-10-16T16:42:20+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.necto.com/photo-archive/factory-photos-20140721/factory-photos-20140721.html</loc>
+  <loc>http://www.necto.com/photo-archive/factory-photos-20140512/factory-photos-20140512.html</loc>
   <lastmod>2014-10-16T16:42:15+00:00</lastmod>
 </url>
 <url>
@@ -342,10 +358,6 @@
 <url>
   <loc>http://www.necto.com/photo-archive/frequency-photos-20140913/frequency-photos-20140913.html</loc>
   <lastmod>2014-10-16T16:42:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://www.necto.com/photo-archive/factory-photos-20140512/factory-photos-20140512.html</loc>
-  <lastmod>2014-10-16T16:42:15+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.necto.com/photo-archive/pride-photos-20140919/pride-photos-20140919.html</loc>
