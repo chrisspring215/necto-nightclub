@@ -42,13 +42,14 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 	</script>
-
+	
 	<!-- Robots -->
 	<meta name="robots" content="all" />
+
+	<script src="js/nav.js"></script>
 	
 </head>
-<body>
-
+<body onload="nav()">
 	<!-- Large Screen Header -->
 	<header class="header-background hide-for-small">
 		<nav class="row utility-navigation">
@@ -91,7 +92,7 @@
 		<nav class="row night-nav">
 			<div class="large-12 columns">
 				<ul class="small-block-grid-2 large-block-grid-4">
-				  <li><a href="factory-monday.html"><strong>FACTORY</strong><br>MONDAY</a></li>
+				  <li><a id="mondayNightFS"><strong>FACTORY</strong><br>MONDAY</a></li>
 				  <!--
 				  <li><a href="rumba-wednesday.html"><strong>RUMBA</strong><br>WEDNESDAY</a></li>
 				-->
