@@ -45,9 +45,11 @@
 	
 	<!-- Robots -->
 	<meta name="robots" content="all" />
+
+	<script src="js/valid.js"></script>
 	
 </head>
-<body>
+<body onload="valid()">
 
 	<!-- Large Screen Header -->
 	<header class="header-background hide-for-small">
@@ -500,6 +502,12 @@
 									<div class="small-12 columns">
 										<label>Message
 											<textarea name="reservation_message" placeholder="Anything you would like us to know about your party?"></textarea>
+										</label>
+										<br>
+									</div>
+									<div class="small-12 columns">
+										<label>Are you a human?
+											<input onchange="valid()" id="human" placeholder="Answer yes if you are" type="text">
 										</label>
 										<br>
 									</div>
