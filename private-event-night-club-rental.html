@@ -45,9 +45,11 @@
 
 	<!-- Robots -->
 	<meta name="robots" content="all" />
+
+	<script src="js/valid.js"></script>
 	
 </head>
-<body>
+<body onload="valid()">
 
 	<!-- Large Screen Header -->
 	<header class="header-background hide-for-small">
@@ -323,7 +325,13 @@
 										<br>
 									</div>
 									<div class="small-12 columns">
-									<input class="button expand" style="background-color: #A1400A; color: #F8A31E;" type="submit" name="submit" id="submit" value="CONTACT US" />
+										<label>Are you a human?
+											<input onchange="valid()" id="human" placeholder="Answer yes if you are" type="text">
+										</label>
+										<br>
+									</div>
+									<div class="small-12 columns">
+									<input class="button expand" style="background-color: #A1400A; color: #F8A31E;" name="submit" id="submit" value="CONTACT US" />
 									</div>
 								</div>
 							</form>
