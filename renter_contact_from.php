@@ -12,4 +12,5 @@ $message = 'NAME: ' . $renter_name . "\n" . 'PHONE: ' . $renter_phone . "\n" . '
 mail ($to, $subject, $message, 'From: ' . $renter_name);
 header("Location: http://www.necto.com/private-event-thank-you.html");
 
+
 ?>

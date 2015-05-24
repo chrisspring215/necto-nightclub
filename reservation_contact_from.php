@@ -12,4 +12,5 @@ $message = 'NAME: ' . $reservation_name . "\n" . 'PHONE: ' . $reservation_phone 
 mail ($to, $subject, $message, 'From: ' . $reservation_name);
 header("Location: http://www.necto.com/bottle-service-and-reservation-thank-you.html");
 
+
 ?>
