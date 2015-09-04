@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^staff\.necto\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.staff\.necto\.com$
+RewriteRule ^/?$ "http\:\/\/necto\.sharepoint\.com" [R=301,L]
+
