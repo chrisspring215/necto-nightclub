@@ -7,13 +7,14 @@ function valid()
 		{
 			
 			submit.type = 'submit';
+			document.getElementById("submit").disabled = false;
 			submit.value = "CONTACT US";
 		}
 	else
 		{
 
-			document.getElementById('submit');
-			submit.type = ' ';
+
+			document.getElementById("submit").disabled = true;
 			submit.value = "PLEASE FILL OUT ALL FIELDS";
 		}
 }
