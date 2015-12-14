@@ -1,0 +1,3 @@
+function eventWriter() {
+	alert('hello');
+}
