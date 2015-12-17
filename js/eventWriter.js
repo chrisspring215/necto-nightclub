@@ -5,7 +5,7 @@ function eventWriter() {
 
 	var eventTitleContent=document.getElementById("eventTitle"),eventMetaDescriptionContent=document.getElementById("eventMetaDescription"),eventDateBodyContent=document.getElementById("eventDateBody"),eventTitleBodyContent=document.getElementById("eventTitleBody"),eventDescriptionBodyContent=document.getElementById("eventDescriptionBody"),eventDoorsContent=document.getElementById("eventDoors"),eventCoverContent=document.getElementById("eventCover"),eventOtherContent=document.getElementById("eventOther"),eventImageSmallContent=document.getElementById("eventImageSmall"),eventImageLargeContent=document.getElementById("eventImageLarge"),ticketButtonLargeContent=document.getElementById("ticketButtonLarge"),ticketButtonLargeHeaderContent=document.getElementById("ticketButtonLargeHeader"),ticketButtonSmallContent=document.getElementById("ticketButtonSmall"),ticketButtonSmallHeaderContent=document.getElementById("ticketButtonSmallHeader"),eventMetaDescriptionTailValue="Necto Nightclub in Ann Arbor, Michigan.";
 
-	if (urlsplit[path] === 'medma-impulse-3-at-necto-nightclub-ann-arbor-michigan-dec-21st-2015.html')
+	if (urlsplit[path] === 'medma-impulse-3-at-necto-nightclub-ann-arbor-michigan-jan-14th-2016.html')
 	{
 		var eventName                 = 'MEDMA Impulse 3';
 		var eventDate                 = 'Jan 14, 2015';
