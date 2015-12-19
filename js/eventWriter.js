@@ -1,3 +1,4 @@
+/*
 function eventWriter() {
 	var fullUrl  = document.location.toString();
 	var urlsplit = fullUrl.split('/');
