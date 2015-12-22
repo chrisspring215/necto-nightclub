@@ -62,8 +62,8 @@ function eventWriter() {
 		var eventCover				  = '$20 presale / $25 DOS';
 		var eventOther				  = '<a href="https://www.facebook.com/events/1677464542490504/">More Info</a>';
 		var eventImage			      = '../img/event-images/' + 'deep-house-yoga-at-necto-nightclub-ann-arbor.png';
-		var ticketedEvent             = false;
-		var ticketLink			  	  = 'http://www.necto.com';
+		var ticketedEvent             = true;
+		var ticketLink			  	  = 'https://www.eventbrite.com/e/deep-house-yoga-necto-nightclub-17-tickets-20089831226?aff=es2';
 
 		eventTitleContent.innerHTML=eventName+" | "+eventDate+" | "+eventMetaDescriptionTailValue,eventMetaDescriptionContent.setAttribute("content",eventMetaDescriptionValue),eventDateBodyContent.innerHTML=eventDate,eventTitleBodyContent.innerHTML=eventName,eventDescriptionBodyContent.innerHTML=eventDescriptionBody,eventDoorsContent.innerHTML=eventDoors,eventCoverContent.innerHTML=eventCover,eventOtherContent.innerHTML=eventOther,eventImageSmallContent.setAttribute("src",eventImage),eventImageLargeContent.setAttribute("src",eventImage),0==ticketedEvent?(ticketButtonLargeContent.setAttribute("class","hide"),ticketButtonLargeHeaderContent.setAttribute("class","hide"),ticketButtonSmallContent.setAttribute("class","hide"),ticketButtonSmallHeaderContent.setAttribute("class","hide")):(ticketButtonLargeHeaderContent.setAttribute("class","hide-for-small"),ticketButtonLargeContent.setAttribute("class","hide-for-small standard-button tix-button"),ticketButtonLargeContent.setAttribute("href",ticketLink),ticketButtonSmallContent.setAttribute("class","hide-for-medium-up standard-button tix-button"),ticketButtonSmallContent.setAttribute("href",ticketLink),ticketButtonSmallHeaderContent.setAttribute("class","hide-for-medium-up"))
 	};
