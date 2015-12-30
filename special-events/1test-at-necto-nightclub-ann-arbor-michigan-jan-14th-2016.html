@@ -25,9 +25,9 @@
 	<link href="apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
 	<link href="apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
 	<link href="apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
-<!-- Google Fonts-->
-<link href='http://fonts.googleapis.com/css?family=Six+Caps:' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<!-- Google Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Six+Caps:' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Google Analytics -->
 	<script type="text/javascript">
@@ -66,13 +66,14 @@ function eventWriter() {
 		var ticketLink			  	  = 'http://www.necto.com';
 
 		eventTitleContent.innerHTML=eventName+" | "+eventDate+" | "+eventMetaDescriptionTailValue,eventMetaDescriptionContent.setAttribute("content",eventMetaDescriptionValue),eventDateBodyContent.innerHTML=eventDate,eventTitleBodyContent.innerHTML=eventName,eventDescriptionBodyContent.innerHTML=eventDescriptionBody,eventDoorsContent.innerHTML=eventDoors,eventCoverContent.innerHTML=eventCover,eventOtherContent.innerHTML=eventOther,eventImageSmallContent.setAttribute("src",eventImage),eventImageLargeContent.setAttribute("src",eventImage),0==ticketedEvent?(ticketButtonLargeContent.setAttribute("class","hide"),ticketButtonLargeHeaderContent.setAttribute("class","hide"),ticketButtonSmallContent.setAttribute("class","hide"),ticketButtonSmallHeaderContent.setAttribute("class","hide")):(ticketButtonLargeHeaderContent.setAttribute("class","hide-for-small"),ticketButtonLargeContent.setAttribute("class","hide-for-small standard-button tix-button"),ticketButtonLargeContent.setAttribute("href",ticketLink),ticketButtonSmallContent.setAttribute("class","hide-for-medium-up standard-button tix-button"),ticketButtonSmallContent.setAttribute("href",ticketLink),ticketButtonSmallHeaderContent.setAttribute("class","hide-for-medium-up"))
+
+		load(fbmetabuilder.php);
 	};
 }
 </script>
 	
 </head>
 <body  onload="eventWriter()">
-
 
 	<!-- Large Screen Header -->
 	<header class="header-background hide-for-small">
