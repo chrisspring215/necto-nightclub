@@ -52,18 +52,18 @@ function eventWriter() {
 
 	var eventTitleContent=document.getElementById("eventTitle"),eventMetaDescriptionContent=document.getElementById("eventMetaDescription"),eventDateBodyContent=document.getElementById("eventDateBody"),eventTitleBodyContent=document.getElementById("eventTitleBody"),eventDescriptionBodyContent=document.getElementById("eventDescriptionBody"),eventDoorsContent=document.getElementById("eventDoors"),eventCoverContent=document.getElementById("eventCover"),eventOtherContent=document.getElementById("eventOther"),eventImageSmallContent=document.getElementById("eventImageSmall"),eventImageLargeContent=document.getElementById("eventImageLarge"),ticketButtonLargeContent=document.getElementById("ticketButtonLarge"),ticketButtonLargeHeaderContent=document.getElementById("ticketButtonLargeHeader"),ticketButtonSmallContent=document.getElementById("ticketButtonSmall"),ticketButtonSmallHeaderContent=document.getElementById("ticketButtonSmallHeader"),eventMetaDescriptionTailValue="Necto Nightclub in Ann Arbor, Michigan.";
 
-	if (urlsplit[path] === 'kap-slap-at-necto-nightclub-ann-arbor-michigan-feb-2nd-2016.html')
+	if (urlsplit[path] === 'max-and-mrs-kasha-davis-at-necto-nightclub-ann-arbor-michigan-feb-12th-2016.html')
 	{
-		var eventName                 = 'Kap Slap';
-		var eventDate                 = 'Feb 2, 2016';
+		var eventName                 = 'Dragster presents... Max & Mrs Kasha Davis';
+		var eventDate                 = 'Feb 12, 2015';
 		var eventMetaDescriptionValue = eventName + ' on ' + eventDate + ' at the ' + eventMetaDescriptionTailValue;
-		var eventDescriptionBody      = "Jared Lucas is a 25 year old DJ/Producer based outside of New York City. Initially recognized for his signature EDM/top 40 bootlegs that tailor to the college scene, Kap Slap now begins a new chapter of his career. Now that he has graduated from Lehigh University, Jared has the time and resources needed to pursue his dream and create his own original productions. His substantial fan base gained through mashups anxiously await his debut single, which is sure to exceed expectations.";
+		var eventDescriptionBody      = 'From RuPauls Drag Race Season 7<br>Max Malanaphy or simply known as "MAX" is from Hudson, Wisconsin. Max was 22 years old during season 7 and was born in Portsmouth, New Hampshire. She was a contestant on Season 7 of RuPauls Drag Race. She was the 7th queen eliminated and is in 8th position.<br>Mrs. Kasha Davis is the stage name of Ed Popil, a drag performer from Rochester, New York. She was one of the 14 contestants to compete on Season 7 of RuPauls Drag Race.';
 		var eventDoors				  = '9pm';
-		var eventCover				  = 'Advanced tickets $12.50. Day of Show tickets $15';
-		var eventOther				  = '<a href="https://www.facebook.com/events/1507312296237063/">More Info</a>';
-		var eventImage			      = '../img/event-images/' + 'kap-slap-at-necto-nightclub-ann-arbor.png';
-		var ticketedEvent             = true;
-		var ticketLink			  	  = 'http://www.clubtix.com/reactdetroit/kap-slap-at-necto-ann-arbor-tickets-430785?p=20462';
+		var eventCover				  = 'Free before 10pm | Free with college ID before 11pm | $5 for 21+ and $8 for 18-20';
+		var eventOther				  = '<a href="https://www.facebook.com/events/822568877848457/">More Info</a>';
+		var eventImage			      = '../img/event-images/' + 'max-and-mrs-kasha-davis-at-necto-nightclub-ann-arbor.png';
+		var ticketedEvent             = false;
+		var ticketLink			  	  = 'http://www.necto.com';
 
 		eventTitleContent.innerHTML=eventName+" | "+eventDate+" | "+eventMetaDescriptionTailValue,eventMetaDescriptionContent.setAttribute("content",eventMetaDescriptionValue),eventDateBodyContent.innerHTML=eventDate,eventTitleBodyContent.innerHTML=eventName,eventDescriptionBodyContent.innerHTML=eventDescriptionBody,eventDoorsContent.innerHTML=eventDoors,eventCoverContent.innerHTML=eventCover,eventOtherContent.innerHTML=eventOther,eventImageSmallContent.setAttribute("src",eventImage),eventImageLargeContent.setAttribute("src",eventImage),0==ticketedEvent?(ticketButtonLargeContent.setAttribute("class","hide"),ticketButtonLargeHeaderContent.setAttribute("class","hide"),ticketButtonSmallContent.setAttribute("class","hide"),ticketButtonSmallHeaderContent.setAttribute("class","hide")):(ticketButtonLargeHeaderContent.setAttribute("class","hide-for-small"),ticketButtonLargeContent.setAttribute("class","hide-for-small standard-button tix-button"),ticketButtonLargeContent.setAttribute("href",ticketLink),ticketButtonSmallContent.setAttribute("class","hide-for-medium-up standard-button tix-button"),ticketButtonSmallContent.setAttribute("href",ticketLink),ticketButtonSmallHeaderContent.setAttribute("class","hide-for-medium-up"))
 
