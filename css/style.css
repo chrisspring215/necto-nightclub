@@ -9278,10 +9278,3 @@ h1, h2, h3, h4, h5, h6, a, ul, li
     border: 3px solid #333333;
   }
 }
-
-.special-calendar-event
-{
-  color: #fff;
-  font-variant: small-caps;
-  font-weight: bold;
-}
