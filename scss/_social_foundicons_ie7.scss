@@ -6,12 +6,14 @@
   font-weight: normal;
   font-style: normal;
 }
-
+/*
 @include ie-class(thumb-up,"000");
 @include ie-class(thumb-down,"001");
 @include ie-class(rss,"002");
+*/
 @include ie-class(facebook,"003");
 @include ie-class(twitter,"004");
+/*
 @include ie-class(pinterest,"005");
 @include ie-class(github,"006");
 @include ie-class(path,"007");
@@ -28,7 +30,9 @@
 @include ie-class(picassa,"012");
 @include ie-class(skype,"013");
 @include ie-class(steam,"014");
+*/
 @include ie-class(instagram,"015");
+/*
 @include ie-class(foursquare,"016");
 @include ie-class(delicious,"017");
 @include ie-class(chat,"018");
@@ -37,3 +41,4 @@
 @include ie-class(video-chat,"01b");
 @include ie-class(digg,"01c");
 @include ie-class(wordpress,"01d");
+*/
