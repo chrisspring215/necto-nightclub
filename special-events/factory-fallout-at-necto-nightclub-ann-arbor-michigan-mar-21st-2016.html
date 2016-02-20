@@ -4,21 +4,20 @@
 
 <head>
 	<!-- Web Fonts  -->
-	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Six+Caps|Sansita+One'>
-	
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
-	<title>Pride Friday | MI's longest running Gay Night | Necto Nightclub, Ann Arbor, Michigan</title>
-	<meta name="description" content="Michigan's Largest and longest running Gay Night kicks off every Friday night in Ann Arbor. High Energy Dance and Retro Pop, UK Dance &amp; Top 40 music videos.">
-	<meta name="keywords" content="Gay night, Gay club, Ann Arbor, Michigan, Night Club, Nightclub, dance, High Energy Dance, Retro Pop, UK Dance, Top 40 music videos">
+	<title id="eventTitle"></title>
+	<meta id="eventMetaDescription" name="description" content="">
 
 	<meta name="author" content="Designed and developed by Christopher Collins - http://space.wccnet.edu/~cacollins/christopher-collins/ - chris@christopher-collins.com">
   
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
  
-	<script src="js/vendor/custom.modernizr.js"></script>
-		
+	<script src="../js/vendor/custom.modernizr.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	
 	<link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
@@ -39,9 +38,9 @@
 <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
 <meta name="msapplication-config" content="/icon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<!-- Google Fonts-->
-<link href='http://fonts.googleapis.com/css?family=Six+Caps:' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<!-- Google Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Six+Caps:' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Google Analytics -->
 	<script type="text/javascript">
@@ -57,9 +56,37 @@
 	
 	<!-- Robots -->
 	<meta name="robots" content="all" />
+
+<script type="text/javascript">
+function eventWriter() {
+	var fullUrl  = document.location.toString();
+	var urlsplit = fullUrl.split('/');
+	var path     = urlsplit.length - 1;
+
+	var eventTitleContent=document.getElementById("eventTitle"),eventMetaDescriptionContent=document.getElementById("eventMetaDescription"),eventDateBodyContent=document.getElementById("eventDateBody"),eventTitleBodyContent=document.getElementById("eventTitleBody"),eventDescriptionBodyContent=document.getElementById("eventDescriptionBody"),eventDoorsContent=document.getElementById("eventDoors"),eventCoverContent=document.getElementById("eventCover"),eventOtherContent=document.getElementById("eventOther"),eventImageSmallContent=document.getElementById("eventImageSmall"),eventImageLargeContent=document.getElementById("eventImageLarge"),ticketButtonLargeContent=document.getElementById("ticketButtonLarge"),ticketButtonLargeHeaderContent=document.getElementById("ticketButtonLargeHeader"),ticketButtonSmallContent=document.getElementById("ticketButtonSmall"),ticketButtonSmallHeaderContent=document.getElementById("ticketButtonSmallHeader"),eventMetaDescriptionTailValue="Necto Nightclub in Ann Arbor, Michigan.";
+
+	if (urlsplit[path] === 'factory-fallout-at-necto-nightclub-ann-arbor-michigan-mar-21st-2016.html')
+	{
+		var eventName                 = "Factory Fallout";
+		var eventDate                 = 'March 21st, 2016';
+		var eventMetaDescriptionValue = eventName + ' on ' + eventDate + ' at the ' + eventMetaDescriptionTailValue;
+		var eventDescriptionBody      = "Secure your place in Factory's post-apocalypse party with DJs Void6, AudioFlesh (Ination / Glitchmode), Madisi, and MC Yoda!";
+		var eventDoors				  = '9pm';
+		var eventCover				  = '$1 before 10pm | $3 after 10pm';
+		var eventOther				  = '<a href="https://www.facebook.com/events/538017979703193/">More Info</a>';
+		var eventImage			      = '../img/event-images/' + 'factory-fallout-at-necto-nightclub-ann-arbor.jpg';
+		var ticketedEvent             = false;
+		var ticketLink			  	  = 'http://www.necto.com';
+
+		eventTitleContent.innerHTML=eventName+" | "+eventDate+" | "+eventMetaDescriptionTailValue,eventMetaDescriptionContent.setAttribute("content",eventMetaDescriptionValue),eventDateBodyContent.innerHTML=eventDate,eventTitleBodyContent.innerHTML=eventName,eventDescriptionBodyContent.innerHTML=eventDescriptionBody,eventDoorsContent.innerHTML=eventDoors,eventCoverContent.innerHTML=eventCover,eventOtherContent.innerHTML=eventOther,eventImageSmallContent.setAttribute("src",eventImage),eventImageLargeContent.setAttribute("src",eventImage),0==ticketedEvent?(ticketButtonLargeContent.setAttribute("class","hide"),ticketButtonLargeHeaderContent.setAttribute("class","hide"),ticketButtonSmallContent.setAttribute("class","hide"),ticketButtonSmallHeaderContent.setAttribute("class","hide")):(ticketButtonLargeHeaderContent.setAttribute("class","hide-for-small"),ticketButtonLargeContent.setAttribute("class","hide-for-small standard-button tix-button"),ticketButtonLargeContent.setAttribute("href",ticketLink),ticketButtonSmallContent.setAttribute("class","hide-for-medium-up standard-button tix-button"),ticketButtonSmallContent.setAttribute("href",ticketLink),ticketButtonSmallHeaderContent.setAttribute("class","hide-for-medium-up"))
+
+		load(fbmetabuilder.php);
+	};
+}
+</script>
 	
 </head>
-<body>
+<body  onload="eventWriter()">
 
 	<!-- Large Screen Header -->
 	<header class="header-background hide-for-small">
@@ -90,12 +117,12 @@
 				<ul class="small-block-grid-2 large-block-grid-7">
 					
 					<li><a href="http://www.eventbrite.com/o/necto-8950809123">tickets</a></li>
-					<li class="moved"><a href="bottle-service-and-reservations.html">bottle service &amp;<br>reservations</a></li>
-					<li class="moved"><a href="private-event-night-club-rental.html">private event<br>rental</a></li>
-					<li><a href="http://www.necto.com"><img class="header-logo" src="img/necto-nightclub-logo-ann-arbor-small.png" alt="Logo of the Necto Nightclub located in Ann Arbor, Michigan."></a></li>
-					<li><a href="contact.html">contact</a></li>
-					<li><a href="directions.html">directions</a></li>
-					<li><a href="calendar.html">calendar</a></li>
+					<li class="moved"><a href="../bottle-service-and-reservations.html">bottle service &amp;<br>reservations</a></li>
+					<li class="moved"><a href="../private-event-night-club-rental.html">private event<br>rental</a></li>
+					<li><a href="http://www.necto.com"><img class="header-logo" src="../img/necto-nightclub-logo-ann-arbor-small.png" alt="Logo of the Necto Nightclub located in Ann Arbor, Michigan."></a></li>
+					<li><a href="../contact.html">contact</a></li>
+					<li><a href="../directions.html">directions</a></li>
+					<li><a href="../calendar.html">calendar</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -103,14 +130,13 @@
 		<nav class="row night-nav">
 			<div class="large-12 columns">
 				<ul class="small-block-grid-2 large-block-grid-4">
-				  <li><a href="factory-monday.html"><strong>FACTORY</strong><br>MONDAY</a></li>
+				  <li><a href="../factory-monday.html"><strong>FACTORY</strong><br>MONDAY</a></li>
 				  <!--
-				  <li><a href="rumba-wednesday.html"><strong>RUMBA</strong><br>WEDNESDAY</a></li>
+				  <li><a href="../rumba-wednesday.html"><strong>RUMBA</strong><br>WEDNESDAY</a></li>
 				-->
-				  <li><a href="college-night-thursday.html"><strong>COLLEGE NIGHT</strong><br>THURSDAY</a></li>
-				  <li><a href="pride-friday.html"><strong>PRIDE</strong><br>FRIDAY</a></li>
-				  <li><a href="frequency-saturday.html"><strong>FREQUENCY</strong><br>SATURDAY</a></li>
-
+				  <li><a href="../college-night-thursday.html"><strong>COLLEGE NIGHT</strong><br>THURSDAY</a></li>
+				  <li><a href="../pride-friday.html"><strong>PRIDE</strong><br>FRIDAY</a></li>
+				  <li><a href="../frequency-saturday.html"><strong>FREQUENCY</strong><br>SATURDAY</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -124,7 +150,7 @@
 		  <ul class="title-area">
 		    <!-- Title Area -->
 		    <li class="name">
-		      <h1><a href="http://www.necto.com"><img src="img/necto-mobile-logo.png" alt="Small logo for the Necto Nightclub located in Ann Arbor Michigan." /></a>Necto Nightclub, Ann Arbor, Michigan. Voted Michigan's best club.</h1>
+		      <h1><a href="http://www.necto.com"><img src="../img/necto-mobile-logo.png" alt="Small logo for the Necto Nightclub located in Ann Arbor Michigan." /></a>Adore Delano LIVE on Feb 6th, 2015 at the Necto Nightclub in Ann Arbor, Michigan.</h1>
 		    </li>
 		    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 		  </ul>
@@ -139,34 +165,35 @@
 		      <li class="has-dropdown"><a class="mobile-header" href="#">Weekly Events</a>
 		        <ul class="dropdown">
 		        	<li class="divider"></li>
-		          <li><a href="factory-monday.html">Factory Monday</a></li>
+		          <li><a href="../factory-monday.html">Factory Monday</a></li>
 		          <li class="divider"></li>
 		          <!--
-		          <li><a href="rumba-wednesday.html">Rumba Wednesday</a></li>
+		          <li><a href="../rumba-wednesday.html">Rumba Wednesday</a></li>
 		          <li class="divider"></li>
 		      -->
-		          <li><a href="college-night-thursday.html">College Night Thursday</a></li>
+		          <li><a href="../college-night-thursday.html">College Night Thursday</a></li>
 		          <li class="divider"></li>
-		          <li><a href="pride-friday.html">Pride Friday</a></li>
+		          <li><a href="../pride-friday.html">Pride Friday</a></li>
 		          <li class="divider"></li>
-		          <li><a href="frequency-saturday.html">Frequency Saturday</a></li>
+		          <li><a href="../frequency-saturday.html">Frequency Saturday</a></li>
 		          <li class="divider"></li>
-		          <li><a href="calendar.html">View Calendar</a></li>
+		          <li><a href="../calendar.html">View Calendar</a></li>
 		        </ul>
 		      </li>
 		      <!-- End 1st Button -->
 
 		      <li class="divider"></li>
 		    
-		    <!-- 2nd Button Removed-->
+		    	<!-- 2nd Button REMOVED -->
+
 
 		      <!-- 3rd Button -->
 		      <li class="has-dropdown"><a class="mobile-header" href="#">VIP and Rental Services</a>
 		        <ul class="dropdown">
 		        	<li class="divider"></li>
-		          <li><a href="bottle-service-and-reservations.html">Reservations &amp; Bottle Service</a></li>
+		          <li><a href="../bottle-service-and-reservations.html">Reservations &amp; Bottle Service</a></li>
 		          <li class="divider"></li>
-		          <li><a href="private-event-night-club-rental.html">Private Event Rentals</a></li>
+		          <li><a href="../private-event-night-club-rental.html">Private Event Rentals</a></li>
 		        </ul>
 		      </li>
 		      <!-- End 3rd Button -->
@@ -198,7 +225,7 @@
 		              <li><label>Maps</label></li>
 		              <li><a href="https://maps.google.com/maps?q=necto+night+club&amp;ll=42.279309,-83.74114&amp;spn=0.013463,0.015707&amp;oe=utf-8&amp;client=firefox-a&amp;t=h&amp;z=16&amp;iwloc=A">Google Maps</a></li>
 		              <li class="divider"></li>
-		              <li><a href="directions.html">Directions and Parking</a></li>
+		              <li><a href="../directions.html">Directions and Parking</a></li>
 		            </ul>
 		          </li>
 		          <li class="divider"></li>
@@ -278,7 +305,7 @@
 		</nav>
 
 		<div class="large-12 columns hide-for-small">
-			<img data-interchange="[img/necto-main-banner-image-small.png, (default)], [img/necto-main-banner-image-large.png, (small)]" class="main-image" alt="A dance floor photo of the Necto Nightclub in Ann Arbor Michigan." />
+			<img data-interchange="[../img/necto-main-banner-image-small.png, (default)], [../img/necto-main-banner-image-large.png, (small)]" class="main-image" alt="The dancefloor of teh Necto Nightclub in Ann Arbor, Michigan." />
 		</div>
 
 	</div>
@@ -293,129 +320,53 @@
 
 		<!-- Calendar Section -->
 		<div class="row page-section">	
-			<div class="large-12 columns section-title">
-				<h2>Pride Fridays</h2>
+			<div class="large-12 columns section-title mayhem-event"> 
+				<span id="eventDateBody" class="home-page-special-event-date">Feb 6th, 2015</span>
+				<h2 id="eventTitleBody"></h2>
 			</div>
 
-			<div class="large-12 columns weekly-event">
-				<div class="row">
-					<div class="small-12 columns hide-for-medium-up">
-						<img src="img/pride-friday-at-necto-nightclub-ann-arbor-michigan.jpg">
-					</div>
+			<div class="large-12 columns">
+				<div class="row">	
+					
 					<div class="large-7 columns">
-						<img class="hide-for-small" src="img/pride-friday-at-necto-nightclub-ann-arbor-michigan.jpg" alt="A Branded Logo for the largest weekly gay event, PRIDE Friday held at the Necto Nightclub in Ann Arbor Michigan.">
-						<ul class="small-block-grid-2 large-block-grid-2">
-							<li><img src="img/pride-friday-necto-nightclub-ann-arbor-michigan-dancefloor-1.png"></li>
-							<li><img src="img/pride-friday-necto-nightclub-ann-arbor-michigan-bartender-2.png"></li>
-						</ul>
-						<h3>About the Night</h3>
-						<p>Necto's Pride Night is the premier LGBT club night in Michigan! The night has been running nonstop since 1984 and is the best party every Friday. </p>
-						<p>Featuring DJ Jason Michael opening the night on the Main Room for our resident DJ Jace spinning High Energy Dance. DVJ Mark keeps Red Room moving all night playing Retro Pop, UK Dance &amp; Top 40 music videos.</p>
-						<p>Pride Friday's are well known for it's Special Events &amp; Guest Artists. Among the popular artists that have performed at Pride include: Adore Delano, Willam Belli, Raven, Latrice Royale, Shangela, Milk, Alaska Thunderfuck, Laganja Estranja, Morgan McMichaels, Gia Gunn, Neon Hitch, Cazwell, Taryn Manning, Kaci Battaglia &amp; many more.</p>
-						<p>Necto is proud to have been voted <a href="http://detroit.cityvoter.com/best/detroit/winners">Best Dance Club</a> by Detroit A-List &amp; one of the <a href="http://detroit.cbslocal.com/top-lists/best-gay-bars-in-metro-detroit/">Best Gay Bars In Metro Detroit</a> by CBS Detroit</p>
-					</div>
-					<div class="large-5 columns">
+						<img id="eventImageSmall" class="hide-for-medium-up">
+
 						<hr class="hide-for-medium-up">
-
-						<a class="recent-photos" href="photo-archive/pride-photos-20151003/pride-photos-20151003.html"><img src="img/pride-photos.jpg"></a>
-
-						<!-- UPCOMING EVENTS -->
-						<h3>Upcoming Events:</h3>
-						
-						<p>Mar 11th, 2016<br><a href="special-events/mr-necto-king-pageant-at-necto-nightclub-ann-arbor-michigan-march-11th-2016.html">Mr. Necto King Pageant</a></p>
-						<p>Mar 11th, 2016<br><a href="special-events/detox-dragster-at-necto-nightclub-ann-arbor-michigan-mar-11th-2016.html">Dragster w/ Detox Icunt</a></p>
-						<p>Mar 18th, 2016<br><a href="special-events/st-pattys-day-rehab-at-necto-nightclub-ann-arbor-michigan-mar-18th-2016.html">St Patty's Day Rehab</a></p>
-
-
-						<p>Apr 6th, 2016<br><a href="special-events/latrice-royale-at-necto-nightclub-ann-arbor-michigan-apr-8th-2016.html">Dragster: Latrice Royale</a></p>
-
-						
-
-						
-
-						<hr>  
-						<!-- END UPCOMING EVENTS -->
-
-						<h3>Main Room:</h3>
-						<p>DJ Jace and DJ Jason Michael in the Main Room spinning High Energy Dance</p>
+						<h3>About The Event:</h3>
+						<p id="eventDescriptionBody"></p>
 						<hr>
+						<h3>Event Info:</h3>
+						<ul class="large-block-grid-3 small-block-grid-3">
+							<li>
+								<h4>Doors</h4>
+								<p id="eventDoors"></p>
+							</li>
+							
+							<li>
+								<h4>Cover</h4>
+								<p id="eventCover"></p>
+							</li>
+							<li>
+								<h4>Other</h4>
+								<p id="eventOther"></p>
+							</li>
+						</ul>
+						<h3 id="ticketButtonLargeHeader">Buy Tickets</h3>
+						<a id="ticketButtonLarge">GET TICKETS</a>
 
-						<h3>Red Room:</h3>
-						<p>DVJ Mark in the Red Room playing Retro Pop, UK Dance &amp; Top 40 music videos</p>
-						<hr>
+					</div>
 
-						<h3>Drink Specials:</h3>
-						<p>Happy Hour from 9pm - 11pm</p>
-						<p>1/2 Off All Drinks, Shots &amp; Bottled Beers</p>
-						<p>$2 Long Islands until 11pm</p>
-						<p>* Excludes Bottle Service &amp; Specials</p>
-						<hr>
-
-						<h3>Cover:</h3>
-						<p>No Cover before 10pm.</p>
-						<p>Guests with College ID get in FREE before 11pm</p>
-						<p>Cover is $5 for 21+ and $8 for 18 - 20</p>
-						<p>18 &amp; over are welcome with proper ID</p>
-						<p>Accepted ID are: drivers license, passport, state issued ID, and military ID.</p>
-						<hr>
-
-						<div class="panel">
-							<script type="text/javascript">var submitted=false;</script>
-					    	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
-					onload="if(submitted) {window.location='http://www.necto.com/pride-friday-mailing-list-thank-you.html';}"></iframe>
-
-					      <form action="https://docs.google.com/forms/d/1XO1pShePtptpCEVpQGK6TAI4SE944cBtBpUM6jy0DU0/formResponse" method="post" target="hidden_iframe" 
-					onsubmit="submitted=true;">
-							<h3 class="mailing-list-header">Mailing List:</h3>
-								<p class="mailing-list-text">Keep up to date on Pride events, get free swag and win free tickets. No spam ever and we will never share your info. Promise.</p>
-								<ol style="padding-left: 0">
-									<div class="ss-form-question errorbox-good">
-										<div dir="ltr" class="ss-item  ss-text">
-											<div class="ss-form-entry">
-												<label aria-hidden="true" class="ss-q-item-label" for="entry_1284295624">
-													<div class="ss-q-title">Email Address</div>
-													<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-												</label>
-												<input type="email" name="entry.1284295624" value="" class="ss-q-short" id="entry_1284295624" dir="auto" aria-label="Email Address  Must be a valid email address" title="Must be a valid email address">
-											</div>
-										</div>
-									</div>
-									<input type="hidden" name="draftResponse" value="[,,&quot;-1977625246789918195&quot;]
-									">
-									<input type="hidden" name="pageHistory" value="0">
-
-									<input type="hidden" name="fbzx" value="-1977625246789918195">
-
-									<div class="ss-item ss-navigate">
-										<table id="navigation-table">
-											<tbody>
-												<tr>
-													<td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-														<input type="submit" name="submit" value="Submit" id="ss-submit">
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</ol>
-							</form>
-						</div>
+					<div class="large-5 columns">
+						<h3 id="ticketButtonSmallHeader">Buy Tickets</h3>
+						<a id="ticketButtonSmall">GET TICKETS</a>
+						<img id="eventImageLarge" class="hide-for-small">
 					</div>
 				</div>
+
+				<hr>
 			</div>
 		</div>
 
-		<div class="row page-section">
-			<div class="large-8 columns weekly-event push-2">
-				<h3 class="center">Social</h3>
-					<ul class="large-block-grid-3 small-block-grid-3">
-						<li class="social-icon center"><a href="https://www.facebook.com/pridenecto" title=""><i class="foundicon-facebook"></i><br><span>FaceBook</span></a></li>
-						<li class="social-icon  center"><a href="https://twitter.com/NectoPride" title=""><i class="foundicon-twitter"></i><br><span>Twitter</span></a></li>
-						<li class="social-icon  center"><a href="http://instagram.com/necto_pride#" title=""><i class="foundicon-instagram"></i><br><span>Instagram</span></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
 	</article>
 	<!-- End Main Content -->
 
@@ -438,18 +389,18 @@
 						<br>
 						<a href="http://www.necto.com/" itemprop="url">http://necto.com</a>
 						<br>
-						<img itemprop="logo" src="img/necto-nightclub-logo-ann-arbor-small.png" alt="Logo for the Necto Nightclub located in Ann Arbor, Michigan." />
+						<img itemprop="logo" src="../img/necto-nightclub-logo-ann-arbor-small.png" alt="Logo for the Necto Nightclub in Ann Arbor, Michigan." />
 					</div>
 				</div>	
 			</div>
 			
 			<div class="large-12 columns footer-nav center ">
 				<ul>
-					<li><a href="about-the-necto.html">About</a></li>
-					<li><a href="necto-press.html">Press</a></li>
-					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="necto-policies.html">Policies</a></li>
-					<li><a href="necto-booking.html">Booking</a></li>
+					<li><a href="../about-the-necto.html">About</a></li>
+					<li><a href="../necto-press.html">Press</a></li>
+					<li><a href="../faq.html">FAQ</a></li>
+					<li><a href="../necto-policies.html">Policies</a></li>
+					<li><a href="../necto-booking.html">Booking</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -465,12 +416,12 @@
 
   <script>
   document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  ('__proto__' in {} ? '../js/vendor/zepto' : '../js/vendor/jquery') +
   '.js><\/script>')
   </script>
   
-  <script src="js/foundation.min.js"></script>
-  <script src="js/foundation/foundation.orbit.js"></script>
+  <script src="../js/foundation.min.js"></script>
+  <script src="../js/foundation/foundation.orbit.js"></script>
 
   <!--
   <script src="js/foundation/foundation.js"></script>
@@ -505,7 +456,7 @@
   
   <script src="js/foundation/foundation.abide.js"></script>
   -->
-  <script src="js/foundation/foundation.interchange.js"></script>
+  <script src="../js/foundation/foundation.interchange.js"></script>
   
   <script>
 	$(document).foundation();
@@ -520,6 +471,15 @@
   ga('send', 'pageview');
 
 </script>
+
+<script type="text/javascript">
+function loadImage() {
+
+	var imageLoc = '../img/event-images/adore-delano-at-necto-nightclub-ann-arbor.png'
+	document.getElementById('eventImageSmall').setAttribute('src', imageLoc);
+	document.getElementById('eventImageLarge').setAttribute('src', imageLoc);
+}
+</script>
+
 </body>
 </html>
-

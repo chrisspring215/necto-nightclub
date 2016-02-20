@@ -42,11 +42,20 @@ Redirect 301 /college-thursday.html http://www.necto.com/college-night-thursday.
 	ExpiresByType image/jpeg "access plus 1 year"
 	ExpiresByType image/gif "access plus 1 year"
 	ExpiresByType image/png "access plus 1 year"
-	ExpiresByType text/css "access plus 1 month"
+	ExpiresByType text/css "access plus 1 week"
 	ExpiresByType application/pdf "access plus 1 month"
-	ExpiresByType text/x-javascript "access plus 1 month"
+	ExpiresByType text/x-javascript "access plus 1 week"
 	ExpiresByType application/x-shockwave-flash "access plus 1 month"
 	ExpiresByType image/x-icon "access plus 1 year"
-	ExpiresByType text/html "access plus 0 seconds"
-	ExpiresDefault "access plus 2 days"
+
+	<filesMatch "\.(html|htm)$">
+	  FileETag None
+	  <ifModule mod_headers.c>
+	     Header unset ETag
+	     Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+	     Header set Pragma "no-cache"
+	     Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+	  </ifModule>
+	</filesMatch>
 </IfModule>
+
