@@ -38,7 +38,15 @@ RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://necto.com/$1 [R=301,L]
 
-Redirect 301 /college-thursday.html http://www.necto.com/college-night-thursday.html
+Redirect 301 /college-thursday.html https://www.necto.com/college-night-thursday.html
+Redirect 301 /transport-thursday.html https://www.necto.com/college-night-thursday.html
+Redirect 301 /home-wednesday.html https://www.necto.com
+Redirect 301 /recreation-wednesday.html https://www.necto.com
+Redirect 301 /rumba-wednesday.html https://www.necto.com
+Redirect 301 /voltage-upcoming-events.html https://www.necto.com
+Redirect 301 /tix/admin/ https://www.necto.com
+Redirect 301 /tix/control/ https://www.necto.com
+Redirect 301 /tix/merch.php https://www.necto.com
 
 <IfModule mod_expires.c>
 	ExpiresActive On
