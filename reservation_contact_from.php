@@ -13,7 +13,7 @@ $message = 'NAME: ' . $reservation_name . "\n" . 'PHONE: ' . $reservation_phone 
 
 // mail ($to, $subject, $message, 'From: ' . $reservation_name);
 mail ($to, $subject, $message, 'From: ' . $reservation_email);
-header("Location: http://www.necto.com/bottle-service-and-reservation-thank-you.html");
+header("Location: https://www.necto.com/bottle-service-and-reservation-thank-you.html");
 
 
 ?>
