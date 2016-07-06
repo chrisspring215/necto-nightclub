@@ -65,18 +65,18 @@ function eventWriter() {
 
 	var eventTitleContent=document.getElementById("eventTitle"),eventMetaDescriptionContent=document.getElementById("eventMetaDescription"),eventDateBodyContent=document.getElementById("eventDateBody"),eventTitleBodyContent=document.getElementById("eventTitleBody"),eventDescriptionBodyContent=document.getElementById("eventDescriptionBody"),eventDoorsContent=document.getElementById("eventDoors"),eventCoverContent=document.getElementById("eventCover"),eventOtherContent=document.getElementById("eventOther"),eventImageSmallContent=document.getElementById("eventImageSmall"),eventImageLargeContent=document.getElementById("eventImageLarge"),ticketButtonLargeContent=document.getElementById("ticketButtonLarge"),ticketButtonLargeHeaderContent=document.getElementById("ticketButtonLargeHeader"),ticketButtonSmallContent=document.getElementById("ticketButtonSmall"),ticketButtonSmallHeaderContent=document.getElementById("ticketButtonSmallHeader"),eventMetaDescriptionTailValue="Necto Nightclub in Ann Arbor, Michigan.";
 
-	if (urlsplit[path] === 'tritonal-at-necto-nightclub-ann-arbor-michigan-sep-28th-2016.html')
+	if (urlsplit[path] === 'gastly-at-necto-nightclub-ann-arbor-michigan-sep-13th-2016.html')
 	{
-		var eventName                 = 'TRITONAL';
-		var eventDate                 = 'Sep 28, 2016';
+		var eventName                 = 'GHASTLY';
+		var eventDate                 = 'Sep 13, 2016';
 		var eventMetaDescriptionValue = eventName + ' on ' + eventDate + ' at the ' + eventMetaDescriptionTailValue;
-		var eventDescriptionBody      = 'Watch a live performance by TRITONAL and you’ll understand the hype. The American production and DJ duo of Chad Cisneros and Dave Reed have firmly situated themselves as one of the most electrifying acts in the international EDM scene. Their zest for life and music is apparent to anyone who’s witnessed them in person or through their speakers and is just one reason why they resonate intensely with their loyal followers, "Tritonians."';
+		var eventDescriptionBody      = "Growing up on a goat farm in the desert of Arizona might not be considered the typical American upbringing for the next big DJ and producer, but then again Ghastly isn’t your typical American artist. Many have described the genre bending musician as a partially insane young man with a dark sense of humor. Politely abominable and casually destructive, he wields the catch phrase “born to die” as a mantra to his chaotic lifestyle. His sets have been heralded as “Energetic and eclectic live performances which are sometimes followed by odd speeches about the abnormalities of life, regretful sexual encounters, and well cooked food.” With such a diverse personality and rapport for his fans, it’s clear that Ghastly has one thing on his mind, and that's to change the world.";
 		var eventDoors				  = '9pm';
 		var eventCover				  = 'Presale tickets begin at $15.00 & will increase to $25 at doors';
-		var eventOther				  = '<a href="https://www.facebook.com/events/1731098520471774/">More Info</a>';
-		var eventImage			      = '../img/event-images/' + 'tritonal-at-the-club-at-necto-nightclub-ann-arbor.jpg';
+		var eventOther				  = '<a href="https://www.facebook.com/events/1304934352869435/">More Info</a>';
+		var eventImage			      = '../img/event-images/' + 'ghastly-at-necto-nightclub-ann-arbor.jpg';
 		var ticketedEvent             = true;
-		var ticketLink			  	  = 'http://tritonalnecto.eventbrite.com';
+		var ticketLink			  	  = 'http://ghastlynecto.eventbrite.com';
 
 		eventTitleContent.innerHTML=eventName+" | "+eventDate+" | "+eventMetaDescriptionTailValue,eventMetaDescriptionContent.setAttribute("content",eventMetaDescriptionValue),eventDateBodyContent.innerHTML=eventDate,eventTitleBodyContent.innerHTML=eventName,eventDescriptionBodyContent.innerHTML=eventDescriptionBody,eventDoorsContent.innerHTML=eventDoors,eventCoverContent.innerHTML=eventCover,eventOtherContent.innerHTML=eventOther,eventImageSmallContent.setAttribute("src",eventImage),eventImageLargeContent.setAttribute("src",eventImage),0==ticketedEvent?(ticketButtonLargeContent.setAttribute("class","hide"),ticketButtonLargeHeaderContent.setAttribute("class","hide"),ticketButtonSmallContent.setAttribute("class","hide"),ticketButtonSmallHeaderContent.setAttribute("class","hide")):(ticketButtonLargeHeaderContent.setAttribute("class","hide-for-small"),ticketButtonLargeContent.setAttribute("class","hide-for-small standard-button tix-button"),ticketButtonLargeContent.setAttribute("href",ticketLink),ticketButtonSmallContent.setAttribute("class","hide-for-medium-up standard-button tix-button"),ticketButtonSmallContent.setAttribute("href",ticketLink),ticketButtonSmallHeaderContent.setAttribute("class","hide-for-medium-up"))
 
