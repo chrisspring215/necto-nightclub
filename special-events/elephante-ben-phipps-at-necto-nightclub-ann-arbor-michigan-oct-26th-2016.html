@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="../css/style.css">
  
 	<script src="../js/vendor/custom.modernizr.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
 	
 	<link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
@@ -39,7 +39,7 @@
 <meta name="msapplication-config" content="/icon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 	<!-- Google Fonts-->
-	<link href='https://fonts.googleapis.com/css?family=Six+Caps:' rel='stylesheet' type='text/css'>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Six+Caps:' rel='stylesheet' type='text/css'> -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Google Analytics -->
@@ -57,34 +57,39 @@
 	<!-- Robots -->
 	<meta name="robots" content="all" />
 
-<script type="text/javascript">
-function eventWriter() {
-	var fullUrl  = document.location.toString();
-	var urlsplit = fullUrl.split('/');
-	var path     = urlsplit.length - 1;
+	<!-- Google RichCard info populates here -->
+	<script type="application/ld+json" id='richCard'></script>
 
-	var eventTitleContent=document.getElementById("eventTitle"),eventMetaDescriptionContent=document.getElementById("eventMetaDescription"),eventDateBodyContent=document.getElementById("eventDateBody"),eventTitleBodyContent=document.getElementById("eventTitleBody"),eventDescriptionBodyContent=document.getElementById("eventDescriptionBody"),eventDoorsContent=document.getElementById("eventDoors"),eventCoverContent=document.getElementById("eventCover"),eventOtherContent=document.getElementById("eventOther"),eventImageSmallContent=document.getElementById("eventImageSmall"),eventImageLargeContent=document.getElementById("eventImageLarge"),ticketButtonLargeContent=document.getElementById("ticketButtonLarge"),ticketButtonLargeHeaderContent=document.getElementById("ticketButtonLargeHeader"),ticketButtonSmallContent=document.getElementById("ticketButtonSmall"),ticketButtonSmallHeaderContent=document.getElementById("ticketButtonSmallHeader"),eventMetaDescriptionTailValue="Necto Nightclub in Ann Arbor, Michigan.";
+	<script type="text/javascript">
+		function eventWriter() {
+			var fullUrl  = document.location.toString();
+			var urlsplit = fullUrl.split('/');
+			var path     = urlsplit.length - 1;
 
-	if (urlsplit[path] === 'elephante-ben-phipps-at-necto-nightclub-ann-arbor-michigan-oct-26th-2016.html')
-	{
-		var eventName                 = 'Elephante with direct support: Ben Phipps';
-		var eventDate                 = 'Oct 26, 2016';
-		var eventMetaDescriptionValue = eventName + ' on ' + eventDate + ' at the ' + eventMetaDescriptionTailValue;
-		var eventDescriptionBody      = 'Elephante aka Tim Wu was born in Ann Arbor, Michigan. He was classically trained in piano at the age of 8 and is a self-taught guitarist. After graduating from Huron High School in 2007, he went on to attend Harvard University.<br>Elephante started his music career as a singer-songwriter and guitarist, recording an acoustic EP before falling in love with electronic music. His first official release was a remix of Illenium - "Escape", out on June 12th on Prep School Records. Since then he has created a string of high-profile mixes for artists like: Dirty South, Galantis, Oliver Heldens, and more.';
-		var eventDoors				  = '9pm';
-		var eventCover				  = 'Presale tickets begin at $5 & will increase to $15 at doors';
-		var eventOther				  = 'More info soon';
-		var eventImage			      = '../img/event-images/' + 'elephante-ben-phipps-at-necto-nightclub-ann-arbor.jpg';
-		var ticketedEvent             = true;
-		var ticketLink			  	  = 'http://www.clubtix.com/elephante-at-necto-tickets-475634?p=10635';
+			var eventTitleContent=document.getElementById("eventTitle"),eventMetaDescriptionContent=document.getElementById("eventMetaDescription"),eventDateBodyContent=document.getElementById("eventDateBody"),eventTitleBodyContent=document.getElementById("eventTitleBody"),eventDescriptionBodyContent=document.getElementById("eventDescriptionBody"),eventDoorsContent=document.getElementById("eventDoors"),eventCoverContent=document.getElementById("eventCover"),eventOtherContent=document.getElementById("eventOther"),eventImageSmallContent=document.getElementById("eventImageSmall"),eventImageLargeContent=document.getElementById("eventImageLarge"),ticketButtonLargeContent=document.getElementById("ticketButtonLarge"),ticketButtonLargeHeaderContent=document.getElementById("ticketButtonLargeHeader"),ticketButtonSmallContent=document.getElementById("ticketButtonSmall"),ticketButtonSmallHeaderContent=document.getElementById("ticketButtonSmallHeader"),eventMetaDescriptionTailValue="Necto Nightclub in Ann Arbor, Michigan.";
 
-		eventTitleContent.innerHTML=eventName+" | "+eventDate+" | "+eventMetaDescriptionTailValue,eventMetaDescriptionContent.setAttribute("content",eventMetaDescriptionValue),eventDateBodyContent.innerHTML=eventDate,eventTitleBodyContent.innerHTML=eventName,eventDescriptionBodyContent.innerHTML=eventDescriptionBody,eventDoorsContent.innerHTML=eventDoors,eventCoverContent.innerHTML=eventCover,eventOtherContent.innerHTML=eventOther,eventImageSmallContent.setAttribute("src",eventImage),eventImageLargeContent.setAttribute("src",eventImage),0==ticketedEvent?(ticketButtonLargeContent.setAttribute("class","hide"),ticketButtonLargeHeaderContent.setAttribute("class","hide"),ticketButtonSmallContent.setAttribute("class","hide"),ticketButtonSmallHeaderContent.setAttribute("class","hide")):(ticketButtonLargeHeaderContent.setAttribute("class","hide-for-small"),ticketButtonLargeContent.setAttribute("class","hide-for-small standard-button tix-button"),ticketButtonLargeContent.setAttribute("href",ticketLink),ticketButtonSmallContent.setAttribute("class","hide-for-medium-up standard-button tix-button"),ticketButtonSmallContent.setAttribute("href",ticketLink),ticketButtonSmallHeaderContent.setAttribute("class","hide-for-medium-up"))
+			if (urlsplit[path] === 'elephante-ben-phipps-at-necto-nightclub-ann-arbor-michigan-oct-26th-2016.html')
+			{
 
-		load(fbmetabuilder.php);
-	};
-}
-</script>
-	
+				var eventName                 = 'Elephante with direct support: Ben Phipps'; // Full name of the event
+				var performer				  = 'Elephante'; // Just the Headliners name
+				var dateOfEvent				  = '2016-10-26T21:00' // 9pm is 21:00
+				var imageFile				  = 'elephante-ben-phipps-at-necto-nightclub-ann-arbor.jpg';
+				var eventDescriptionBody      = 'Elephante aka Tim Wu was born in Ann Arbor, Michigan. He was classically trained in piano at the age of 8 and is a self-taught guitarist. After graduating from Huron High School in 2007, he went on to attend Harvard University.<br>Elephante started his music career as a singer-songwriter and guitarist, recording an acoustic EP before falling in love with electronic music. His first official release was a remix of Illenium - &#34;Escape&#34;, out on June 12th on Prep School Records. Since then he has created a string of high-profile mixes for artists like: Dirty South, Galantis, Oliver Heldens, and more.';
+				var ticketedEvent             = true;
+				var ticketLink			  	  = 'http://www.clubtix.com/elephante-at-necto-tickets-475634?p=10635';
+				var eventCover				  = 'Presale tickets begin at $5 & will increase to $15 at doors';
+				var eventOther				  = '<a href=""></a>';
+
+				var timeCode=new Date(dateOfEvent),hour=dateOfEvent.split("T")[1].split(":")[0],min=dateOfEvent.split("T")[1].split(":")[1],eventDoorTime,ampm=" AM";numbHour=parseInt(hour),numbMin=min,12===numbHour?(ampm=" PM",eventDoorTime=numbHour+":"+numbMin+ampm):24===numbHour?eventDoorTime=numbHour-12+":"+numbMin+ampm:numbHour>12?(ampm=" PM",eventDoorTime=numbHour-12+":"+numbMin+ampm):numbHour<12&&(ampm=" AM",eventDoorTime=numbHour+":"+numbMin+ampm);var day=timeCode.getDay();switch(day){case 0:day="Sun";break;case 1:day="Mon";break;case 2:day="Tue";break;case 3:day="Wed";break;case 4:day="Thu";break;case 5:day="Fri";break;case 6:day="Sat"}var date=timeCode.getDate(),month=timeCode.getMonth()+1;switch(month){case 1:month="Jan";break;case 2:month="Feb";break;case 3:month="Mar";break;case 4:month="Apr";break;case 5:month="May";break;case 6:month="Jun";break;case 7:month="Jul";break;case 8:month="Aug";break;case 9:month="Sept";break;case 10:month="Oct";break;case 11:month="Nov";break;case 12:month="Dec"}var year=timeCode.getFullYear(),eventDate=day+" "+month+" "+date+", "+year,eventMetaDescriptionValue=eventName+" on "+eventDate+" at the "+eventMetaDescriptionTailValue,eventDoors=eventDoorTime,eventImage="../img/event-images/"+imageFile;
+				eventTitleContent.innerHTML=eventName+" | "+eventDate+" | "+eventMetaDescriptionTailValue,eventMetaDescriptionContent.setAttribute("content",eventMetaDescriptionValue),eventDateBodyContent.innerHTML=eventDate,eventTitleBodyContent.innerHTML=eventName,eventDescriptionBodyContent.innerHTML=eventDescriptionBody,eventDoorsContent.innerHTML=eventDoors,eventCoverContent.innerHTML=eventCover,eventOtherContent.innerHTML=eventOther,eventImageSmallContent.setAttribute("src",eventImage),eventImageLargeContent.setAttribute("src",eventImage),0==ticketedEvent?(ticketButtonLargeContent.setAttribute("class","hide"),ticketButtonLargeHeaderContent.setAttribute("class","hide"),ticketButtonSmallContent.setAttribute("class","hide"),ticketButtonSmallHeaderContent.setAttribute("class","hide")):(ticketButtonLargeHeaderContent.setAttribute("class","hide-for-small"),ticketButtonLargeContent.setAttribute("class","hide-for-small standard-button tix-button"),ticketButtonLargeContent.setAttribute("href",ticketLink),ticketButtonSmallContent.setAttribute("class","hide-for-medium-up standard-button tix-button"),ticketButtonSmallContent.setAttribute("href",ticketLink),ticketButtonSmallHeaderContent.setAttribute("class","hide-for-medium-up"));	
+				var richCard = document.getElementById('richCard');
+				var richCardData = '{"@context": "http://schema.org","@type": "MusicEvent","name": "' + eventName + '","description": "' + eventDescriptionBody + '","performer" : "' + performer + '","startDate" : "' + timeCode + '","url" : "' + document.location.toString() + '","image" : "' + 'https://www.necto.com/img/event-images/' + imageFile + '","location" : {"@type" : "Place","sameAs" : "https://www.necto.com","name" : "Necto Nightclub","address" : "516 E. Liberty St, Ann Arbor, MI 48104"},"offers": {"@type": "Offer","url": "' + ticketLink + '"}}';
+				richCard.innerHTML = richCardData;
+				
+			};
+		}
+	</script>
 </head>
 <body  onload="eventWriter()">
 
@@ -304,17 +309,15 @@ function eventWriter() {
 		  </section>
 		</nav>
 
+		<!--
 		<div class="large-12 columns hide-for-small">
 			<img data-interchange="[../img/necto-main-banner-image-small.png, (default)], [../img/necto-main-banner-image-large.png, (small)]" class="main-image" alt="The dancefloor of teh Necto Nightclub in Ann Arbor, Michigan." />
 		</div>
-
+		-->
 	</div>
 	<!-- EndSmall Screen Header -->
-
 	<!-- Main Content -->
-
 	<!-- Small Screen Main Banner -->
-
 
 	<article class="article-background">
 
@@ -353,7 +356,6 @@ function eventWriter() {
 						</ul>
 						<h3 id="ticketButtonLargeHeader">Buy Tickets</h3>
 						<a id="ticketButtonLarge">GET TICKETS</a>
-
 					</div>
 
 					<div class="large-5 columns">
@@ -369,7 +371,6 @@ function eventWriter() {
 
 	</article>
 	<!-- End Main Content -->
-
 
 	<!-- Page Footer -->
 	<footer>
@@ -421,47 +422,27 @@ function eventWriter() {
   </script>
   
   <script src="../js/foundation.min.js"></script>
-  <script src="../js/foundation/foundation.orbit.js"></script>
-
-  <!--
+<!-- <script src="../js/foundation/foundation.orbit.js"></script>
   <script src="js/foundation/foundation.js"></script>
-  
   <script src="js/foundation/foundation.alerts.js"></script>
-  
   <script src="js/foundation/foundation.clearing.js"></script>
-  
   <script src="js/foundation/foundation.cookie.js"></script>
-  
   <script src="js/foundation/foundation.dropdown.js"></script>
-  
   <script src="js/foundation/foundation.forms.js"></script>
-  
   <script src="js/foundation/foundation.joyride.js"></script>
-  
   <script src="js/foundation/foundation.magellan.js"></script>
-  
-  
-  
   <script src="js/foundation/foundation.reveal.js"></script>
-  
   <script src="js/foundation/foundation.section.js"></script>
-  
   <script src="js/foundation/foundation.tooltips.js"></script>
-  
   <script src="js/foundation/foundation.topbar.js"></script>
-  
- 
-  
   <script src="js/foundation/foundation.placeholder.js"></script>
-  
   <script src="js/foundation/foundation.abide.js"></script>
-  -->
   <script src="../js/foundation/foundation.interchange.js"></script>
+-->
   
   <script>
 	$(document).foundation();
   </script>
-
 
 <script type="text/javascript">
 function loadImage() {

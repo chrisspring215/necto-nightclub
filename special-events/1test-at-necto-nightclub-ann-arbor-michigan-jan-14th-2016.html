@@ -3,91 +3,86 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
 <head>
-	<!-- Web Fonts  -->
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-
 	<title id="eventTitle"></title>
 	<meta id="eventMetaDescription" name="description" content="">
-
 	<meta name="author" content="Designed and developed by Christopher Collins - http://space.wccnet.edu/~cacollins/christopher-collins/ - chris@christopher-collins.com">
   
 	<link rel="stylesheet" href="../css/style.css">
- 
 	<script src="../js/vendor/custom.modernizr.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-	
+
 	<link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/icon/android-chrome-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/icon/manifest.json">
-<link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/icon/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
-<meta name="msapplication-config" content="/icon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/icon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/icon/manifest.json">
+	<link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/icon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+	<meta name="msapplication-config" content="/icon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
 	<!-- Google Fonts-->
-	<link href='https://fonts.googleapis.com/css?family=Six+Caps:' rel='stylesheet' type='text/css'>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Six+Caps:' rel='stylesheet' type='text/css'> -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Google Analytics -->
 	<script type="text/javascript">
-
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-71282212-1', 'auto');
-  ga('send', 'pageview');
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-71282212-1', 'auto');
+		ga('send', 'pageview');
 	</script>
 	
 	<!-- Robots -->
 	<meta name="robots" content="all" />
 
-<script type="text/javascript">
-function eventWriter() {
-	var fullUrl  = document.location.toString();
-	var urlsplit = fullUrl.split('/');
-	var path     = urlsplit.length - 1;
+	<!-- Google RichCard info populates here -->
+	<script type="application/ld+json" id='richCard'></script>
 
-	var eventTitleContent=document.getElementById("eventTitle"),eventMetaDescriptionContent=document.getElementById("eventMetaDescription"),eventDateBodyContent=document.getElementById("eventDateBody"),eventTitleBodyContent=document.getElementById("eventTitleBody"),eventDescriptionBodyContent=document.getElementById("eventDescriptionBody"),eventDoorsContent=document.getElementById("eventDoors"),eventCoverContent=document.getElementById("eventCover"),eventOtherContent=document.getElementById("eventOther"),eventImageSmallContent=document.getElementById("eventImageSmall"),eventImageLargeContent=document.getElementById("eventImageLarge"),ticketButtonLargeContent=document.getElementById("ticketButtonLarge"),ticketButtonLargeHeaderContent=document.getElementById("ticketButtonLargeHeader"),ticketButtonSmallContent=document.getElementById("ticketButtonSmall"),ticketButtonSmallHeaderContent=document.getElementById("ticketButtonSmallHeader"),eventMetaDescriptionTailValue="Necto Nightclub in Ann Arbor, Michigan.";
+	<script type="text/javascript">
+		function eventWriter() {
+			var fullUrl  = document.location.toString();
+			var urlsplit = fullUrl.split('/');
+			var path     = urlsplit.length - 1;
 
-	if (urlsplit[path] === '1test-at-necto-nightclub-ann-arbor-michigan-jan-14th-2016.html')
-	{
-		var eventName                 = 'MEDMA Impulse 3';
-		var eventDate                 = 'Jan 14, 2016';
-		var eventMetaDescriptionValue = eventName + ' on ' + eventDate + ' at the ' + eventMetaDescriptionTailValue;
-		var eventDescriptionBody      = "MEDMA celebrates the new semester with raw, gritty, and primal music in the basement of Necto on January 14th. Attire is jungle-inspired.";
-		var eventDoors				  = '10pm';
-		var eventCover				  = 'Free with MEDMA Pass until midnight';
-		var eventOther				  = '<a href="">More Info</a>';
-		var eventImage			      = '../img/event-images/' + 'medma-impulse-3-at-necto-nightclub-ann-arbor.png';
-		var ticketedEvent             = false;
-		var ticketLink			  	  = 'http://www.necto.com';
+			var eventTitleContent=document.getElementById("eventTitle"),eventMetaDescriptionContent=document.getElementById("eventMetaDescription"),eventDateBodyContent=document.getElementById("eventDateBody"),eventTitleBodyContent=document.getElementById("eventTitleBody"),eventDescriptionBodyContent=document.getElementById("eventDescriptionBody"),eventDoorsContent=document.getElementById("eventDoors"),eventCoverContent=document.getElementById("eventCover"),eventOtherContent=document.getElementById("eventOther"),eventImageSmallContent=document.getElementById("eventImageSmall"),eventImageLargeContent=document.getElementById("eventImageLarge"),ticketButtonLargeContent=document.getElementById("ticketButtonLarge"),ticketButtonLargeHeaderContent=document.getElementById("ticketButtonLargeHeader"),ticketButtonSmallContent=document.getElementById("ticketButtonSmall"),ticketButtonSmallHeaderContent=document.getElementById("ticketButtonSmallHeader"),eventMetaDescriptionTailValue="Necto Nightclub in Ann Arbor, Michigan.";
 
-		eventTitleContent.innerHTML=eventName+" | "+eventDate+" | "+eventMetaDescriptionTailValue,eventMetaDescriptionContent.setAttribute("content",eventMetaDescriptionValue),eventDateBodyContent.innerHTML=eventDate,eventTitleBodyContent.innerHTML=eventName,eventDescriptionBodyContent.innerHTML=eventDescriptionBody,eventDoorsContent.innerHTML=eventDoors,eventCoverContent.innerHTML=eventCover,eventOtherContent.innerHTML=eventOther,eventImageSmallContent.setAttribute("src",eventImage),eventImageLargeContent.setAttribute("src",eventImage),0==ticketedEvent?(ticketButtonLargeContent.setAttribute("class","hide"),ticketButtonLargeHeaderContent.setAttribute("class","hide"),ticketButtonSmallContent.setAttribute("class","hide"),ticketButtonSmallHeaderContent.setAttribute("class","hide")):(ticketButtonLargeHeaderContent.setAttribute("class","hide-for-small"),ticketButtonLargeContent.setAttribute("class","hide-for-small standard-button tix-button"),ticketButtonLargeContent.setAttribute("href",ticketLink),ticketButtonSmallContent.setAttribute("class","hide-for-medium-up standard-button tix-button"),ticketButtonSmallContent.setAttribute("href",ticketLink),ticketButtonSmallHeaderContent.setAttribute("class","hide-for-medium-up"))
+			if (urlsplit[path] === '1test-at-necto-nightclub-ann-arbor-michigan-jan-14th-2016.html')
+			{
+				var eventName                 = 'Elephante with direct support: Ben Phipps'; // Full name of the event
+				var performer				  = 'Elephante'; // Just the Headliners name
+				var dateOfEvent				  = '2016-10-26T21:00' // 9pm is 21:00
+				var imageFile				  = 'elephante-ben-phipps-at-necto-nightclub-ann-arbor.jpg';
+				var eventDescriptionBody      = 'Elephante aka Tim Wu was born in Ann Arbor, Michigan. He was classically trained in piano at the age of 8 and is a self-taught guitarist. After graduating from Huron High School in 2007, he went on to attend Harvard University.<br>Elephante started his music career as a singer-songwriter and guitarist, recording an acoustic EP before falling in love with electronic music. His first official release was a remix of Illenium - &#34;Escape&#34;, out on June 12th on Prep School Records. Since then he has created a string of high-profile mixes for artists like: Dirty South, Galantis, Oliver Heldens, and more.';
+				var ticketedEvent             = true;
+				var ticketLink			  	  = 'http://www.clubtix.com/elephante-at-necto-tickets-475634?p=10635';
+				var eventCover				  = 'Presale tickets begin at $5 & will increase to $15 at doors';
+				var eventOther				  = '<a href=""></a>';
 
-		load(fbmetabuilder.php);
-	};
-}
-</script>
-	
+				var timeCode=new Date(dateOfEvent),hour=dateOfEvent.split("T")[1].split(":")[0],min=dateOfEvent.split("T")[1].split(":")[1],eventDoorTime,ampm=" AM";numbHour=parseInt(hour),numbMin=min,12===numbHour?(ampm=" PM",eventDoorTime=numbHour+":"+numbMin+ampm):24===numbHour?eventDoorTime=numbHour-12+":"+numbMin+ampm:numbHour>12?(ampm=" PM",eventDoorTime=numbHour-12+":"+numbMin+ampm):numbHour<12&&(ampm=" AM",eventDoorTime=numbHour+":"+numbMin+ampm);var day=timeCode.getDay();switch(day){case 0:day="Sun";break;case 1:day="Mon";break;case 2:day="Tue";break;case 3:day="Wed";break;case 4:day="Thu";break;case 5:day="Fri";break;case 6:day="Sat"}var date=timeCode.getDate(),month=timeCode.getMonth()+1;switch(month){case 1:month="Jan";break;case 2:month="Feb";break;case 3:month="Mar";break;case 4:month="Apr";break;case 5:month="May";break;case 6:month="Jun";break;case 7:month="Jul";break;case 8:month="Aug";break;case 9:month="Sept";break;case 10:month="Oct";break;case 11:month="Nov";break;case 12:month="Dec"}var year=timeCode.getFullYear(),eventDate=day+" "+month+" "+date+", "+year,eventMetaDescriptionValue=eventName+" on "+eventDate+" at the "+eventMetaDescriptionTailValue,eventDoors=eventDoorTime,eventImage="../img/event-images/"+imageFile;
+				eventTitleContent.innerHTML=eventName+" | "+eventDate+" | "+eventMetaDescriptionTailValue,eventMetaDescriptionContent.setAttribute("content",eventMetaDescriptionValue),eventDateBodyContent.innerHTML=eventDate,eventTitleBodyContent.innerHTML=eventName,eventDescriptionBodyContent.innerHTML=eventDescriptionBody,eventDoorsContent.innerHTML=eventDoors,eventCoverContent.innerHTML=eventCover,eventOtherContent.innerHTML=eventOther,eventImageSmallContent.setAttribute("src",eventImage),eventImageLargeContent.setAttribute("src",eventImage),0==ticketedEvent?(ticketButtonLargeContent.setAttribute("class","hide"),ticketButtonLargeHeaderContent.setAttribute("class","hide"),ticketButtonSmallContent.setAttribute("class","hide"),ticketButtonSmallHeaderContent.setAttribute("class","hide")):(ticketButtonLargeHeaderContent.setAttribute("class","hide-for-small"),ticketButtonLargeContent.setAttribute("class","hide-for-small standard-button tix-button"),ticketButtonLargeContent.setAttribute("href",ticketLink),ticketButtonSmallContent.setAttribute("class","hide-for-medium-up standard-button tix-button"),ticketButtonSmallContent.setAttribute("href",ticketLink),ticketButtonSmallHeaderContent.setAttribute("class","hide-for-medium-up"));	
+				var richCard = document.getElementById('richCard');
+				var richCardData = '{"@context": "http://schema.org","@type": "MusicEvent","name": "' + eventName + '","description": "' + eventDescriptionBody + '","performer" : "' + performer + '","startDate" : "' + timeCode + '","url" : "' + document.location.toString() + '","image" : "' + 'https://www.necto.com/img/event-images/' + imageFile + '","location" : {"@type" : "Place","sameAs" : "https://www.necto.com","name" : "Necto Nightclub","address" : "516 E. Liberty St, Ann Arbor, MI 48104"},"offers": {"@type": "Offer","url": "' + ticketLink + '"}}';
+				richCard.innerHTML = richCardData;			
+			};
+		}
+	</script>	
 </head>
-<body  onload="eventWriter()">
-
+<body onload="eventWriter()">
 	<!-- Large Screen Header -->
 	<header class="header-background hide-for-small">
 		<nav class="row utility-navigation">
@@ -111,7 +106,6 @@ function eventWriter() {
 				</ul>
 			</div>
 		</nav>
-
 		<nav class="row global-nav">
 			<div class="large-12 columns">
 				<ul class="small-block-grid-2 large-block-grid-7">
@@ -126,7 +120,6 @@ function eventWriter() {
 				</ul>
 			</div>
 		</nav>
-
 		<nav class="row night-nav">
 			<div class="large-12 columns">
 				<ul class="small-block-grid-2 large-block-grid-4">
@@ -143,7 +136,6 @@ function eventWriter() {
 
 	</header>
 	<!-- End Large Screen Header -->
-
 	<!-- Small Screen Header -->
 	<div class="row show-for-small">
 		<nav class="top-bar">
@@ -154,13 +146,10 @@ function eventWriter() {
 		    </li>
 		    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 		  </ul>
-
 		  <section class="top-bar-section">
 		    <!-- Right Nav Section -->
 		    <ul class="right">
-
 		      <li class="divider"></li>
-
 		      <!-- 1st Button -->
 		      <li class="has-dropdown"><a class="mobile-header" href="#">Weekly Events</a>
 		        <ul class="dropdown">
@@ -181,12 +170,8 @@ function eventWriter() {
 		        </ul>
 		      </li>
 		      <!-- End 1st Button -->
-
 		      <li class="divider"></li>
-		    
-		    	<!-- 2nd Button REMOVED -->
-
-
+		      <!-- 2nd Button REMOVED -->
 		      <!-- 3rd Button -->
 		      <li class="has-dropdown"><a class="mobile-header" href="#">VIP and Rental Services</a>
 		        <ul class="dropdown">
@@ -197,9 +182,7 @@ function eventWriter() {
 		        </ul>
 		      </li>
 		      <!-- End 3rd Button -->
-
 		      <li class="divider"></li>
-
 		      <!-- 4th button-->
 		      <li class="has-dropdown"><a class="mobile-header" href="#">Club Info</a>
 		        <ul class="dropdown">
@@ -232,9 +215,7 @@ function eventWriter() {
 		        </ul>
 		      </li>
 		      <!-- End 4th button-->
-
 		      <li class="divider"></li>
-
 		      <!-- 5th button-->
 		      <li class="has-dropdown"><a class="mobile-header" href="#">Social Media</a>
 
@@ -297,40 +278,26 @@ function eventWriter() {
 		          <li class="divider"></li>
 		        </ul>
 		      </li>
-		      <!-- End 5th button-->
-		 
+		      <!-- End 5th button-->	 
 		      <li class="divider"></li>
 		    </ul>
 		  </section>
 		</nav>
-
-		<div class="large-12 columns hide-for-small">
-			<img data-interchange="[../img/necto-main-banner-image-small.png, (default)], [../img/necto-main-banner-image-large.png, (small)]" class="main-image" alt="The dancefloor of teh Necto Nightclub in Ann Arbor, Michigan." />
-		</div>
-
 	</div>
 	<!-- EndSmall Screen Header -->
-
 	<!-- Main Content -->
-
 	<!-- Small Screen Main Banner -->
-
-
 	<article class="article-background">
-
 		<!-- Calendar Section -->
 		<div class="row page-section">	
 			<div class="large-12 columns section-title mayhem-event"> 
 				<span id="eventDateBody" class="home-page-special-event-date">Feb 6th, 2015</span>
 				<h2 id="eventTitleBody"></h2>
 			</div>
-
 			<div class="large-12 columns">
-				<div class="row">	
-					
+				<div class="row">					
 					<div class="large-7 columns">
 						<img id="eventImageSmall" class="hide-for-medium-up">
-
 						<hr class="hide-for-medium-up">
 						<h3>About The Event:</h3>
 						<p id="eventDescriptionBody"></p>
@@ -355,22 +322,17 @@ function eventWriter() {
 						<a id="ticketButtonLarge">GET TICKETS</a>
 
 					</div>
-
 					<div class="large-5 columns">
 						<h3 id="ticketButtonSmallHeader">Buy Tickets</h3>
 						<a id="ticketButtonSmall">GET TICKETS</a>
 						<img id="eventImageLarge" class="hide-for-small">
 					</div>
 				</div>
-
 				<hr>
 			</div>
 		</div>
-
 	</article>
 	<!-- End Main Content -->
-
-
 	<!-- Page Footer -->
 	<footer>
 		<nav class="row">
@@ -392,8 +354,7 @@ function eventWriter() {
 						<img itemprop="logo" src="../img/necto-nightclub-logo-ann-arbor-small.png" alt="Logo for the Necto Nightclub in Ann Arbor, Michigan." />
 					</div>
 				</div>	
-			</div>
-			
+			</div>			
 			<div class="large-12 columns footer-nav center ">
 				<ul>
 					<li><a href="../about-the-necto.html">About</a></li>
@@ -413,64 +374,33 @@ function eventWriter() {
 		</div>
 	</footer>
 	<!-- End Page Footer -->
-
   <script>
   document.write('<script src=' +
   ('__proto__' in {} ? '../js/vendor/zepto' : '../js/vendor/jquery') +
   '.js><\/script>')
   </script>
-  
   <script src="../js/foundation.min.js"></script>
-  <script src="../js/foundation/foundation.orbit.js"></script>
-
-  <!--
+  <!-- <script src="../js/foundation/foundation.orbit.js"></script>
   <script src="js/foundation/foundation.js"></script>
-  
   <script src="js/foundation/foundation.alerts.js"></script>
-  
   <script src="js/foundation/foundation.clearing.js"></script>
-  
   <script src="js/foundation/foundation.cookie.js"></script>
-  
   <script src="js/foundation/foundation.dropdown.js"></script>
-  
   <script src="js/foundation/foundation.forms.js"></script>
-  
   <script src="js/foundation/foundation.joyride.js"></script>
-  
   <script src="js/foundation/foundation.magellan.js"></script>
-  
-  
-  
   <script src="js/foundation/foundation.reveal.js"></script>
-  
   <script src="js/foundation/foundation.section.js"></script>
-  
   <script src="js/foundation/foundation.tooltips.js"></script>
-  
   <script src="js/foundation/foundation.topbar.js"></script>
-  
- 
-  
   <script src="js/foundation/foundation.placeholder.js"></script>
-  
   <script src="js/foundation/foundation.abide.js"></script>
-  -->
   <script src="../js/foundation/foundation.interchange.js"></script>
-  
+-->
+
   <script>
 	$(document).foundation();
   </script>
-
-
-<script type="text/javascript">
-function loadImage() {
-
-	var imageLoc = '../img/event-images/adore-delano-at-necto-nightclub-ann-arbor.png'
-	document.getElementById('eventImageSmall').setAttribute('src', imageLoc);
-	document.getElementById('eventImageLarge').setAttribute('src', imageLoc);
-}
-</script>
 
 </body>
 </html>
