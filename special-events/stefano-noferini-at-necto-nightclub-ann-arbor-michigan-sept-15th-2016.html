@@ -63,14 +63,14 @@
 
 			if (urlsplit[path] === 'stefano-noferini-at-necto-nightclub-ann-arbor-michigan-sept-15th-2016.html')
 			{
-				var eventName                 = 'MEDMA presents... STEFANO NOFERINI'; // Full name of the event
-				var performer				  = 'STEFANO NOFERINI'; // Just the Headliners name
+				var eventName                 = 'MEDMA presents... ARDALAN x medma'; // Full name of the event
+				var performer				  = 'ARDALAN'; // Just the Headliners name
 				var dateOfEvent				  = '2016-9-15T21:00' // 9pm is 21:00
 				var imageFile				  = 'stefano-noferini-medma-at-necto-night-club-ann-arbor.jpg';
-				var eventDescriptionBody      = "Known to have a golden touch when it comes to dance floor destroyers, Noferini is a shining example that true talent rises to the top. A long time champion of house music in all its forms, Stefano has been building his legend for some time. Always innovating sounds and crossing into a broad range of genres has been a key factor in his well-deserved rise. Never one to stagnate, Stefano has merged all the musical elements at his disposal into a brilliant sound experience that no one can match.";
+				var eventDescriptionBody      = "Due to illness Stefano Noferini had to cancel his show this Thursday. No worries... Dirty Bird's own ARDALAN will be here to make everything alright!";
 				var ticketedEvent             = true;
-				var ticketLink			  	  = 'https://www.eventbrite.com/e/stefano-noferini-w-medma-tickets-27444978670?aff=es2';
-				var eventCover				  = '$5.00 & $10 will increase to $15 at doors';
+				var ticketLink			  	  = 'https://www.eventbrite.com/e/ardalan-x-medma-at-necto-tickets-27710828835';
+				var eventCover				  = 'Presale tickets begin at $10 will increase to $15 at doors';
 				var eventOther				  = '<a href="https://www.facebook.com/events/527579917366775/">More Info</a>';
 
 				var timeCode=new Date(dateOfEvent),hour=dateOfEvent.split("T")[1].split(":")[0],min=dateOfEvent.split("T")[1].split(":")[1],eventDoorTime,ampm=" AM";numbHour=parseInt(hour),numbMin=min,12===numbHour?(ampm=" PM",eventDoorTime=numbHour+":"+numbMin+ampm):24===numbHour?eventDoorTime=numbHour-12+":"+numbMin+ampm:numbHour>12?(ampm=" PM",eventDoorTime=numbHour-12+":"+numbMin+ampm):numbHour<12&&(ampm=" AM",eventDoorTime=numbHour+":"+numbMin+ampm);var day=timeCode.getDay();switch(day){case 0:day="Sun";break;case 1:day="Mon";break;case 2:day="Tue";break;case 3:day="Wed";break;case 4:day="Thu";break;case 5:day="Fri";break;case 6:day="Sat"}var date=timeCode.getDate(),month=timeCode.getMonth()+1;switch(month){case 1:month="Jan";break;case 2:month="Feb";break;case 3:month="Mar";break;case 4:month="Apr";break;case 5:month="May";break;case 6:month="Jun";break;case 7:month="Jul";break;case 8:month="Aug";break;case 9:month="Sept";break;case 10:month="Oct";break;case 11:month="Nov";break;case 12:month="Dec"}var year=timeCode.getFullYear(),eventDate=day+" "+month+" "+date+", "+year,eventMetaDescriptionValue=eventName+" on "+eventDate+" at the "+eventMetaDescriptionTailValue,eventDoors=eventDoorTime,eventImage="../img/event-images/"+imageFile;
