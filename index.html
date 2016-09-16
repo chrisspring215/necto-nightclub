@@ -107,8 +107,9 @@
 				<ul class="small-block-grid-2 large-block-grid-7">
 					
 					<li><a href="https://www.eventbrite.com/d/mi--ann-arbor/necto/?mode=search">tickets</a></li>
-					<li class="moved"><a href="bottle-service-and-reservations.html">bottle service &amp;<br>reservations</a></li>
-					<li class="moved"><a href="private-event-night-club-rental.html">private event<br>rental</a></li>
+					<li class="moved"><a id="desktopBottleServiceURL">bottle service &amp;<br>reservations</a></li>
+					<li class="moved"><a id="desktopPrivEventsURL">private event<br>rental</a></li>
+					<!-- Chris you left off here -->
 					<li><a href="http://www.necto.com"><img class="header-logo" src="img/necto-nightclub-logo-ann-arbor-small.png" alt="Logo of the Necto Nightclub located in Ann Arbor, Michigan."></a></li>
 					<li><a href="contact.html">contact</a></li>
 					<li><a href="directions.html">directions</a></li>
@@ -120,10 +121,10 @@
 		<nav class="row night-nav">
 			<div class="large-12 columns">
 				<ul id="globalNavLargeLis">
-				  <li><a id="mondayNightFSroot"></a></li>
-				  <li><a id="thursdayNightFSroot"></a></li>
-				  <li><a id="fridayNightFSroot"></a></li>
-				  <li><a id="saturdayNightFSroot"></a></li>
+				  <li><a id="desktopMondayLink"></a></li>
+				  <li><a id="desktopThursdayLink"></a></li>
+				  <li><a id="desktopFridayLink"></a></li>
+				  <li><a id="desktopSaturdayLink"></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -163,17 +164,13 @@
 		      <li class="has-dropdown"><a class="mobile-header" href="#">Weekly Events</a>
 		        <ul class="dropdown">
 		        	<li class="divider"></li>
-		          <li><a href="factory-monday.html">Factory Monday</a></li>
+		          <li><a id="mobileMondayLink"></a></li>
 		          <li class="divider"></li>
-		          <!--
-		          <li><a href="rumba-wednesday.html">Rumba Wednesday</a></li>
+		          <li><a id="mobileThursdayLink"></a></li>
 		          <li class="divider"></li>
-		      -->
-		          <li><a href="college-night-thursday.html">College Night Thursday</a></li>
+		          <li><a id="mobileFridayLink"></a></li>
 		          <li class="divider"></li>
-		          <li><a href="pride-friday.html">Pride Friday</a></li>
-		          <li class="divider"></li>
-		          <li><a href="frequency-saturday.html">Frequency Saturday</a></li>
+		          <li><a id="mobileSaturdayLink"></a></li>
 		          <li class="divider"></li>
 		          <li><a href="calendar.html">View Calendar</a></li>
 		        </ul>
@@ -188,9 +185,9 @@
 		      <li class="has-dropdown"><a class="mobile-header" href="#">VIP and Rental Services</a>
 		        <ul class="dropdown">
 		        	<li class="divider"></li>
-		          <li><a href="bottle-service-and-reservations.html">Reservations &amp; Bottle Service</a></li>
+		          <li><a id="mobileBottleServiceURL">Reservations &amp; Bottle Service</a></li>
 		          <li class="divider"></li>
-		          <li><a href="private-event-night-club-rental.html">Private Event Rentals</a></li>
+		          <li><a id="mobilePrivEventsURL">Private Event Rentals</a></li>
 		        </ul>
 		      </li>
 		      <!-- End 3rd Button -->
@@ -259,7 +256,7 @@
 		          	</ul>
 		          </li>
 		          <li class="divider"></li>
-		          <li class="has-dropdown"><a href="#">College Night Pages</a>
+		          <li class="has-dropdown"><a href="#">Mix Pages</a>
 		          	<ul class="dropdown">
 		          		<li class="divider"></li>
 		          		<li><a href="http://www.facebook.com/NectoNightclub">Necto FaceBook</a>
@@ -375,13 +372,13 @@
 
 				  <!-- Thursday Night Section -->		
 				  <li class="home-page-weekly-event">
-				  	<a id="college-night-thursday" href="college-night-thursday.html">
+				  	<a id="college-night-thursday" href="mix-thursday.html">
 				  		<span class="day-of-night">THURSDAY</span>
-					  	<h3>COLLEGE NIGHT</h3>
-					  	<img src="img/college-night-necto-ann-arbor.jpg" alt="A Branded Logo for College Thursdays held at the Necto Nightclub in Ann Arbor Michigan."/>
+					  	<h3>MIX</h3>
+					  	<img src="img/mix-thursday-necto-nightclub.jpg" alt="A Branded Logo for College Thursdays held at the Necto Nightclub in Ann Arbor Michigan."/>
 						</a>
-				  	<p>Join Necto every Thursday night at University of Michigan's favorite nightclub for the biggest college night in Southeast Michigan. Every week dance to the best Top 40, House &amp; Hip Hop video's in the Main Room.</p>
-				  	<p class="night-link"><a href="college-night-thursday.html">College Night Page</a></p>
+				  	<p>We’re mixing it up each &amp; every Thursday, with a blend of concerts by renowned artists, special events, unique parties, and even functions that you can book. Heard about a DJ at Necto? It was probably on a Thursday - check our <a href="calendar.html">calendar</a> to see what’s happening this week.</p>
+				  	<p class="night-link"><a href="mix-thursday.html">MIX Page</a></p>
 				  	<hr class="hide-for-medium-up">
 				  </li>
 				  <!-- END Thursday Night Section -->
@@ -621,7 +618,7 @@
 						<img data-interchange="[img/about-the-necto-night-club.jpg, (default)], [img/about-the-necto-night-club.jpg, (small)]" alt="A Dj spinning dance music at Ann Arbor, Michigan's Necto Night Club." alt="A close up of the DJ booth at the Necto Nightclub in Ann Arbor, Michigan."/>
 						<hr class="hide-for-small">
 						<p>Established in 2001, the Necto Nightclub is <strong>Ann Arbor's premier destination for nightlife entertainment</strong>. Located in the heart of Ann Arbor's entertainment district, Necto Nightclub serves as the nightlife epicenter for University of Michigan's campus and the city at large.</p>
-						<p>We offer multiple weekly &amp; special events to maximize your nightlife experience including an internationally known <strong>Goth-Industrial</strong> night <a href="factory-monday.html">Factory Mondays</a>, a University of Michigan favorite <a href="college-night-thursday.html">College Night Thursdays</a>, the <strong>largest and longest established Gay Night in Michigan</strong> <a href="pride-friday.html">Pride Friday</a> &amp; one of the Hottest Club Nights in Southeast Michigan, <a href="frequency-saturday.html">Frequency Saturdays</a>.</p>
+						<p>We offer multiple weekly &amp; special events to maximize your nightlife experience including an internationally known <strong>Goth-Industrial</strong> night <a href="factory-monday.html">Factory Mondays</a>, the <strong>largest and longest established Gay Night in Michigan</strong> <a href="pride-friday.html">Pride Friday</a> &amp; one of the Hottest Club Nights in Southeast Michigan, <a href="frequency-saturday.html">Frequency Saturdays</a>.</p>
 
 						<p>As an <strong>award-winning</strong>, full-service nightclub, we are proud to offer our clientele a full range of entertainment options and amenities including <strong>VIP</strong> and <strong>Bottle Service</strong> and party packages to ensure your night is memorable.</p>
 						<p>We are honored to be voted '<strong><em>Best Nightclub</em></strong>' by the Metro Times, Current Magazine, Channel 4’s Vote 4 The Best, Detroit A-List and AnnArbor.com and '<strong><em>Best Venue with Diverse Music</em></strong>' by Real Detroit Weekly.</p>
