@@ -24,3 +24,15 @@ Disallow: /tix/address.php
 Disallow: /tix/index.php
 Disallow: /tix/linejump.php
 Disallow: /tix/forgot_password.php
+
+Disallow: /college-night-thursday.html
+Noindex: /college-night-thursday.html
+
+Disallow: /rumba-wednesday.html
+Noindex: /rumba-wednesday.html
+
+Disallow: /transport-thursday.html
+Noindex: /transport-thursday.html
+
+Disallow: /home-wednesday.html
+Noindex: /home-wednesday.html

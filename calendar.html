@@ -16,6 +16,7 @@
 	<meta name="author" content="Designed and developed by Christopher Collins - http://space.wccnet.edu/~cacollins/christopher-collins/ - chris@christopher-collins.com">
   
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/nav.js"></script>
  
 	<script src="js/vendor/custom.modernizr.js"></script>
 		
@@ -89,30 +90,28 @@
 				<ul class="small-block-grid-2 large-block-grid-7">
 					
 					<li><a href="https://www.eventbrite.com/d/mi--ann-arbor/necto/?mode=search">tickets</a></li>
-					<li class="moved"><a href="bottle-service-and-reservations.html">bottle service &amp;<br>reservations</a></li>
-					<li class="moved"><a href="private-event-night-club-rental.html">private event<br>rental</a></li>
-					<li><a href="http://www.necto.com"><img class="header-logo" src="img/necto-nightclub-logo-ann-arbor-small.png" alt="Logo of the Necto Nightclub located in Ann Arbor, Michigan."></a></li>
-					<li><a href="contact.html">contact</a></li>
-					<li><a href="directions.html">directions</a></li>
-					<li><a href="calendar.html">calendar</a></li>
+					<li class="moved"><a id="desktopBottleServiceURL">bottle service &amp;<br>reservations</a></li>
+					<li class="moved"><a id="desktopPrivEventsURL">private event<br>rental</a></li>
+					<li><a id="desktopHomeLogoURL"><img class="header-logo" src="img/necto-nightclub-logo-ann-arbor-small.png" alt="Logo of the Necto Nightclub located in Ann Arbor, Michigan."></a></li>
+					<li><a id="desktopContactURL">contact</a></li>
+					<li><a id="desktopDirectionsURL">directions</a></li>
+					<li><a id="desktopCalendarURL">calendar</a></li>
 				</ul>
 			</div>
 		</nav>
 
 		<nav class="row night-nav">
 			<div class="large-12 columns">
-				<ul class="small-block-grid-2 large-block-grid-4">
-				  <li><a href="factory-monday.html"><strong>FACTORY</strong><br>MONDAY</a></li>
-				  <!--
-				  <li><a href="rumba-wednesday.html"><strong>RUMBA</strong><br>WEDNESDAY</a></li>
-				-->
-				  <li><a href="college-night-thursday.html"><strong>COLLEGE NIGHT</strong><br>THURSDAY</a></li>
-				  <li><a href="pride-friday.html"><strong>PRIDE</strong><br>FRIDAY</a></li>
-				  <li><a href="frequency-saturday.html"><strong>FREQUENCY</strong><br>SATURDAY</a></li>
-
+				<ul id="globalNavLargeLis">
+					<li><a id="desktopMondayLink"></a></li>
+					<li><a id="desktopThursdayLink"></a></li>
+					<li><a id="desktopFridayLink"></a></li>
+					<li><a id="desktopSaturdayLink"></a></li>
 				</ul>
 			</div>
 		</nav>
+
+		
 
 	</header>
 	<!-- End Large Screen Header -->
@@ -120,168 +119,158 @@
 	<!-- Small Screen Header -->
 	<div class="row show-for-small">
 		<nav class="top-bar">
-		  <ul class="title-area">
-		    <!-- Title Area -->
-		    <li class="name">
-		      <h1><a href="http://www.necto.com"><img src="img/necto-mobile-logo.png" alt="Small logo for the Necto Nightclub located in Ann Arbor Michigan." /></a>Necto Nightclub, Ann Arbor, Michigan. Voted Michigan's best club.</h1>
-		    </li>
-		    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-		  </ul>
 
-		  <section class="top-bar-section">
-		    <!-- Right Nav Section -->
-		    <ul class="right">
+			<ul class="title-area">	
+				<li class="name"><h1><a id="mobileHomeLogoURL"><img id="mobileLogo" src="img/necto-mobile-logo.png" alt="Small logo for the Necto Nightclub located in Ann Arbor Michigan." /></a>Necto Nightclub, Ann Arbor, Michigan. Voted Michigan's best club.</h1></li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
 
-		      <li class="divider"></li>
-
-		      <!-- 1st Button -->
-		      <li class="has-dropdown"><a class="mobile-header" href="#">Weekly Events</a>
-		        <ul class="dropdown">
-		        	<li class="divider"></li>
-		          <li><a href="factory-monday.html">Factory Monday</a></li>
-		          <li class="divider"></li>
-		          <!--
-		          <li><a href="rumba-wednesday.html">Rumba Wednesday</a></li>
-		          <li class="divider"></li>
-		      -->
-		          <li><a href="college-night-thursday.html">College Night Thursday</a></li>
-		          <li class="divider"></li>
-		          <li><a href="pride-friday.html">Pride Friday</a></li>
-		          <li class="divider"></li>
-		          <li><a href="frequency-saturday.html">Frequency Saturday</a></li>
-		          <li class="divider"></li>
-		          <li><a href="calendar.html">View Calendar</a></li>
-		        </ul>
-		      </li>
-		      <!-- End 1st Button -->
-
-		      <li class="divider"></li>
-		    
-		    <!-- 2nd Button Removed-->
-
-		      <!-- 3rd Button -->
-		      <li class="has-dropdown"><a class="mobile-header" href="#">VIP and Rental Services</a>
-		        <ul class="dropdown">
-		        	<li class="divider"></li>
-		          <li><a href="bottle-service-and-reservations.html">Reservations &amp; Bottle Service</a></li>
-		          <li class="divider"></li>
-		          <li><a href="private-event-night-club-rental.html">Private Event Rentals</a></li>
-		        </ul>
-		      </li>
-		      <!-- End 3rd Button -->
-
-		      <li class="divider"></li>
-
-		      <!-- 4th button-->
-		      <li class="has-dropdown"><a class="mobile-header" href="#">Club Info</a>
-		        <ul class="dropdown">
-		        	<li class="divider"></li>
-		          <li class="has-dropdown"><a href="#">Contact</a>
-		            <ul class="dropdown">
-		            	<li class="divider"></li>
-		              <li><label>Phone</label></li>
-		              <li><a href="tel:+17349945436">734.994.5436 INFO</a></li>
-		              <li class="divider"></li>
-		              <li><a href="tel:+17349945835">734.994.5835 OFFICE</a></li>
-		              <li class="divider"></li>
-		              <li><a href="tel:+17349944020">734.994.4020 FAX</a></li>
-		              <li class="divider"></li>
-		              <li><label>Email</label></li>
-		              <li><a href="mailto:info@thenecto.com">Email Necto</a></li>
-		            </ul>
-		          </li>
-		          <li class="divider"></li>
-		          <li class="has-dropdown"><a href="#">Directions</a>
-		            <ul class="dropdown">
-		            	<li class="divider"></li>
-		              <li><label>Maps</label></li>
-		              <li><a href="https://maps.google.com/maps?q=necto+night+club&amp;ll=42.279309,-83.74114&amp;spn=0.013463,0.015707&amp;oe=utf-8&amp;client=firefox-a&amp;t=h&amp;z=16&amp;iwloc=A">Google Maps</a></li>
-		              <li class="divider"></li>
-		              <li><a href="directions.html">Directions and Parking</a></li>
-		            </ul>
-		          </li>
-		          <li class="divider"></li>
-		        </ul>
-		      </li>
-		      <!-- End 4th button-->
-
-		      <li class="divider"></li>
-
-		      <!-- 5th button-->
-		      <li class="has-dropdown"><a class="mobile-header" href="#">Social Media</a>
-
-		        <ul class="dropdown">
-		        	<li class="divider"></li>
-		        	<li class="has-dropdown"><a href="#">General</a>
-		          	<ul class="dropdown">
-		          		<li class="divider"></li>
-		          		<li><a href="http://www.facebook.com/NectoNightclub">Necto FaceBook</a>
-		          			<li class="divider"></li>
-		          		<li><a href="http://www.twitter.com/Necto">Necto Twitter</a>
-		          			<li class="divider"></li>
-		          		<li><a href="http://instagram.com/nectonightclub#">Necto Instagram</a>
-		          	</ul>
-		          </li>
-		          <li class="divider"></li>
-		          <li class="has-dropdown"><a href="#">Factory Pages</a>
-		          	<ul class="dropdown">
-		          		<li class="divider"></li>
-		          		<li><a href="https://www.facebook.com/FactoryAtNecto">Factory FaceBook</a>
-		          		<li class="divider"></li>
-		          		<li><a href="https://twitter.com/FactoryAtNecto">Factory Twitter</a>
-		          		<li class="divider"></li>
-		          		<li><a href="http://instagram.com/nectomonday">Factory Instagram</a>
-		          	</ul>
-		          </li>
-		          <li class="divider"></li>
-		          <li class="has-dropdown"><a href="#">College Night Pages</a>
-		          	<ul class="dropdown">
-		          		<li class="divider"></li>
-		          		<li><a href="http://www.facebook.com/NectoNightclub">Necto FaceBook</a>
-		          		<li class="divider"></li>
-		          		<li><a href="http://www.twitter.com/Necto">Necto Twitter</a>
-		          		<li class="divider"></li>
-		          		<li><a href="http://instagram.com/nectonightclub#">Necto Instagram</a>
-		          	</ul>
-		          </li>
-		          <li class="divider"></li>
-		          <li class="has-dropdown"><a href="#">Pride Pages</a>
-		          	<ul class="dropdown">
-		          		<li class="divider"></li>
-		          		<li><a href="https://www.facebook.com/pridenecto">Pride FaceBook</a>
-		          		<li class="divider"></li>
-		          		<li><a href="https://twitter.com/NectoPride">Pride Twitter</a>
-		          		<li class="divider"></li>
-		          		<li><a href="http://instagram.com/necto_pride">Pride Instagram</a>
-		          	</ul>
-		          </li>
-		          <li class="divider"></li>
-		          <li class="has-dropdown"><a href="#">Frequency Pages</a>
-		          	<ul class="dropdown">
-		          		<li class="divider"></li>
-		          		<li><a href="http://www.facebook.com/NectoNightclub">Necto FaceBook</a>
-		          		<li class="divider"></li>
-		          		<li><a href="http://www.twitter.com/Necto">Necto Twitter</a>
-		          		<li class="divider"></li>
-		          		<li><a href="http://instagram.com/nectonightclub#">Necto Instagram</a>
-		          	</ul>
-		          </li>
-		          <li class="divider"></li>
-		        </ul>
-		      </li>
-		      <!-- End 5th button-->
-		 
-		      <li class="divider"></li>
-		    </ul>
-		  </section>
+			<section class="top-bar-section">
+			    <!-- Right Nav Section -->
+			    <ul class="right">
+			        <li class="divider"></li>
+			        <!-- 1st Button -->
+			        <li class="has-dropdown">
+			            <a class="mobile-header" href="#">Weekly Events</a>
+			            <ul class="dropdown">
+			                <li class="divider"></li>
+			                <li><a id="mobileMondayLink"></a></li>
+			                <li class="divider"></li>
+			                <li><a id="mobileThursdayLink"></a></li>
+			                <li class="divider"></li>
+			                <li><a id="mobileFridayLink"></a></li>
+			                <li class="divider"></li>
+			                <li><a id="mobileSaturdayLink"></a></li>
+			                <li class="divider"></li>
+			                <li><a id="mobileCalendarURL">View Calendar</a></li>
+			            </ul>
+			        </li>
+			        <!-- End 1st Button -->
+			        <li class="divider"></li>
+			        <!-- 2nd Button Removed-->
+			        <!-- 3rd Button -->
+			        <li class="has-dropdown">
+			            <a class="mobile-header" href="#">VIP and Rental Services</a>
+			            <ul class="dropdown">
+			                <li class="divider"></li>
+			                <li><a id="mobileBottleServiceURL">Reservations &amp; Bottle Service</a></li>
+			                <li class="divider"></li>
+			                <li><a id="mobilePrivEventsURL">Private Event Rentals</a></li>
+			            </ul>
+			        </li>
+			        <!-- End 3rd Button -->
+			        <li class="divider"></li>
+			        <!-- 4th button-->
+			        <li class="has-dropdown">
+			            <a class="mobile-header" href="#">Club Info</a>
+			            <ul class="dropdown">
+			                <li class="divider"></li>
+			                <li class="has-dropdown">
+			                    <a href="#">Contact</a>
+			                    <ul class="dropdown">
+			                        <li class="divider"></li>
+			                        <li><label>Phone</label></li>
+			                        <li><a href="tel:+17349945436">734.994.5436 INFO</a></li>
+			                        <li class="divider"></li>
+			                        <li><a href="tel:+17349945835">734.994.5835 OFFICE</a></li>
+			                        <li class="divider"></li>
+			                        <li><a href="tel:+17349944020">734.994.4020 FAX</a></li>
+			                        <li class="divider"></li>
+			                        <li><label>Email</label></li>
+			                        <li><a href="mailto:info@thenecto.com">Email Necto</a></li>
+			                    </ul>
+			                </li>
+			                <li class="divider"></li>
+			                <li class="has-dropdown">
+			                    <a href="#">Directions</a>
+			                    <ul class="dropdown">
+			                        <li class="divider"></li>
+			                        <li><label>Maps</label></li>
+			                        <li><a href="https://maps.google.com/maps?q=necto+night+club&amp;ll=42.279309,-83.74114&amp;spn=0.013463,0.015707&amp;oe=utf-8&amp;client=firefox-a&amp;t=h&amp;z=16&amp;iwloc=A">Google Maps</a></li>
+			                        <li class="divider"></li>
+			                        <li><a id="mobileDirectionsURL">Directions and Parking</a></li>
+			                    </ul>
+			                </li>
+			                <li class="divider"></li>
+			            </ul>
+			        </li>
+			        <!-- End 4th button-->
+			        <li class="divider"></li>
+			        <!-- 5th button-->
+			        <li class="has-dropdown">
+			            <a class="mobile-header" href="#">Social Media</a>
+			            <ul class="dropdown">
+			                <li class="divider"></li>
+			                <li class="has-dropdown">
+			                    <a href="#">General</a>
+			                    <ul class="dropdown">
+			                        <li class="divider"></li>
+			                        <li><a href="http://www.facebook.com/NectoNightclub">Necto FaceBook</a>
+			                        <li class="divider"></li>
+			                        <li><a href="http://www.twitter.com/Necto">Necto Twitter</a>
+			                        <li class="divider"></li>
+			                        <li><a href="http://instagram.com/nectonightclub#">Necto Instagram</a>
+			                    </ul>
+			                </li>
+			                <li class="divider"></li>
+			                <li class="has-dropdown">
+			                    <a href="#">Factory Pages</a>
+			                    <ul class="dropdown">
+			                        <li class="divider"></li>
+			                        <li><a href="https://www.facebook.com/FactoryAtNecto">Factory FaceBook</a>
+			                        <li class="divider"></li>
+			                        <li><a href="https://twitter.com/FactoryAtNecto">Factory Twitter</a>
+			                        <li class="divider"></li>
+			                        <li><a href="http://instagram.com/nectomonday">Factory Instagram</a>
+			                    </ul>
+			                </li>
+			                <li class="divider"></li>
+			                <li class="has-dropdown">
+			                    <a href="#">Mix Pages</a>
+			                    <ul class="dropdown">
+			                        <li class="divider"></li>
+			                        <li><a href="http://www.facebook.com/NectoNightclub">Necto FaceBook</a>
+			                        <li class="divider"></li>
+			                        <li><a href="http://www.twitter.com/Necto">Necto Twitter</a>
+			                        <li class="divider"></li>
+			                        <li><a href="http://instagram.com/nectonightclub#">Necto Instagram</a>
+			                    </ul>
+			                </li>
+			                <li class="divider"></li>
+			                <li class="has-dropdown">
+			                    <a href="#">Pride Pages</a>
+			                    <ul class="dropdown">
+			                        <li class="divider"></li>
+			                        <li><a href="https://www.facebook.com/pridenecto">Pride FaceBook</a>
+			                        <li class="divider"></li>
+			                        <li><a href="https://twitter.com/NectoPride">Pride Twitter</a>
+			                        <li class="divider"></li>
+			                        <li><a href="http://instagram.com/necto_pride">Pride Instagram</a>
+			                    </ul>
+			                </li>
+			                <li class="divider"></li>
+			                <li class="has-dropdown">
+			                    <a href="#">Frequency Pages</a>
+			                    <ul class="dropdown">
+			                        <li class="divider"></li>
+			                        <li><a href="http://www.facebook.com/NectoNightclub">Necto FaceBook</a>
+			                        <li class="divider"></li>
+			                        <li><a href="http://www.twitter.com/Necto">Necto Twitter</a>
+			                        <li class="divider"></li>
+			                        <li><a href="http://instagram.com/nectonightclub#">Necto Instagram</a>
+			                    </ul>
+			                </li>
+			                <li class="divider"></li>
+			            </ul>
+			        </li>
+			        <!-- End 5th button-->
+			        <li class="divider"></li>
+			    </ul>
+			</section>
 		</nav>
-
-		<div class="large-12 columns hide-for-small">
-			<img data-interchange="[img/necto-main-banner-image-small.png, (default)], [img/necto-main-banner-image-large.png, (small)]" class="main-image" alt="A dance floor photo of the Necto Nightclub in Ann Arbor Michigan." />
-		</div>
-
 	</div>
 	<!-- EndSmall Screen Header -->
+	<script type="text/javascript">nav()</script>
 
 	<!-- Main Content -->
 
@@ -306,7 +295,6 @@
 
 				<!-- SEPT -->
 
-				<div class="friday" name="September 16th, 2016"></div>
 				<div class="saturday" name="September 17th, 2016"></div>
 				<div class="monday" name="September 19th, 2016"></div>
 
