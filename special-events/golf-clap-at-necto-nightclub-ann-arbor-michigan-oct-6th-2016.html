@@ -62,17 +62,17 @@
 
 			var eventTitleContent=document.getElementById("eventTitle"),eventMetaDescriptionContent=document.getElementById("eventMetaDescription"),eventDateBodyContent=document.getElementById("eventDateBody"),eventTitleBodyContent=document.getElementById("eventTitleBody"),eventDescriptionBodyContent=document.getElementById("eventDescriptionBody"),eventDoorsContent=document.getElementById("eventDoors"),eventCoverContent=document.getElementById("eventCover"),eventOtherContent=document.getElementById("eventOther"),eventImageSmallContent=document.getElementById("eventImageSmall"),eventImageLargeContent=document.getElementById("eventImageLarge"),ticketButtonLargeContent=document.getElementById("ticketButtonLarge"),ticketButtonLargeHeaderContent=document.getElementById("ticketButtonLargeHeader"),ticketButtonSmallContent=document.getElementById("ticketButtonSmall"),ticketButtonSmallHeaderContent=document.getElementById("ticketButtonSmallHeader"),eventMetaDescriptionTailValue="Necto Nightclub in Ann Arbor, Michigan.";
 
-			if (urlsplit[path] === '1test-at-necto-nightclub-ann-arbor-michigan-jan-14th-2016.html')
+			if (urlsplit[path] === 'golf-clap-at-necto-nightclub-ann-arbor-michigan-oct-6th-2016.html')
 			{
-				var eventName                 = 'Elephante with direct support: Ben Phipps'; // Full name of the event
-				var performer				  = 'Elephante'; // Just the Headliners name
-				var dateOfEvent				  = '2016-10-26T21:00' // 9pm is 21:00
-				var imageFile				  = 'elephante-ben-phipps-at-necto-nightclub-ann-arbor.jpg';
-				var eventDescriptionBody      = 'Elephante aka Tim Wu was born in Ann Arbor, Michigan. He was classically trained in piano at the age of 8 and is a self-taught guitarist. After graduating from Huron High School in 2007, he went on to attend Harvard University.<br>Elephante started his music career as a singer-songwriter and guitarist, recording an acoustic EP before falling in love with electronic music. His first official release was a remix of Illenium - &#34;Escape&#34;, out on June 12th on Prep School Records. Since then he has created a string of high-profile mixes for artists like: Dirty South, Galantis, Oliver Heldens, and more.';
+				var eventName                 = 'Country Club Disco presents... GOLF CLAP & Friends'; // Full name of the event
+				var performer				  = 'Golf Clap'; // Just the Headliners name
+				var dateOfEvent				  = '2016-10-06T22:00' // 9pm is 21:00
+				var imageFile				  = 'golf-clap-oct-6-2016-at-necto-nightclub-ann-arbor.jpg';
+				var eventDescriptionBody      = 'No better way to throw a proper party than with GOLF CLAP & Friends!<br><strong>Country Club Disco presents... Golf Clap with opening sets by the Ghita Sisters & Brahj</strong><br>DJs; producers; club headliners; after-party enthusiasts: Golf Clap are Hugh Cleal and Bryan Jones, a Detroit duo with an unmatched passion for house music and a seemingly endless supply of studio and club-focussed creativity. And with releases on some of the world’s most influential house labels already under their belts, along with a lauded Boiler Room session and beyond, they’re only just getting started. Produced by Necto & Southpaw Events';
 				var ticketedEvent             = true;
-				var ticketLink			  	  = 'http://www.clubtix.com/elephante-at-necto-tickets-475634?p=10635';
-				var eventCover				  = 'Presale tickets begin at $5 & will increase to $15 at doors';
-				var eventOther				  = '<a href=""></a>';
+				var ticketLink			  	  = 'https://www.eventbrite.com/e/golf-clap-friends-tickets-28166619116';
+				var eventCover				  = 'Tickets are FREE for 21 & over | $10 for 18-20 with proper ID';
+				var eventOther				  = '<a href="https://www.facebook.com/events/317680438623928/">More Info</a>';
 
 				var timeCode=new Date(dateOfEvent),hour=dateOfEvent.split("T")[1].split(":")[0],min=dateOfEvent.split("T")[1].split(":")[1],eventDoorTime,ampm=" AM";numbHour=parseInt(hour),numbMin=min,12===numbHour?(ampm=" PM",eventDoorTime=numbHour+":"+numbMin+ampm):24===numbHour?eventDoorTime=numbHour-12+":"+numbMin+ampm:numbHour>12?(ampm=" PM",eventDoorTime=numbHour-12+":"+numbMin+ampm):numbHour<12&&(ampm=" AM",eventDoorTime=numbHour+":"+numbMin+ampm);var day=timeCode.getDay();switch(day){case 0:day="Sun";break;case 1:day="Mon";break;case 2:day="Tue";break;case 3:day="Wed";break;case 4:day="Thu";break;case 5:day="Fri";break;case 6:day="Sat"}var date=timeCode.getDate(),month=timeCode.getMonth()+1;switch(month){case 1:month="Jan";break;case 2:month="Feb";break;case 3:month="Mar";break;case 4:month="Apr";break;case 5:month="May";break;case 6:month="Jun";break;case 7:month="Jul";break;case 8:month="Aug";break;case 9:month="Sept";break;case 10:month="Oct";break;case 11:month="Nov";break;case 12:month="Dec"}var year=timeCode.getFullYear(),eventDate=day+" "+month+" "+date+", "+year,eventMetaDescriptionValue=eventName+" on "+eventDate+" at the "+eventMetaDescriptionTailValue,eventDoors=eventDoorTime,eventImage="../img/event-images/"+imageFile;
 				eventTitleContent.innerHTML=eventName+" | "+eventDate+" | "+eventMetaDescriptionTailValue,eventMetaDescriptionContent.setAttribute("content",eventMetaDescriptionValue),eventDateBodyContent.innerHTML=eventDate,eventTitleBodyContent.innerHTML=eventName,eventDescriptionBodyContent.innerHTML=eventDescriptionBody,eventDoorsContent.innerHTML=eventDoors,eventCoverContent.innerHTML=eventCover,eventOtherContent.innerHTML=eventOther,eventImageSmallContent.setAttribute("src",eventImage),eventImageLargeContent.setAttribute("src",eventImage),0==ticketedEvent?(ticketButtonLargeContent.setAttribute("class","hide"),ticketButtonLargeHeaderContent.setAttribute("class","hide"),ticketButtonSmallContent.setAttribute("class","hide"),ticketButtonSmallHeaderContent.setAttribute("class","hide")):(ticketButtonLargeHeaderContent.setAttribute("class","hide-for-small"),ticketButtonLargeContent.setAttribute("class","hide-for-small standard-button tix-button"),ticketButtonLargeContent.setAttribute("href",ticketLink),ticketButtonSmallContent.setAttribute("class","hide-for-medium-up standard-button tix-button"),ticketButtonSmallContent.setAttribute("href",ticketLink),ticketButtonSmallHeaderContent.setAttribute("class","hide-for-medium-up"));	
@@ -331,12 +331,14 @@
 						</ul>
 						<h3 id="ticketButtonLargeHeader">Buy Tickets</h3>
 						<a id="ticketButtonLarge">GET TICKETS</a>
+						
 
 					</div>
 					<div class="large-5 columns">
 						<h3 id="ticketButtonSmallHeader">Buy Tickets</h3>
 						<a id="ticketButtonSmall">GET TICKETS</a>
 						<img id="eventImageLarge" class="hide-for-small">
+						<br>
 					</div>
 				</div>
 				<hr>
