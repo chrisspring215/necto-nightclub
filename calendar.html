@@ -293,63 +293,11 @@
 				<!-- <div class="friday" name="friday"></div> -->
 				<!-- <div class="saturday" name="saturday"></div> -->
 
-<!-- OCT -->
-
-				<!-- Special Event Listing -->
-				<div class="row page-section">
-					<div class="large-2 columns calendar-date">
-						<span class="day-indicator">Sunday&nbsp;</span><br>
-						<span class="date-indicator">Oct 30th 2016&nbsp;&nbsp;</span><br class="hide-for-small">
-						<span class="time-indicator">8:00pm</span>
-					</div>
-					<div class="large-7 columns calendar-event end">
-						<h3><a href="special-events/feed-me-family-reunion-devils-night-at-necto-nightclub-ann-arbor-michigan-oct-30th-2016.html">FEED ME'S FAMILY REUNION : Devil's Night</a></h3>
-						<img src="img/event-images/cal-feed-me-at-necto-night-club-ann-arbor.jpg">
-						<p>Jon Gooch is a electro producer under the alias of 'Feed Me', He is also known as 'Spor'. Under his Spor alias he mostly produces drum and bass, while under his Feed Me alias he creates music in all different kinds of genres, ranging from Dubstep to Trap.</p>
-						<div class="row">
-
-							<div class="large-4 columns end">
-								<a class="button expand tix-button" href="http://www.clubtix.com/feed-me-at-necto-tickets-482732?p=24108">GET TICKETS</a>
-							</div>
-
-						    <div class="large-4 columns end">
-								<a class="button expand tix-button" href="special-events/feed-me-family-reunion-devils-night-at-necto-nightclub-ann-arbor-michigan-oct-30th-2016.html">VIEW EVENT</a>
-							</div>
-							<div class="large-4 columns end">
-								<a class="button expand tix-button" href="bottle-service-and-reservations.html?=calpagelink">GET VIP</a>
-							</div>
-						</div>		
-					</div>
-				</div>
-				<!-- END Special Event Listing -->
-
-				<!-- Special Event Listing -->
-				<div class="row page-section">
-					<div class="large-2 columns calendar-date">
-						<span class="day-indicator">Monday&nbsp;</span><br>
-						<span class="date-indicator">Oct 31st 2016&nbsp;&nbsp;</span><br class="hide-for-small">
-						<span class="time-indicator">9:00pm</span>
-					</div>
-					<div class="large-7 columns calendar-event end">
-						<h3><a href="special-events/bring-out-your-dead-halloween-2016-at-necto-nightclub-ann-arbor-michigan-oct-31st-2016.html">Factory presents... Bring Out Your Dead: Halloween 2016!</a></h3>
-						<img src="img/event-images/cal-bring-out-your-dead-halloween-2016-at-necto-nightclub-ann-arbor.jpg">
-						<p>Join the Factory Family for our favorite party of the year... HALLOWEEN! Join Void 6 in the Main Room &amp; DJ Madisi in the Red Room for the best Halloween Party in Southeast Michigan! Get here early to enjoy the festivities.</p>
-						<div class="row">
-							<!--
-							<div class="large-4 columns end">
-								<a class="button expand tix-button" href="https://www.eventbrite.com/e/fun-house-halloween-chills-thrills-tickets-27741581818">GET TICKETS</a>
-							</div>
-						-->
-						    <div class="large-6 columns end">
-								<a class="button expand tix-button" href="special-events/bring-out-your-dead-halloween-2016-at-necto-nightclub-ann-arbor-michigan-oct-31st-2016.html">VIEW EVENT</a>
-							</div>
-							<div class="large-6 columns end">
-								<a class="button expand tix-button" href="bottle-service-and-reservations.html?=calpagelink">GET VIP</a>
-							</div>
-						</div>		
-					</div>
-				</div>
-				<!-- END Special Event Listing -->
+<!-- NOV -->
+				<div class="thursday" name="Nov 3rd 2016"></div>
+				<div class="friday" name="Nov 4th 2016"></div>
+				<div class="saturday" name="Nov 5th 2016"></div>
+				<div class="monday" name="Nov 7th 2016"></div>
 
 				<!-- Special Event Listing -->
 				<div class="row page-section">
@@ -431,6 +379,9 @@
 				</div>
 				<!-- END Special Event Listing -->
 
+				<div class="saturday" name="Nov 12th 2016"></div>
+
+
 				<!-- Special Event Listing -->
 				<div class="row page-section">
 					<div class="large-2 columns calendar-date">
@@ -460,6 +411,16 @@
 					</div>
 				</div>
 				<!-- END Special Event Listing -->
+
+				<div class="thursday" name="Nov 17th 2016"></div>
+				<div class="friday" name="Nov 18th 2016"></div>
+				<div class="saturday" name="Nov 19th 2016"></div>
+				<div class="monday" name="Nov 21st 2016"></div>
+
+				<div class="thursday" name="Nov 24th 2016"></div>
+				<div class="friday" name="Nov 25th 2016"></div>
+				<div class="saturday" name="Nov 26th 2016"></div>
+				<div class="monday" name="Nov 28th 2016"></div>
 
 				<!-- Special Event Listing 
 				<div class="row page-section">
@@ -618,15 +579,15 @@
 	//Thursday Gen
 		var thursday = document.getElementsByClassName('thursday');
 		var thursLength = thursday.length;
-		var thursName = 'COLLEGE NIGHT';
+		var thursName = 'MIX';
 		var thursDoors = '10:00pm';
-		var thursDesc = "<img src='img/college-night-necto-ann-arbor.jpg'" + "<br>" + "Join Necto every Thursday night at University of Michigan's favorite nightclub for the biggest college night in Southeast Michigan. Every week dance to the best Top 40, House & Hip Hop video's in the Main Room.";
-		var thursLink = 'college-night-thursday.html';
-		var thursLinkText = 'COLLEGE NIGHT THURSDAY PAGE';
+		var thursDesc = "<br>" + "We’re mixing it up each & every Thursday, with a blend of concerts by renowned artists, special events, unique parties, and even functions that you can book.";
+		var thursLink = 'mix-thursday.html';
+		var thursLinkText = 'MIX THURSDAY PAGE';
 
-		for (var a = 0; monLength; a++) {
+		for (var a = 0; thursLength; a++) {
 			var thursDate = thursday[a].getAttribute('name')
-			thursday[a].innerHTML = '<div class="row page-section" style="border-bottom: 1px solid #222"><div class="large-2 columns calendar-date"><span class="day-indicator">Thursday&nbsp;</span><br><span class="date-indicator">' + thursDate + '&nbsp;&nbsp;</span><br class="hide-for-small"><span class="time-indicator">' + thursDoors + '</span></div><div class="large-6 columns calendar-event"><h3><a href="' + thursLink + '">' + thursName + '</a></h3><p>' + thursDesc + '</p></div><div class="large-4 small-12 columns calendar-links "><ul class="large-block-grid-1 small-block-grid-1"><li><a href="' + thursLink + '" class="standard-button">' + thursLinkText + '</a></li></ul></div></div>';
+			thursday[a].innerHTML = '<div class="row page-section" style="border-bottom: 1px solid #222"><div class="large-2 columns calendar-date"><span class="day-indicator">Thursday&nbsp;</span><br><span class="date-indicator">' + thursDate + '&nbsp;&nbsp;</span><br class="hide-for-small"><span class="time-indicator">' + thursDoors + '</span></div><div class="large-7 columns calendar-event end"><h3><a href="' + thursLink + '">' + thursName + '</a></h3><p>' + thursDesc + '</p><div class="row"><div class="large-6 small-12 columns calendar-links "><a href="' + thursLink + '" class="button expand tix-button">' + thursLinkText + '</a></div><div class="large-6 small-12 columns calendar-links "><a href="bottle-service-and-reservations.html?=calpagelink" class="button expand tix-button">GET VIP</a></div></div></div>';
 		};
 </script>
 
