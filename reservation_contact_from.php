@@ -13,7 +13,7 @@ $reservation_reffered = $_POST['reservation_reffered'];
 $to = 'vip@necto.com';
 $subject = 'VIP REQUEST';
 
-$message = 'NAME: ' . $reservation_name . "\n" . 'PHONE: ' . $reservation_phone . "\n" . 'EMAIL: ' . $reservation_email . "\n" . $reservation_date . "\n" . 'MESSAGE: ' . $reservation_message . "\n" . 'BRAND: ' . $reservation_brand . "\n" . 'REFFERED: ' . $reservation_reffered;
+$message = 'NAME: ' . $reservation_name . "\n" . 'PHONE: ' . $reservation_phone . "\n" . 'EMAIL: ' . $reservation_email . "\n" . 'RESERVATION DATE: ' . $reservation_date . "\n" . 'GUESTS: ' . $reservation_guests . "\n" . 'MESSAGE: ' . $reservation_message . "\n" . 'BRAND: ' . $reservation_brand . "\n" . 'REFFERED: ' . $reservation_reffered;
 
 // mail ($to, $subject, $message, 'From: ' . $reservation_name);
 mail ($to, $subject, $message, 'From: ' . $reservation_email);
