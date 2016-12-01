@@ -62,23 +62,25 @@
 
 			var eventTitleContent=document.getElementById("eventTitle"),eventMetaDescriptionContent=document.getElementById("eventMetaDescription"),eventDateBodyContent=document.getElementById("eventDateBody"),eventTitleBodyContent=document.getElementById("eventTitleBody"),eventDescriptionBodyContent=document.getElementById("eventDescriptionBody"),eventDoorsContent=document.getElementById("eventDoors"),eventCoverContent=document.getElementById("eventCover"),eventOtherContent=document.getElementById("eventOther"),eventImageSmallContent=document.getElementById("eventImageSmall"),eventImageLargeContent=document.getElementById("eventImageLarge"),ticketButtonLargeContent=document.getElementById("ticketButtonLarge"),ticketButtonLargeHeaderContent=document.getElementById("ticketButtonLargeHeader"),ticketButtonSmallContent=document.getElementById("ticketButtonSmall"),ticketButtonSmallHeaderContent=document.getElementById("ticketButtonSmallHeader"),eventMetaDescriptionTailValue="Necto Nightclub in Ann Arbor, Michigan.";
 
-			if (urlsplit[path] === 'new-years-eve-2017-ann-arbor-necto-nightclub.html')
+			if (urlsplit[path] === 'miss-necto-professional-amateur-pageant-2017-at-necto-nightclub-ann-arbor-michigan-jan-29th-2017.html')
 			{
-				var eventName                 = 'New Years Eve: 2017'; // Full name of the event
-				var performer				  = 'New Years Eve 2017 - Ann Arbor'; // Just the Headliners name
-				var dateOfEvent				  = '2016-12-31T21:00' // 9pm is 21:00
-				var imageFile				  = 'new-years-eve-2017-at-necto-nightclub-ann-arbor.jpg';
-				var eventDescriptionBody      = "All that Glitters! Ring in the New Year with your favorite Southeast Michigan Nightclub... Necto! Join DJ Hardy, Nick D & MC Yoda in the Main Room spinning Top 40 & House. Ayinde Audio in the Red Room playing the best music from the late 80's, 90's & early 2000s.";
+				var eventName                 = 'Miss Necto Professional/Amateur Pageant 2017'; // Full name of the event
+				var performer				  = 'Miss Necto Pageant 2017'; // Just the Headliners name
+				var dateOfEvent				  = '2017-01-29T18:00' // 9pm is 21:00
+				var imageFile				  = 'miss-necto-2017-at-necto-nightclub-ann-arbor.jpeg';
+				var eventDescriptionBody      = "Join us Sunday January 29th, 2017 as we join the huntsman for the 3rd annual Miss Necto Professional/ Amateur Pageant! This year's theme is Evil Queens!<br></br>Hosted by Chanel Hunter & Jadein Black</br></br>Honoring...</br>The Reigning Miss Necto Professional 2016</br>Analya Le'beél Crespo</br>and Miss Necto Amateur 2016 Tedi Rhinestone";
 				var ticketedEvent             = true;
-				var ticketLink			  	  = 'https://www.eventbrite.com/e/new-years-eve-2017-tickets-29809040643';
-				var eventCover				  = 'Presale tickets begin at $5 & will increase to $15 at doors';
-				var eventOther				  = '<a href="https://www.facebook.com/events/221900801590054/">More Info</a>';
+				var ticketLink			  	  = 'https://www.eventbrite.com/e/miss-necto-proam-pageant-2017-evil-queens-tickets-29831519879';
+				var eventCover				  = 'Pre-sale single ticket - $15 | 2 Tickets - $20 | 4 Pack Tickets - $30';
+				var eventOther				  = '<a href="https://www.facebook.com/events/235480763538626/">More Info</a>';
 
 				var timeCode=new Date(dateOfEvent),hour=dateOfEvent.split("T")[1].split(":")[0],min=dateOfEvent.split("T")[1].split(":")[1],eventDoorTime,ampm=" AM";numbHour=parseInt(hour),numbMin=min,12===numbHour?(ampm=" PM",eventDoorTime=numbHour+":"+numbMin+ampm):24===numbHour?eventDoorTime=numbHour-12+":"+numbMin+ampm:numbHour>12?(ampm=" PM",eventDoorTime=numbHour-12+":"+numbMin+ampm):numbHour<12&&(ampm=" AM",eventDoorTime=numbHour+":"+numbMin+ampm);var day=timeCode.getDay();switch(day){case 0:day="Sun";break;case 1:day="Mon";break;case 2:day="Tue";break;case 3:day="Wed";break;case 4:day="Thu";break;case 5:day="Fri";break;case 6:day="Sat"}var date=timeCode.getDate(),month=timeCode.getMonth()+1;switch(month){case 1:month="Jan";break;case 2:month="Feb";break;case 3:month="Mar";break;case 4:month="Apr";break;case 5:month="May";break;case 6:month="Jun";break;case 7:month="Jul";break;case 8:month="Aug";break;case 9:month="Sept";break;case 10:month="Oct";break;case 11:month="Nov";break;case 12:month="Dec"}var year=timeCode.getFullYear(),eventDate=day+" "+month+" "+date+", "+year,eventMetaDescriptionValue=eventName+" on "+eventDate+" at the "+eventMetaDescriptionTailValue,eventDoors=eventDoorTime,eventImage="../img/event-images/"+imageFile;
 				eventTitleContent.innerHTML=eventName+" | "+eventDate+" | "+eventMetaDescriptionTailValue,eventMetaDescriptionContent.setAttribute("content",eventMetaDescriptionValue),eventDateBodyContent.innerHTML=eventDate,eventTitleBodyContent.innerHTML=eventName,eventDescriptionBodyContent.innerHTML=eventDescriptionBody,eventDoorsContent.innerHTML=eventDoors,eventCoverContent.innerHTML=eventCover,eventOtherContent.innerHTML=eventOther,eventImageSmallContent.setAttribute("src",eventImage),eventImageLargeContent.setAttribute("src",eventImage),0==ticketedEvent?(ticketButtonLargeContent.setAttribute("class","hide"),ticketButtonLargeHeaderContent.setAttribute("class","hide"),ticketButtonSmallContent.setAttribute("class","hide"),ticketButtonSmallHeaderContent.setAttribute("class","hide")):(ticketButtonLargeHeaderContent.setAttribute("class","hide-for-small"),ticketButtonLargeContent.setAttribute("class","hide-for-small standard-button tix-button"),ticketButtonLargeContent.setAttribute("href",ticketLink),ticketButtonSmallContent.setAttribute("class","hide-for-medium-up standard-button tix-button"),ticketButtonSmallContent.setAttribute("href",ticketLink),ticketButtonSmallHeaderContent.setAttribute("class","hide-for-medium-up"));	
 				var richCard = document.getElementById('richCard');
 				var richCardData = '{"@context": "http://schema.org","@type": "MusicEvent","name": "' + eventName + '","description": "' + eventDescriptionBody + '","performer" : "' + performer + '","url" : "' + document.location.toString() + '","image" : "' + 'https://www.necto.com/img/event-images/' + imageFile + '","location" : {"@type" : "Place","sameAs" : "https://www.necto.com","name" : "Necto Nightclub","address" : "516 E. Liberty St, Ann Arbor, MI 48104"},"offers": {"@type": "Offer","url": "' + ticketLink + '"}}';
-				richCard.innerHTML = richCardData;			
+				richCard.innerHTML = richCardData;
+
+				if (ticketedEvent === false) { ticketButtonLargeHeaderContent.innerHTML === " "}	
 			};
 		}
 	</script>	
@@ -144,7 +146,7 @@
 		<nav class="top-bar">
 
 			<ul class="title-area">	
-				<li class="name"><h1><a id="mobileHomeLogoURL"><img id="mobileLogo" src="img/necto-mobile-logo.png" alt="Small logo for the Necto Nightclub located in Ann Arbor Michigan." /></a>New Years Eve: 2017 at Necto Nightclub, Ann Arbor, Michigan.</h1></li>
+				<li class="name"><h1><a id="mobileHomeLogoURL"><img id="mobileLogo" src="img/necto-mobile-logo.png" alt="Small logo for the Necto Nightclub located in Ann Arbor Michigan." /></a>Necto Nightclub, Ann Arbor, Michigan. Voted Michigan's best club.</h1></li>
 				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 			</ul>
 
@@ -297,67 +299,51 @@
 	<!-- Main Content -->
 	<!-- Small Screen Main Banner -->
 	<article class="article-background">
-
 		<!-- Calendar Section -->
 		<div class="row page-section">	
-			<div class="large-12 columns">
-				<img src="../img/event-images/cal-new-years-eve-2017-at-necto-nightclub-ann-arbor.jpeg">
+			<div class="large-12 columns section-title mayhem-event"> 
+				<span id="eventDateBody" class="home-page-special-event-date">Feb 6th, 2015</span>
+				<h2 id="eventTitleBody"></h2>
 			</div>
-			<div class="large-7 columns">
-				<h2>New Years Eve: 2017</h2>
-				<p>All that Glitters! Ring in the New Year with your favorite Southeast Michigan Nightclub... Necto! Join DJ Hardy, Nick D &amp; MC Yoda in the Main Room spinning Top 40 &amp; House. Ayinde Audio in the Red Room playing the best music from the late 80's, 90's &amp; early 2000s.</p>
-				<p><strong>DOORS</strong>: 9:00PM</p>
-				<p><strong>MORE INFO</strong>: <a href="https://www.facebook.com/events/221900801590054/">FACEBOOK</a></p>
+			<div class="large-12 columns">
+				<div class="row">					
+					<div class="large-7 columns">
+						<img id="eventImageSmall" class="hide-for-medium-up">
+						<hr class="hide-for-medium-up">
+						<h3>About The Event:</h3>
+						<p id="eventDescriptionBody"></p>
+						<h3 id="vipButtonLargeHeader">Upgrade Your Night</h3>
+						<a href="../bottle-service-and-reservations.html?=linkfromevent"><button class="standard-button tix-button expanded">GET VIP</button></a>
+						<hr>
+						<h3>Event Info:</h3>
+						<ul class="large-block-grid-3 small-block-grid-3">
+							<li>
+								<h4>Doors</h4>
+								<p id="eventDoors"></p>
+							</li>
+							
+							<li>
+								<h4>Cover</h4>
+								<p id="eventCover"></p>
+							</li>
+							<li>
+								<h4>Other</h4>
+								<p id="eventOther"></p>
+							</li>
+						</ul>
+						<h3 id="ticketButtonLargeHeader">Buy Tickets</h3>
+						<a id="ticketButtonLarge">GET TICKETS</a>
 
-			</div>
-			<div class="large-5 columns">
-				<h2 style="color: #f8a31e;">Tickets:</h2>
-				<p>Pre-sale $30 for a single ticket</p>
-				<p>$50 for a pair of tickets</p>
-				<p>$80 for a 4 pack of tickets</p>
-				<p>VIP Packages are available &amp; include express entry with line skip, VIP seating, bottle service &amp; champagne. Tickets at doors $30 for 21+ &amp; $50 for 18-20</p>
-
-				<a href="https://www.eventbrite.com/e/new-years-eve-2017-tickets-29809040643" class="button tix-button expand">GET TICKETS</a>
-			</div>
-			<div class="large-12 columns">
-			<hr>
-			</div>
-			<div class="large-12 columns">
-				<h2 style="color: #f8a31e;">VIP Packages</h2>
-				<p>New Year's Eve VIP packages are available but limited. If you are looking for a truly unique NYE experience, take a look at our options below and contact the Necto at <a href="mailto:vip@necto.com?Subject=NYE%20VIP%20General">vip@necto.com</a>.</p>
+					</div>
+					<div class="large-5 columns">
+						<h3 id="ticketButtonSmallHeader">Buy Tickets</h3>
+						<a id="ticketButtonSmall">GET TICKETS</a>
+						<img id="eventImageLarge" class="hide-for-small">
+					</div>
+				</div>
 				<hr>
-				<div class="row">
-					<div class="small-12 large-6 columns">
-						<h3 style="color: #a1400a;">Liberty St. Section 1</h3>
-						<p>Includes line skip and free admission for up to 5 guests, 1 bottle of house Champagne &amp; 1 bottle of Premium liquor with garnishes and mixers.</p>
-						<a href="mailto:vip@necto.com?Subject=NYE%20VIP%20liberty1" class="button tix-button expand">BOOK THIS PACKAGE</a>
-					</div>
-					<div class="small-12 large-6 columns">
-						<h3 style="color: #a1400a;">Liberty St. Section 2</h3>
-						<p>Includes line skip and free admission for up to 10 guests, 1 bottle of house Champagne &amp; 2 bottles of Premium liquor with garnishes and mixers + 1 bottle of house champagne.</p>
-						<a href="mailto:vip@necto.com?Subject=NYE%20VIP%20liberty2" class="button tix-button expand">BOOK THIS PACKAGE</a>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="small-12 large-6 columns">
-						<h3 style="color: #a1400a;">Main Dancefloor</h3>
-						<p>Includes line skip and free admission for up to 10 guests, 1 bottle of house Champagne &amp; 2 bottles of Premium liquor with garnishes and mixers + 1 bottle of house champagne.</p>
-						<a href="mailto:vip@necto.com?Subject=NYE%20VIP%20DanceFloor" class="button tix-button expand">BOOK THIS PACKAGE</a>
-					</div>
-					<div class="small-12 large-6 columns">
-						<h3 style="color: #a1400a;">Dj Booth</h3>
-						<p>Located directly next to the main floor DJ booth, the DJ Lounge overlooks the Main Dance floor and provides room for up to 20 guests. The Lounge includes free cover and line skip for your party, 2 bottles of liquor with garnishes and mixers +4 bottles of house champagne.</p>
-						<a href="mailto:vip@necto.com?Subject=NYE%20VIP%20DJbooth" class="button tix-button expand">BOOK THIS PACKAGE</a>
-					</div>
-				</div>
-
 			</div>
 		</div>
-		<!-- END Calendar Section -->
-
-
-		
 	</article>
 	<!-- End Main Content -->
 	<!-- Page Footer -->
