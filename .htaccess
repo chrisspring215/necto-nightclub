@@ -47,6 +47,7 @@ Redirect 301 /voltage-upcoming-events.html https://www.necto.com
 Redirect 301 /tix/admin/ https://www.necto.com
 Redirect 301 /tix/control/ https://www.necto.com
 Redirect 301 /tix/merch.php https://www.necto.com
+Redirect 301 special-events/new-years-eve-party-2015-at-necto-nightclub-ann-arbor-michigan-dec-31st-2014.html https://www.necto.com/special-event-groups/new-years-eve-2017-ann-arbor-necto-nightclub.html
 Redirect 301 /special-events/new-years-eve-2016-winter-garden-party-at-necto-nightclub-ann-arbor-michigan-dec-31st-2015.html https://www.necto.com/special-event-groups/new-years-eve-2017-ann-arbor-necto-nightclub.html
 
 <IfModule mod_expires.c>
